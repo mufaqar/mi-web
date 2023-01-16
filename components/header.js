@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useEffect, useState } from "react";;
 
 
@@ -62,9 +63,10 @@ export default function Navbar() {
         window.addEventListener('scroll', changeBackground);
 
     }
+    const router = useRouter();
     return (
-        <nav className={`drop-shadow-md px-4 py-4 h-16 items-center fixed left-0 right-0 z-50 ${navbar ? 'bg-white' : 'bg-[ rgb(255 255 255 /0)]'
-            }`}
+        <nav className={`drop-shadow-md px-4 py-4 h-16 items-center fixed left-0 right-0 z-50 
+        ${router.pathname === '/' ? navbar ? 'bg-white' : 'bg-rgb(255 255 255 /0)' : 'bg-white' }`}
         >
             <div className='md:w-[1170px] mx-auto flex filter'>
                 <MobileNav open={open} setOpen={setOpen} />
@@ -80,13 +82,12 @@ export default function Navbar() {
                         setOpen(!open)
                     }}>
                         {/* hamburger button */}
-                        <span className={`h-1 w-full  ${navbar ? 'bg-black' : 'bg-white'} rounded-lg transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-3.5" : ""}`} />
-                        <span className={`h-1 w-full  ${navbar ? 'bg-black' : 'bg-white'} rounded-lg transition-all duration-300 ease-in-out ${open ? "w-0" : "w-full"}`} />
-                        <span className={`h-1 w-full  ${navbar ? 'bg-black' : 'bg-white'} rounded-lg transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-3.5" : ""}`} />
+                        <span className={`h-1 w-full ${router.pathname === '/' ? navbar ? 'bg-black' : 'bg-white' : 'bg-black' } rounded-lg transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-3.5" : ""}`} />
+                        <span className={`h-1 w-full ${router.pathname === '/' ? navbar ? 'bg-black' : 'bg-white' : 'bg-black' } rounded-lg transition-all duration-300 ease-in-out ${open ? "w-0" : "w-full"}`} />
+                        <span className={`h-1 w-full ${router.pathname === '/' ? navbar ? 'bg-black' : 'bg-white' : 'bg-black' } rounded-lg transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-3.5" : ""}`} />
                     </div>
 
-                    <div className={`hidden md:flex uppercase text-sm space-x-4  ${navbar ? 'text-black' : 'text-white'
-            }`}>
+                    <div className={`hidden md:flex uppercase text-sm space-x-4 ${router.pathname === '/' ? navbar ? 'text-black' : 'text-white' : 'text-black' }`}>
                         <Link href="/">
                             Home
                         </Link>
