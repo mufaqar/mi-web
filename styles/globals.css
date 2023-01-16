@@ -1,16 +1,57 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    
+        
+    h1,h2,h3,h4,h5,h6{
+        @apply font-Montserrat ;
+    }
+    p,a,span,ul,li{
+        @apply font-Raleway;
+    }
+.service{
+    @apply flex flex-col items-center before:content-[''] before:w-1/2 before:h-1/2 group-hover:before:animate-animBefore
+    before:absolute before:left-0 before:top-0 before:border-t before:border-l before:border-transparent 
+    group-hover:before:border-white relative p-11 after:content-[''] after:w-1/2 group-hover:after:w-1/2 
+    after:h-1/2 group-hover:after:animate-animBefore after:absolute after:right-0 after:bottom-0 after:border-b 
+    after:border-r after:border-transparent group-hover:after:border-white;
+}
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.imageHolder{
+    background-image: url(../public/images/serviceBg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.servicesBg{
+    background-image: url(../public/images/our-team-bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.swiper-pagination-bullet-active{
+    background-color: #EF2D56 !important;
 }
 
-* {
-  box-sizing: border-box;
+.swiper-button-next, .swiper-button-prev{
+    width: calc(var(--swiper-navigation-size)/ 7* 40) !important;
+    top: 80% !important;
+    justify-content: end !important;
+    color: #EF2D56 !important;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 24px !important;
+}
+@media (max-width: 768px) {
+    .swiper-button-next, .swiper-button-prev{
+        width: calc(var(--swiper-navigation-size)/ 80 * 20) !important;
+        top: 88% !important;
+        justify-content: end !important;
+    }
 }
