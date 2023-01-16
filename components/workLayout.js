@@ -5,13 +5,13 @@ import Work_Image from '../public/images/workBg.png';
 export default function WorkLayout() {
     return (
         <>
-            <div className={"relative flex  items-end group bg-black transition duration-200"}>
+            <div className={"relative group bg-black transition duration-200"}>
                 <Link href="/single-work">
                     <Image
                         src={Work_Image}
                         alt=""
                         priority="true"
-                        className="group-hover:opacity-70 w-full h-full object-cover"
+                        className="group-hover:opacity-70 w-full h-full object-contain object-center"
                     />
                 </Link>
                 <ul className="cat absolute md:top-10 top-4 left-5 md:flex md:space-x-4 space-x-0 md:space-y-0 space-y-4">
