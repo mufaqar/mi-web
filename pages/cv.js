@@ -42,26 +42,26 @@ export default function CV() {
                     <div className="md:w-2/3 w-full flex md:flex-row flex-col md:space-y-0 space-y-5 items-center justify-between">
                         <div>
                             <Link href="#">
-                                <a className="flex space-x-2 items-center group">
+                                <span className="flex space-x-2 items-center group">
                                     <BsHeadphones className="md:text-3xl text-2xl text-customPink group-hover:text-black" />
                                     <span className="text-xl">Contact Information</span>
-                                </a>
+                                </span>
                             </Link>
                         </div>
                         <div>
                             <Link href="#">
-                                <a className="flex space-x-2 items-center group">
+                                <span className="flex space-x-2 items-center group">
                                     <BsEnvelopeOpen className="md:text-3xl text-2xl text-customPink group-hover:text-black" />
                                     <span className="text-xl">Send Message</span>
-                                </a>
+                                </span>
                             </Link>
                         </div>
                         <div>
                             <Link href="#">
-                                <a className="flex space-x-2 items-center group">
+                                <span className="flex space-x-2 items-center group">
                                     <BsCloudDownload className="md:text-3xl text-2xl text-customPink group-hover:text-black" />
                                     <span className="text-xl">Download Resume</span>
-                                </a>
+                                </span>
                             </Link>
                         </div>
                     </div>
