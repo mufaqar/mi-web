@@ -5,8 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    
+@layer components{  
         
     h1,h2,h3,h4,h5,h6{
         @apply font-Montserrat ;
@@ -23,18 +22,6 @@
 }
 }
 
-.imageHolder{
-    background-image: url(../public/images/serviceBg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.servicesBg{
-    background-image: url(../public/images/our-team-bg2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 .swiper-pagination-bullet-active{
     background-color: #EF2D56 !important;
 }

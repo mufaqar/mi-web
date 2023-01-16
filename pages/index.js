@@ -28,7 +28,7 @@ export default function Home() {
         </div>
       </section>
       <section className="grid md:grid-cols-2 border-t border-slate-100">
-        <div className="imageHolder md:h-auto h-screen flex items-center">
+        <div className="bg-[url(/images/serviceBg.jpg)] bg-center bg-no-repeat bg-cover md:h-auto h-screen flex items-center">
           <div className="w-full flex flex-col md:px-24 px-4 md:items-start items-center">
             <h4 className="text-sm tracking-widest font-medium uppercase ">THIS IS WHAT WE LOVE TO DO.</h4>
             <h2 className="after:content-['.'] after:ml-0.5 after:text-customPink md:text-5xl text-4xl leading-7 font-bold tracking-wide mt-5">Experties</h2>

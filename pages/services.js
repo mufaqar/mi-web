@@ -10,7 +10,7 @@ export default function Services() {
     <>
       <InnerPages_Banner sub="THIS IS WHAT I LOVE TO DO." title="WHAT I OFFER" />
 
-      <section className='servicesBg py-24 px-5'>
+      <section className='bg-[url(/images/our-team-bg2.jpg)] bg-center bg-no-repeat bg-cover py-24 px-5'>
         <div className='md:w-[1170px] mx-auto grid md:grid-cols-3 gap-9'>
           <Service icon={<AiOutlineBulb />} title="WEB DESIGNING AND BRANDING" content="We design and give a personality, value and competitive edge to your brand. We strongly believe that if you are not online, you are not in today’s corporate business. We are the creators of good brands with a specialized persona and essence of communication. Get stunning broachers and flyers specially designed for you. Your story of glory speaks through your brand." />
           <Service icon={<FiLayers />} title="REACTJS , NEXTJS AND TAILWINDCSS" content="I build Websites that are fast, easy to manage, secure & convert your visitors into customers using Nextjs and TailwindCss" />
