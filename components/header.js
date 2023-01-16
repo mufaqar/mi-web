@@ -45,36 +45,27 @@ function MobileNav({ open, setOpen }) {
 
 export default function Navbar() {
 
+    const [open, setOpen] = useState(false);
 
+    const [navbar, setNavbar] = useState(false);
 
-    const [clientWindowHeight, setClientWindowHeight] = useState("");
-
-    const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
-
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    });
-
-    const handleScroll = () => {
-        setClientWindowHeight(window.scrollY);
-    };
-
-    useEffect(() => {
-        let backgroundTransparacyVar = clientWindowHeight / 600;
-
-        if (backgroundTransparacyVar < 1) {
-            setBackgroundTransparacy(backgroundTransparacyVar);
+    const changeBackground = () => {
+        if (window.scrollY >= 600) {
+            setNavbar(true);
         }
-    }, [clientWindowHeight]);
+        else {
+            setNavbar(false);
+        }
+    }
+    if (typeof window !== "undefined") {
 
+        window.addEventListener('scroll', changeBackground);
 
-    const [open, setOpen] = useState(false)
+    }
     return (
-        <nav className=" drop-shadow-md bg-white px-4 py-4 h-16 items-center fixed left-0 right-0 z-50"
-            style={{
-                background: `rgba(255, 255, 255, ${backgroundTransparacy})`,
-            }}>
+        <nav className={`drop-shadow-md px-4 py-4 h-16 items-center fixed left-0 right-0 z-50 ${navbar ? 'bg-white' : 'bg-[ rgb(255 255 255 /0)]'
+            }`}
+        >
             <div className='md:w-[1170px] mx-auto flex filter'>
                 <MobileNav open={open} setOpen={setOpen} />
                 <div className="w-3/12 flex items-center">
@@ -89,12 +80,13 @@ export default function Navbar() {
                         setOpen(!open)
                     }}>
                         {/* hamburger button */}
-                        <span className={`h-1 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-3.5" : ""}`} />
-                        <span className={`h-1 w-full bg-black rounded-lg transition-all duration-300 ease-in-out ${open ? "w-0" : "w-full"}`} />
-                        <span className={`h-1 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-3.5" : ""}`} />
+                        <span className={`h-1 w-full  ${navbar ? 'bg-black' : 'bg-white'} rounded-lg transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-3.5" : ""}`} />
+                        <span className={`h-1 w-full  ${navbar ? 'bg-black' : 'bg-white'} rounded-lg transition-all duration-300 ease-in-out ${open ? "w-0" : "w-full"}`} />
+                        <span className={`h-1 w-full  ${navbar ? 'bg-black' : 'bg-white'} rounded-lg transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-3.5" : ""}`} />
                     </div>
 
-                    <div className="hidden md:flex uppercase text-sm space-x-4">
+                    <div className={`hidden md:flex uppercase text-sm space-x-4  ${navbar ? 'text-black' : 'text-white'
+            }`}>
                         <Link href="/">
                             Home
                         </Link>
