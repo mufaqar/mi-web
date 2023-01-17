@@ -23,51 +23,51 @@ export default function About() {
                         <h3 className='text-2xl font-bold uppercase tracking-tighter text-black mb-5'>SKILLS</h3>
                         <ul className="flex flex-col md:space-y-4 ">
                             <li className="font-medium text-sm uppercase flex flex-col space-y-3 items-center">
-                                <p className="w-full">START UP </p>
+                                <p className="w-full">WORDPRESS DEVELOPMENT</p>
                                 <div className="w-full">
                                     <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '70%' }}>
-                                            70%
+                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '95%' }}>
+                                            95%
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li className="font-medium text-sm uppercase flex flex-col space-y-3 items-center">
-                                <p className="w-full">START UP </p>
+                                <p className="w-full">PHP</p>
                                 <div className="w-full">
                                     <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '70%' }}>
-                                            70%
+                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '92%' }}>
+                                            92%
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li className="font-medium text-sm uppercase flex flex-col space-y-3 items-center">
-                                <p className="w-full">START UP </p>
+                                <p className="w-full">NEXTJS / TAILWINDCSS</p>
                                 <div className="w-full">
                                     <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '70%' }}>
-                                            70%
+                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '92%' }}>
+                                            92%
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li className="font-medium text-sm uppercase flex flex-col space-y-3 items-center">
-                                <p className="w-full">START UP </p>
+                                <p className="w-full">HTML CSS</p>
                                 <div className="w-full">
                                     <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '70%' }}>
-                                            70%
+                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '90%' }}>
+                                            90%
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li className="font-medium text-sm uppercase flex flex-col space-y-3 items-center">
-                                <p className="w-full">START UP </p>
+                                <p className="w-full">WEB DEVELOPMENT</p>
                                 <div className="w-full">
                                     <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '70%' }}>
-                                            70%
+                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '88%' }}>
+                                            88%
                                         </div>
                                     </div>
                                 </div>
