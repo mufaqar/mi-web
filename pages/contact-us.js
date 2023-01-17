@@ -1,9 +1,10 @@
 import { useFormik } from 'formik';
-import { BsArrowRight, BsBuilding } from 'react-icons/bs';
+import { BsArrowRight, BsBuilding, BsEnvelope, BsTelephone } from 'react-icons/bs';
 import InnerPages_Banner from '../components/innerPages-banner';
 import * as Yup from 'yup';
+import Link from 'next/link';
 
-export const signUpschema = Yup.object().shape({
+export const signUpschema = Yup.object({
     name: Yup.string().required("Please select field"),
     email: Yup.string().email().required("Please select field"),
     phone: Yup.string().required("Please select field"),
@@ -34,28 +35,31 @@ export default function Contact_Us() {
                 <div className='flex md:flex-row flex-col'>
                     <div className='md:w-5/12 w-full p-12 items-center justify-center bg-zinc-900'>
                         <div className='flex md:flex-row flex-col md:space-x-5 space-y-5 md:text-left text-center items-center p-5 mb-7 '>
-                            <BsBuilding className='text-8xl text-white' />
+                            <BsBuilding className='text-5xl text-white' />
                             <div className='flex flex-col justify-center'>
                                 <h3 className='text-2xl font-semibold text-white'>Office Location</h3>
                                 <p className='text-base text-gray-400'>134 B Ahmed Housing Multan Lahore , Paksitan</p>
                             </div>
                         </div>
                         <hr className='w-10/12 mx-auto border-gray-400 mb-7'></hr>
-                        <div className='flex md:flex-row flex-col md:space-x-9 mb-7'>
-                            <div className='flex flex-col text-center'>
+                        <div className='flex md:flex-row flex-col md:space-x-5 space-y-5 md:text-left text-center items-center p-5 mb-7 '>
+                            <BsTelephone className='text-5xl text-white' />
+                            <div className='flex flex-col justify-center'>
                                 <p className='text-base text-gray-400 uppercase'>Phone</p>
-                                <h3 className='text-2xl font-semibold text-white'>+92 302-6006-280</h3>
-                            </div>
-                            <div className='flex flex-col text-center'>
-                                <p className='text-base text-gray-400 uppercase'>Phone</p>
-                                <h3 className='text-2xl font-semibold text-white'>+92 335-4311-573</h3>
+                                <Link href="tel:+923026006280" target="_blank" rel="nofollow">
+                                    <h3 className='text-2xl font-semibold text-white'>+92 302-6006-280</h3>
+                                </Link>
                             </div>
                         </div>
                         <hr className='w-10/12 mx-auto border-gray-400 mb-7'></hr>
-                        <div className='flex flex-col text-center'>
-                            <p className='text-base text-gray-400 uppercase'>Send an Email</p>
-                            <h3 className='text-2xl font-semibold text-white'>info@mufaqar.com</h3>
-                            <h3 className='text-2xl font-semibold text-white'>info@mufaqar.com</h3>
+                        <div className='flex md:flex-row flex-col md:space-x-5 space-y-5 md:text-left text-center items-center p-5 '>
+                            <BsEnvelope className='text-5xl text-white' />
+                            <div className='flex flex-col justify-center'>
+                                <p className='text-base text-gray-400 uppercase'>Send an Email</p>
+                                <Link href="mailto:mufaqar@gmail.com" target="_blank" rel="nofollow">
+                                    <h3 className='text-2xl font-semibold text-white'>info@mufaqar.com</h3>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                     <div className='md:w-7/12 w-full'>
@@ -79,13 +83,13 @@ export default function Contact_Us() {
                                 onChange={handleChange}
                                 onBlur={handleBlur}
                                 className="md:w-1/2 w-full border border-gray-300 focus:border-customPink outline-none py-4 px-6 text-sm uppercase md:mr-4 md:mb-0 mb-4" />
-                            
+
                             <label htmlFor='email' className='hidden'>Your Email</label>
                             <input
                                 type="email"
                                 name="email"
                                 placeholder="Your Email"
-                                value={values.name}
+                                value={values.email}
                                 onChange={handleChange}
                                 onBlur={handleBlur}
                                 className="md:w-1/2 w-full border border-gray-300 focus:border-customPink outline-none py-4 px-6 text-sm uppercase" />
@@ -95,7 +99,7 @@ export default function Contact_Us() {
                             type="tel"
                             name="phone"
                             placeholder="Your Phone"
-                            value={values.name}
+                            value={values.phone}
                             onChange={handleChange}
                             onBlur={handleBlur}
                             className="w-full border border-gray-300 focus:border-customPink outline-none py-4 px-6 text-sm uppercase mb-4" />
@@ -104,11 +108,13 @@ export default function Contact_Us() {
                             name="textarea"
                             rows="10"
                             placeholder="Tell us a little bit about your project"
-                            value={values.name}
+                            value={values.textarea}
                             onChange={handleChange}
                             onBlur={handleBlur}
                             className="w-full border border-gray-300 focus:border-customPink outline-none py-4 px-6 text-sm uppercase mb-4"></textarea>
-                        <button className='border-2 border-customPink flex w-44 h-14 justify-between items-center text-sm uppercase text-black p-4 hover:bg-customPink hover:w-48 hover:text-white transform transition-all duration-300'>
+                        <button
+                            type='submit'
+                            className='border-2 border-customPink flex w-44 h-14 justify-between items-center text-sm uppercase text-black p-4 hover:bg-customPink hover:w-48 hover:text-white transform transition-all duration-300'>
                             <span>Send Message </span><BsArrowRight className='text-xl' />
                         </button>
                     </form>
