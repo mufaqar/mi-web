@@ -72,9 +72,21 @@ export default function Navbar() {
                 <MobileNav open={open} setOpen={setOpen} />
                 <div className="w-3/12 flex items-center">
                     <Link href="/" className="text-2xl font-semibold">
-                        <Image src="/images/logo-white.png"
-                            alt="logo" width={140} height={40}>
-                        </Image></Link>
+                    {router.pathname === '/' ? navbar ? (
+                                <Image src="/images/logo-black.png"
+                                alt="logo" width={140} height={40}>
+                            </Image>):
+                                (
+                                    <Image src="/images/logo-white.png"
+                                    alt="logo" width={140} height={40}>
+                                </Image> 
+                                ):
+                                (
+                                    <Image src="/images/logo-black.png"
+                                    alt="logo" width={140} height={40}>
+                                </Image> 
+                                )}
+                        </Link>
                 </div>
                 <div className="w-9/12 flex justify-end items-center">
 
