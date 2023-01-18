@@ -9,6 +9,7 @@ import { TbFocusCentered } from 'react-icons/tb';
 import { TbGlobe } from 'react-icons/tb';
 import Clients from "../components/clients";
 import Featured_Service from "../components/featured_services";
+import { Brands } from "../components/brands";
 
 
 export default function Home() {
@@ -62,15 +63,8 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="py-24 border-b border-slate-200 bg-white">
-        <div className="md:w-[1140px] w-auto mx-auto">
-          <div className="flex flex-col items-center my-6">
-            <h4 className="text-sm tracking-widest font-medium uppercase ">SOME OF THE BEST.</h4>
-            <h2 className="after:content-['.'] after:ml-0.5 after:text-customPink md:text-6xl text-5xl leading-7 font-bold tracking-wide mt-5">Our Clients</h2>
-            <hr className="border-b border-customPink w-12 mt-10"></hr>
-          </div>
-          <Clients />
-        </div>
+      <section className="py-16 bg-white">
+        <Brands />
       </section>
       <section className="py-24 border-b border-slate-200 bg-white">
         <div className="md:w-[1140px] w-auto mx-auto">
@@ -106,11 +100,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-24 border-b border-slate-200  bg-white">
+      <section className="py-24 border-b border-slate-200  bg-[#0d47a1]">
         <div className="md:w-[1140px] mx-auto flex flex-col items-center justify-center px-4">
-          <h3 className="after:content-['.'] after:ml-0.5 after:text-customPink md:text-5xl text-4xl text-center leading-10 font-bold tracking-wide mt-5">I'd Love To Hear About Your Project</h3>
-          <p className="text-lg text-slate-500 text-center my-5">Looking For A New Web Design (With Development) And/or Corporate Identity?</p>
-          <button className="border border-black py-5 px-8 bg-transparent hover:bg-black transition-all duration-500 text-black hover:text-white uppercase text-xs ">Work With Me</button>
+          <h3 className="after:content-['.'] after:ml-0.5 after:text-customPink md:text-5xl text-4xl text-white text-center leading-10 font-bold tracking-wide mt-5">I'd Love To Hear About Your Project</h3>
+          <p className="text-lg text-white text-center my-5">Looking For A New Web Design (With Development) And/or Corporate Identity?</p>
+          <button className="border border-white py-5 px-8 bg-transparent hover:bg-white transition-all duration-500 text-white hover:text-[#0d47a1] font-medium uppercase text-xs ">Work With Me</button>
         </div>
       </section>
     </>

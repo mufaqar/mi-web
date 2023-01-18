@@ -34,7 +34,7 @@ export const Brands = () => {
     
   return (
     <div>
-        <h2 className="mt-2 text-center text-gray-700 text-3xl md:text-4xl font-bold ">
+        <h2 className="pt-2 text-center text-gray-700 text-3xl md:text-4xl font-bold ">
             Clients
         </h2>
         <p className="max-w-2xl mx-auto mt-4 text-lg leading-7 tracking-wide text-center text-gray-400">
