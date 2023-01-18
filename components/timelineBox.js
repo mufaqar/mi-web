@@ -10,18 +10,18 @@ export default function TimelineBox({ Start_Date, End_Date, Company, Com_Loc, Po
                     <div className='mb-3'>
                         <div className='flex justify-between'>
                             <p className='flex flex-col mb-2'>
-                                <span className='text-slate-300 font-medium text-sm'>From </span>
+                                <span className='text-white font-medium text-sm'>From </span>
                                 <span className='text-white text-base font-medium'>{Start_Date}</span>
                             </p>
                             <p className='flex flex-col'>
-                                <span className='text-slate-300 font-medium text-sm'>To </span>
+                                <span className='text-white font-medium text-sm'>To </span>
                                 <span className='text-white text-base font-medium'>{End_Date}</span>
                             </p>
                         </div>
                     </div>
                     <div>
                         <h5 className="text-xl font-bold tracking-tighter text-white mb-2">{Company}</h5>
-                        <p className='text-slate-300 font-medium text-sm'>{Com_Loc}</p>
+                        <p className='text-white font-medium text-sm'>{Com_Loc}</p>
                     </div>
                 </div>
                 <div className='md:w-3/4 w-full bg-white p-4'>

@@ -17,7 +17,7 @@ export default function Testimonial() {
                 <div className='md:w-1/4 w-full bg-customPink py-14 px-8 items-center'>
                     <div>
                         <h5 className="text-xl font-bold tracking-tighter text-white mb-2">Our Happy Clients</h5>
-                        <p className='text-slate-300 font-medium text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor,</p>
+                        <p className='text-white font-medium text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor,</p>
                     </div>
                 </div>
                 <div className='md:w-3/4 w-full p-7 bg-gray-100'>

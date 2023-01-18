@@ -26,7 +26,7 @@ export default function About() {
                                 <p className="w-full">WORDPRESS DEVELOPMENT</p>
                                 <div className="w-full">
                                     <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '95%' }}>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '95%' }}>
                                             95%
                                         </div>
                                     </div>
@@ -36,7 +36,7 @@ export default function About() {
                                 <p className="w-full">PHP</p>
                                 <div className="w-full">
                                     <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '92%' }}>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '92%' }}>
                                             92%
                                         </div>
                                     </div>
@@ -46,7 +46,7 @@ export default function About() {
                                 <p className="w-full">NEXTJS / TAILWINDCSS</p>
                                 <div className="w-full">
                                     <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '92%' }}>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '92%' }}>
                                             92%
                                         </div>
                                     </div>
@@ -56,7 +56,7 @@ export default function About() {
                                 <p className="w-full">HTML CSS</p>
                                 <div className="w-full">
                                     <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '90%' }}>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '90%' }}>
                                             90%
                                         </div>
                                     </div>
@@ -66,7 +66,7 @@ export default function About() {
                                 <p className="w-full">WEB DEVELOPMENT</p>
                                 <div className="w-full">
                                     <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '88%' }}>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '88%' }}>
                                             88%
                                         </div>
                                     </div>

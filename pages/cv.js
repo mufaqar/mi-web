@@ -11,7 +11,7 @@ import Profile_Pic from '../public/images/me.jpg';
 export default function CV() {
     return (
         <>
-            <section id="about" className="pt-24 pb-16 bg-zinc-900">
+            <section id="about" className="pt-24 pb-16 bg-[#0d47a1]">
                 <div className='md:w-[1140px] mx-auto flex md:flex-row flex-col md:space-y-0 space-y-8 items-center'>
                     <div className="md:w-1/3 w-full flex justify-center">
                         <div className="border-4 border-white md:mb-[-9.8rem]">
@@ -25,11 +25,11 @@ export default function CV() {
                         <h2 className='md:text-6xl text-4xl font-bold text-white mb-4'>
                             Mufaqar Islam
                         </h2>
-                        <h6 className='md:text-2xl text-xl font-medium mb-4 text-gray-300'>Full Stack Web Developer | WordPress | React | NextJs | Tailwindcss</h6>
-                        <p className='text-sm font-medium tracking-widest text-gray-300'>GREATER NEW YORK AREA</p>
-                        <p className='text-sm font-medium tracking-widest mb-5 text-gray-300'>INFORMATION TECHNOLOGY & SERVICES</p>
-                        <p className='text-sm font-medium tracking-widest text-gray-300'>PREVIOUS: FRONT-END DEVELOPER AT PORTO</p>
-                        <p className='text-sm font-medium tracking-widest text-gray-300'>EDUCATION: PORTO SCHOOL</p>
+                        <h6 className='md:text-2xl text-xl font-medium mb-4 text-white'>Full Stack Web Developer | WordPress | React | NextJs | Tailwindcss</h6>
+                        <p className='text-sm font-medium tracking-widest text-white'>GREATER NEW YORK AREA</p>
+                        <p className='text-sm font-medium tracking-widest mb-5 text-white'>INFORMATION TECHNOLOGY & SERVICES</p>
+                        <p className='text-sm font-medium tracking-widest text-white'>PREVIOUS: FRONT-END DEVELOPER AT PORTO</p>
+                        <p className='text-sm font-medium tracking-widest text-white'>EDUCATION: PORTO SCHOOL</p>
                     </div>
                 </div>
             </section>
@@ -189,28 +189,28 @@ export default function CV() {
                                 <li className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">PHP </p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '92%' }}> 92%</div>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '92%' }}> 92%</div>
                                     </div>
                                     </div>
                                 </li>
                                 <li className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">MySql </p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
                                     </div>
                                     </div>
                                 </li>
                                 <li className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">Rest API</p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
                                     </div>
                                     </div>
                                 </li>
                                 <li className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">JavaScript </p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
                                     </div>
                                     </div>
                                 </li>
@@ -219,28 +219,28 @@ export default function CV() {
                                 <li className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">jQuery </p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
                                     </div>
                                     </div>
                                 </li>
                                 <li className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">ReactJs</p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
                                     </div>
                                     </div>
                                 </li>
                                 <li className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">NextJs</p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
                                     </div>
                                     </div>
                                 </li>
                                 <li className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">Redux </p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
                                     </div>
                                     </div>
                                 </li>
