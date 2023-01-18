@@ -21,7 +21,6 @@
     after:border-r after:border-transparent group-hover:after:border-white;
 }
 }
-
 .swiper-pagination-bullet-active{
     background-color: #0d47a1 !important;
 }
@@ -34,6 +33,14 @@
 }
 .swiper-button-next:after, .swiper-button-prev:after{
     font-size: 24px !important;
+}
+
+.stories_wrapper>div:nth-child(3n+1), .stories_wrapper>div:nth-child(4n+1) {
+    background: #e5e9ff75;
+}
+
+.stories_wrapper>div {
+    padding: 4rem;
 }
 @media (max-width: 768px) {
     .swiper-button-next, .swiper-button-prev{

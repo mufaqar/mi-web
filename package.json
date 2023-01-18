@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "formik": "^2.2.9",
+    "framer-motion": "^8.4.7",
     "next": "^13.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-easy-swipe": "^0.0.22",
+    "react-hook-inview": "^4.5.0",
     "react-icons": "^4.4.0",
     "react-tsparticles": "^2.7.1",
     "swiper": "^8.2.4",
