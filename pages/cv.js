@@ -11,7 +11,7 @@ import Profile_Pic from '../public/images/me.jpg';
 export default function CV() {
     return (
         <>
-            <section id="about" className="pt-24 pb-16 bg-[#0d47a1]">
+            <section id="about" className="md:pt-24 pb-16 bg-[#0d47a1]">
                 <div className='md:w-[1140px] mx-auto flex md:flex-row flex-col md:space-y-0 space-y-8 items-center'>
                     <div className="md:w-1/3 w-full flex justify-center">
                         <div className="border-4 border-white md:mb-[-9.8rem]">
@@ -21,7 +21,7 @@ export default function CV() {
                             />
                         </div>
                     </div>
-                    <div className="md:w-2/3 w-full md:pl-11 md:text-left text-center">
+                    <div className="md:w-2/3 w-full md:pl-11 px-4 md:text-left text-center">
                         <h2 className='md:text-6xl text-4xl font-bold text-white mb-4'>
                             Mufaqar Islam
                         </h2>

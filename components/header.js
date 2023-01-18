@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";;
 function MobileNav({ open, setOpen }) {
 
     return (
-        <div className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
+        <div className={`absolute top-0 left-0 h-screen w-screen bg-[#0d47a1] transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
             <div className="flex items-center justify-center filter drop-shadow-md "> {/*logo container*/}
                 <Link href="/" className="text-xl font-semibold">
                     <Image src="/images/logo-white.png"
@@ -16,27 +16,27 @@ function MobileNav({ open, setOpen }) {
             </div>
             <div className="flex flex-col ml-4">
                 <Link href="/" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
-                    className="text-sm font-medium my-4 uppercase">
+                    className="text-sm font-medium my-4 uppercase text-white">
                     Home
                 </Link>
                 <Link href="/about" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
-                    className="text-sm font-normal my-4 uppercase">
+                    className="text-sm font-normal my-4 uppercase text-white">
                     About Me
                 </Link>
                 <Link href="/works" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
-                    className="text-sm font-normal my-4 uppercase">
+                    className="text-sm font-normal my-4 uppercase text-white">
                     Works
                 </Link>
                 <Link href="/services" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
-                    className="text-sm font-normal my-4 uppercase">
+                    className="text-sm font-normal my-4 uppercase text-white">
                     Services
                 </Link>
                 <Link href="/cv" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
-                    className="text-sm font-normal my-4 uppercase">
+                    className="text-sm font-normal my-4 uppercase text-white">
                     CV
                 </Link>
                 <Link href="/contact-us" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
-                    className="text-sm font-normal my-4 uppercase">
+                    className="text-sm font-normal my-4 uppercase text-white">
                     Contact Me
                 </Link>
             </div>
