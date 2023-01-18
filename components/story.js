@@ -38,7 +38,7 @@ function Story() {
 
     return (
         <>
-            <section className="container grid p-4 pb-32 mx-auto mt-40 mb-8 md:grid-cols-2 story md:p-0 md:pb-32">
+            <section className="container grid p-4 pb-32 mx-auto mt-16 mb-8 md:grid-cols-2 story md:p-0 md:pb-32">
                 <div className="relative grid bg-white border border-gray-300 stories_wrapper rounded-xl md:grid-cols-2">
                     <div className="border-r-[1px] border-gray-300">
                         <motion.h2
