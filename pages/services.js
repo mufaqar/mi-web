@@ -24,7 +24,7 @@ export default function Services() {
         <div className='md:w-[1170px] mx-auto flex  md:flex-row flex-col items-center p-10 bg-gray-200'>
           <h3 className='md:text-4xl text-3xl leading-10 font-bold tracking-wide md:w-3/4 w-full'>I'd Love To Hear About Your Project</h3>
           <button className='md:w-1/4 w-full flex items-center space-x-5'>
-            <span className='bg-gradient-to-r from-[#EF2D56] to-[#bd71ff] w-12 h-12 flex items-center justify-center 
+            <span className='bg-gradient-to-r from-[#0d47a1] to-[#bd71ff] w-12 h-12 flex items-center justify-center 
             text-white rounded-full animate-videoIcon'><FiPlay /></span>
             <span className='text-base font-medium tracking-widest'>START YOUR PROJECT</span></button>
         </div>

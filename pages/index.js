@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Banner className="home-banner bg-zinc-900" />
-      <section className="py-24">
+      <section className="py-24 bg-white">
         <div className="md:w-8/12 w-auto mx-auto">
           <div className="flex flex-col items-center mb-6">
             <h4 className="text-sm tracking-widest font-medium uppercase stroke-black ">WHAT I AM BEST IN</h4>
@@ -27,7 +27,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="grid md:grid-cols-2 border-t border-slate-100">
+      <section className="grid md:grid-cols-2 border-t border-slate-100 bg-white">
         <div className="bg-[url(/images/serviceBg.jpg)] bg-center bg-no-repeat bg-cover md:h-auto h-screen flex items-center">
           <div className="w-full flex flex-col md:px-24 px-4 md:items-start items-center">
             <h4 className="text-sm tracking-widest font-medium uppercase ">THIS IS WHAT WE LOVE TO DO.</h4>
@@ -62,7 +62,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="py-24 border-b border-slate-200">
+      <section className="py-24 border-b border-slate-200 bg-white">
         <div className="md:w-[1140px] w-auto mx-auto">
           <div className="flex flex-col items-center my-6">
             <h4 className="text-sm tracking-widest font-medium uppercase ">SOME OF THE BEST.</h4>
@@ -72,7 +72,7 @@ export default function Home() {
           <Clients />
         </div>
       </section>
-      <section className="py-24 border-b border-slate-200">
+      <section className="py-24 border-b border-slate-200 bg-white">
         <div className="md:w-[1140px] w-auto mx-auto">
           <div className="grid md:grid-cols-4 items-center">
             <div className="flex items-center justify-center">
@@ -106,7 +106,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-24 border-b border-slate-200 ">
+      <section className="py-24 border-b border-slate-200  bg-white">
         <div className="md:w-[1140px] mx-auto flex flex-col items-center justify-center px-4">
           <h3 className="after:content-['.'] after:ml-0.5 after:text-customPink md:text-5xl text-4xl text-center leading-10 font-bold tracking-wide mt-5">I'd Love To Hear About Your Project</h3>
           <p className="text-lg text-slate-500 text-center my-5">Looking For A New Web Design (With Development) And/or Corporate Identity?</p>

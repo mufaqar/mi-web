@@ -13,7 +13,7 @@ module.exports = {
         '3xl': '0px 0px 15px 0px rgb(0 0 0 / 8%)',
       },
       colors: {
-        'customPink': '#EF2D56',
+        'customPink': '#0d47a1',
       },
       animation: {
         animHr: 'animation1 1s ease',

@@ -6,28 +6,41 @@ import { AiOutlineSkype } from 'react-icons/ai';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-
 // import required modules
-import {Autoplay } from "swiper";
+import { Autoplay } from "swiper";
+import { useCallback } from "react";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+
 
 export default function Banner() {
+  const particlesInit = useCallback(async engine => {
+    console.log(engine);
+    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    await loadFull(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async container => {
+    await console.log(container);
+  }, []);
+
   return (
     <>
-      <section className="bg-zinc-900 py-24">
+      <section className="relative py-24">
         <div className='md:w-[1140px] mx-auto flex flex-col items-center space-y-16 p-4'>
           <h6 className='text-xl text-white font-medium tracking-widest '>Hello, I'm Mufaqar</h6>
           <div className='w-full h-auto'>
             <Swiper
-            centeredSlides={true}
-            loop={true}
-            autoplay={{
+              centeredSlides={true}
+              loop={true}
+              autoplay={{
                 delay: 2000,
-            }}
+              }}
               modules={[Autoplay]}
               className="mySwiper"
             >
@@ -65,7 +78,87 @@ export default function Banner() {
             <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition hover:duration-500'><Link href="#"><AiOutlineSkype className='text-white' /></Link></li>
           </ul>
         </div>
+        <Particles
+        className='-z-10 relative'
+          id="tsparticles"
+          init={particlesInit}
+          loaded={particlesLoaded}
+          fullscreen="false"
+          options={{
+            background: {
+              color: {
+                value: "#0d47a1",
+              },
+            },
+            fpsLimit: 120,
+            interactivity: {
+              events: {
+                onClick: {
+                  enable: true,
+                  mode: "push",
+                },
+                onHover: {
+                  enable: true,
+                  mode: "repulse",
+                },
+                resize: true,
+              },
+              modes: {
+                push: {
+                  quantity: 4,
+                },
+                repulse: {
+                  distance: 200,
+                  duration: 0.4,
+                },
+              },
+            },
+            particles: {
+              color: {
+                value: "#ffffff",
+              },
+              links: {
+                color: "#ffffff",
+                distance: 150,
+                enable: true,
+                opacity: 0.5,
+                width: 1,
+              },
+              collisions: {
+                enable: true,
+              },
+              move: {
+                directions: "none",
+                enable: true,
+                outModes: {
+                  default: "bounce",
+                },
+                random: false,
+                speed: 6,
+                straight: false,
+              },
+              number: {
+                density: {
+                  enable: true,
+                  area: 800,
+                },
+                value: 80,
+              },
+              opacity: {
+                value: 0.5,
+              },
+              shape: {
+                type: "circle",
+              },
+              size: {
+                value: { min: 1, max: 5 },
+              },
+            },
+            detectRetina: true,
+          }}
+        />
       </section>
+
 
     </>
   )
