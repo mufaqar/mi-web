@@ -155,7 +155,7 @@ export default function CV() {
                             Info="Developed PHP based Websites, Customized Frontend and Integrate with
                             database backend."
                         />
-                        <div className="h-[485px] w-1 bg-black absolute inset-0 -left-3 top-[125px] md:block hidden"></div>
+                        <div className="h-[485px] w-1 bg-[#0d47a1] absolute inset-0 -left-3 top-[125px] md:block hidden"></div>
                     </div>
                 </div>
             </section>
