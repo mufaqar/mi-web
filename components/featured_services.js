@@ -1,7 +1,7 @@
 
 export default function Featured_Service({ BG_icon, mai_icon, title, content }) {
     return (
-      <div className="border-b border-r border-slate-100 p-11 group hover:bg-customPink">
+      <div className="md:border-t-0 md:border-l-0 border border-slate-100 p-11 group hover:bg-customPink">
         <div className="service">
           <span className="icon text-6xl mb-5 text-slate-700 group-hover:text-white stroke-0 group-hover:animate-servicesIcon">
             {BG_icon}
