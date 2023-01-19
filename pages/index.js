@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <Banner className="home-banner bg-zinc-900" />
       <section className="py-24 bg-white">
-        <div className="md:w-8/12 w-auto mx-auto">
+        <div className="container mx-auto">
           <div className="flex flex-col items-center mb-6">
             <h4 className="text-sm tracking-widest font-medium uppercase stroke-black ">WHAT I AM BEST IN</h4>
             <h2 className="after:content-['.'] after:ml-0.5 after:text-customPink md:text-6xl text-5xl leading-7 font-bold tracking-wide mt-5 font-Montserrat">My Experties</h2>
@@ -66,8 +66,8 @@ export default function Home() {
       <section className="py-16 bg-white">
         <Brands />
       </section>
-      <section className="py-24 border-b border-slate-200 bg-white">
-        <div className="md:w-[1140px] w-auto mx-auto">
+      <section className="pt-5 pb-16 border-b border-slate-200 bg-white">
+        <div className="md:max-w-[1140px] w-auto mx-auto">
           <div className="grid md:grid-cols-4 items-center">
             <div className="flex items-center justify-center">
               <BsGraphUp className="text-5xl text-gray-700 mr-5 stroke-0" />
@@ -101,7 +101,7 @@ export default function Home() {
         </div>
       </section>
       <section className="py-24 border-b border-slate-200  bg-[#0d47a1]">
-        <div className="md:w-[1140px] mx-auto flex flex-col items-center justify-center px-4">
+        <div className="md:max-w-[1140px] mx-auto flex flex-col items-center justify-center px-4">
           <h3 className="after:content-['.'] after:ml-0.5 after:text-customPink md:text-5xl text-4xl text-white text-center leading-10 font-bold tracking-wide mt-5">I'd Love To Hear About Your Project</h3>
           <p className="text-lg text-white text-center my-5">Looking For A New Web Design (With Development) And/or Corporate Identity?</p>
           <button className="border border-white py-5 px-8 bg-transparent hover:bg-white transition-all duration-500 text-white hover:text-[#0d47a1] font-medium uppercase text-xs ">Work With Me</button>

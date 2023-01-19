@@ -10,7 +10,7 @@ export default function Footer() {
     return (
         <>
             <footer className='bg-gray-200 py-8'>
-                <div className='md:w-[1170px] mx-auto grid md:grid-cols-3 items-center'>
+                <div className='container mx-auto grid md:grid-cols-3 items-center'>
                     <div className='w-full flex px-4 items-center md:justify-start justify-center'>
                         <p className='flex items-center text-base tracking-wider font-normal text-slate-500 my-2 space-x-4'>Made With <AiOutlineHeart className='text-customPink stroke-0' /> By Mufaqar.</p>
                     </div>

@@ -69,7 +69,7 @@ export default function Contact_Us() {
             </section>
 
             <section>
-                <div className='md:w-[1170px] mx-auto flex flex-col py-16 px-4'>
+                <div className='container mx-auto flex flex-col py-16 px-4'>
                     <p className='text-sm text-gray-400 uppercase text-center'>LET'S WORK TOGETHER.</p>
                     <h3 className='text-4xl font-semibold text-black text-center mb-7'>Contact Us</h3>
                     <form onSubmit={handleSubmit} action="#" className='md:w-3/4 w-full mx-auto'>

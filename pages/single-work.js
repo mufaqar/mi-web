@@ -15,7 +15,7 @@ export default function SingleWork() {
             </section>
 
             <section className="py-12 px-8">
-                <div className="md:w-[1140px] mx-auto flex md:flex-row flex-col ">
+                <div className="md:max-w-[1140px] mx-auto flex md:flex-row flex-col ">
                     <div className="md:w-1/2 w-full md:p-7 p-4">
                         <h2 className="md:text-5xl text-4xl leading-7 font-bold tracking-wide mb-5">The Challenge</h2>
                         <p className="text-xl text-slate-500 mb-5">Warburton Building Services is an Oxfordshire company specialising in installation and maintenance of mechanical & electrical services, and they approached Electric Studio needing a new easy to manage and up to date website.</p>
@@ -66,7 +66,7 @@ export default function SingleWork() {
             </section>
 
             <section className="py-24 px-8">
-                <div className="md:w-[1140px] mx-auto">
+                <div className="md:max-w-[1140px] mx-auto">
                     <h2 className="md:text-5xl text-4xl leading-7 font-bold tracking-wide mb-5">The Solution</h2>
                     <p className="text-xl text-slate-500 mb-5">Warburton Building Services is an Oxfordshire company specialising in installation and maintenance of mechanical & electrical services, and they approached Electric Studio needing a new easy to manage and up to date website.</p>
                     <p className="text-xl text-slate-500 mb-5">With their old website not being mobile friendly and looking tired, they challenged Electric Studio to fully redesign and rebuild it.</p>

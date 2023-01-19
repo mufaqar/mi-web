@@ -32,7 +32,7 @@ export default function Banner() {
   return (
     <>
       <section className="relative py-24">
-        <div className='md:w-[1140px] mx-auto flex flex-col items-center space-y-16 p-4'>
+        <div className='container mx-auto flex flex-col items-center space-y-16 p-4'>
           <h6 className='text-xl text-white font-medium tracking-widest '>Hello, I'm Mufaqar</h6>
           <div className='w-full h-auto'>
             <Swiper

@@ -68,7 +68,7 @@ export default function Navbar() {
         <nav className={`drop-shadow-md px-4 py-4 h-16 items-center fixed left-0 right-0 z-50 
         ${router.pathname === '/' ? navbar ? 'bg-white' : 'bg-rgb(255 255 255 /0)' : 'bg-white' }`}
         >
-            <div className='md:w-[1170px] mx-auto flex filter'>
+            <div className='container mx-auto flex filter'>
                 <MobileNav open={open} setOpen={setOpen} />
                 <div className="w-3/12 flex items-center">
                     <Link href="/" className="text-2xl font-semibold">

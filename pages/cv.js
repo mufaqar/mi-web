@@ -12,7 +12,7 @@ export default function CV() {
     return (
         <>
             <section id="about" className="md:pt-24 pb-16 bg-[#0d47a1]">
-                <div className='md:w-[1140px] mx-auto flex md:flex-row flex-col md:space-y-0 space-y-8 items-center'>
+                <div className='md:max-w-[1140px] mx-auto flex md:flex-row flex-col md:space-y-0 space-y-8 items-center'>
                     <div className="md:w-1/3 w-full flex justify-center">
                         <div className="border-4 border-white md:mb-[-9.8rem]">
                             <Image src={Profile_Pic}
@@ -35,7 +35,7 @@ export default function CV() {
             </section>
 
             <section className="py-8 border-b border-black/30">
-                <div className="md:w-[1140px] mx-auto flex md:flex-row flex-col items-center">
+                <div className="md:max-w-[1140px] mx-auto flex md:flex-row flex-col items-center">
                     <div className=" w-1/3">
 
                     </div>
@@ -69,7 +69,7 @@ export default function CV() {
             </section>
 
             <section className="py-8">
-                <div className="md:w-[1140px] mx-auto grid md:grid-cols-2">
+                <div className="md:max-w-[1140px] mx-auto grid md:grid-cols-2">
                     <div className="md:p-8 p-5">
                         <h3 className='text-2xl font-bold uppercase tracking-tighter text-black mb-5'>About me</h3>
                         <p className="text-base text-slate-700">ReactJs Developer with 10+ years of extensive Frontend and
@@ -81,25 +81,25 @@ export default function CV() {
                             <h5 className="text-xl font-bold tracking-tighter text-black mb-3">Personal Details</h5>
                             <div className="flex md:flex-row flex-col justify-between">
                                 <ul className="flex flex-col md:space-y-4">
-                                    <li className="font-medium text-sm uppercase flex items-center space-x-5">
+                                    <li className="font-medium text-sm uppercase flex items-center space-x-2">
                                         <span>PHONE: </span>
                                         <Link href="tel:+923026006280" target="_blank" rel="nofollow">
                                             <span className="text-slate-500">(+92) 302 -6006280</span>
                                         </Link>
                                     </li>
-                                    <li className="font-medium text-sm uppercase flex items-center space-x-5">
+                                    <li className="font-medium text-sm uppercase flex items-center space-x-2">
                                         <span>NATIONALITY: </span> <span className="text-slate-500"> PAKISTAN</span>
                                     </li>
 
                                 </ul>
                                 <ul className="flex flex-col md:space-y-4">
-                                    <li className="font-medium text-sm uppercase flex items-center space-x-5">
+                                    <li className="font-medium text-sm uppercase flex items-center space-x-2">
                                         <span>SKYPE: </span>
                                         <Link href="skype:mufaqar" target="_blank" rel="nofollow">
                                             <span className="text-slate-500"> skype:mufaqar</span>
                                         </Link>
                                     </li>
-                                    <li className="font-medium text-sm uppercase flex items-center space-x-5">
+                                    <li className="font-medium text-sm uppercase flex items-center space-x-2">
                                         <span>EMAIL: </span>
                                         <Link href="mailto:mufaqar@gmail.com" target="_blank" rel="nofollow">
                                             <span className="text-slate-500">mufaqar@gmail.com</span>
@@ -113,7 +113,7 @@ export default function CV() {
             </section>
 
             <section id="experience" className="py-16 px-4 bg-gray-100">
-                <div className="md:w-[1140px] mx-auto ">
+                <div className="md:max-w-[1140px] mx-auto ">
                     <h3 className='text-2xl font-bold uppercase tracking-tighter text-black mb-5'>EXPERIENCE</h3>
                     <div className="relative">
                         <TimelineBox
@@ -161,7 +161,7 @@ export default function CV() {
             </section>
 
             <section id="education" className="py-16 px-4">
-                <div className="md:w-[1140px] mx-auto ">
+                <div className="md:max-w-[1140px] mx-auto ">
                     <h3 className='text-2xl font-bold uppercase tracking-tighter text-black mb-5'>EDUCATION</h3>
                     <div className="grid md:grid-cols-2 gap-5">
                         <div className="shadow-xl p-8 transform hover:-translate-y-3 duration-500 ">
@@ -181,7 +181,7 @@ export default function CV() {
             </section>
 
             <section id="skills" className="py-16 px-4">
-                <div className="md:w-[1140px] mx-auto flex md:flex-row flex-col items-center">
+                <div className="md:max-w-[1140px] mx-auto flex md:flex-row flex-col items-center">
                     <div className="p-8 md:w-3/4 w-full">
                         <h3 className='text-2xl font-bold uppercase tracking-tighter text-black mb-5'>SKILLS & LANGUAGE</h3>
                         <div className="flex md:flex-row flex-col md:space-x-5">

@@ -3,7 +3,7 @@ import React from 'react'
 export default function TimelineBox({ Start_Date, End_Date, Company, Com_Loc, Position, Info }) {
     return (
         <>
-            <div className='md:w-[1110px] md:h-[220px] h-full mx-auto flex md:flex-row flex-col shadow-3xl my-7
+            <div className='md:max-w-[1110px] md:h-[220px] h-full mx-auto flex md:flex-row flex-col shadow-3xl my-7
             before:content-[" "] before:w-4 before:h-4 before:rounded-full before:bg-[#0d47a1] before:border-double before:border-4
              before:border-white before:absolute before:translate-x-[-2.05rem] before:translate-y-28 md:before:block before:hidden'>
                 <div className='md:w-1/4 w-full bg-customPink p-4'>

@@ -13,7 +13,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 export default function Testimonial() {
     return (
         <>
-            <div className='md:w-[1110px] mx-auto flex md:flex-row flex-col'>
+            <div className='md:max-w-[1110px] mx-auto flex md:flex-row flex-col'>
                 <div className='md:w-1/4 w-full bg-customPink py-14 px-8 items-center'>
                     <div>
                         <h5 className="text-xl font-bold tracking-tighter text-white mb-2">Our Happy Clients</h5>
