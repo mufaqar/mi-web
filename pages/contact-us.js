@@ -114,7 +114,7 @@ export default function Contact_Us() {
                             className="w-full border border-gray-300 focus:border-customPink outline-none py-4 px-6 text-sm uppercase mb-4"></textarea>
                         <button
                             type='submit'
-                            className='border-2 border-customPink flex w-44 h-14 justify-between items-center text-sm uppercase text-black p-4 hover:bg-customPink hover:w-48 hover:text-white transform transition-all duration-300'>
+                            className='border-2 border-customPink flex w-44 h-14 justify-between items-center text-sm uppercase text-customPink font-medium p-4 hover:bg-customPink hover:w-48 hover:text-white transform transition-all duration-300'>
                             <span>Send Message </span><BsArrowRight className='text-xl' />
                         </button>
                     </form>
