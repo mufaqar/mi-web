@@ -43,7 +43,7 @@ export const Brands = () => {
 
     return (
         <div>
-            <h2 className="pt-2 text-center text-gray-700 text-3xl md:text-4xl font-bold ">
+            <h2 className="after:content-['.'] after:ml-0.5 after:text-customPink md:text-6xl text-4xl leading-7 font-bold tracking-wide text-center font-Montserrat">
                 Clients
             </h2>
             <p className="max-w-2xl mx-auto mt-4 text-lg leading-7 tracking-wide text-center text-gray-400">

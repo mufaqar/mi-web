@@ -166,7 +166,7 @@ function Story() {
                     </p>
                     <motion.button
                         animate={animationOpacity}
-                        className="border border-black py-5 px-8 bg-transparent hover:bg-black text-black hover:text-white uppercase text-xs ">
+                        className="border border-black py-5 px-8 bg-transparent hover:bg-black text-black hover:text-white uppercase text-xs mt-5">
                         Load More
                     </motion.button>
                 </div>

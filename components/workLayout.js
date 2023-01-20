@@ -29,7 +29,7 @@ export default function WorkLayout() {
                     </li>
                 </ul>
                 <Link href="/single-work">
-                <h2 className="absolute md:bottom-10 bottom-4 left-5 text-4xl font-bold text-white">Teddington</h2>
+                <h2 className="absolute md:bottom-10 bottom-4 left-5 text-4xl font-bold text-white ">Teddington</h2>
                 </Link>
             </div>
 

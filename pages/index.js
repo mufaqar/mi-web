@@ -20,7 +20,7 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="flex flex-col items-center mb-6">
             <h4 className="text-sm tracking-widest font-medium uppercase stroke-black ">WHAT I AM BEST IN</h4>
-            <h2 className="after:content-['.'] after:ml-0.5 after:text-customPink md:text-6xl text-5xl leading-7 font-bold tracking-wide mt-5 font-Montserrat">My Experties</h2>
+            <h2 className="after:content-['.'] after:ml-0.5 after:text-customPink md:text-6xl text-4xl leading-7 font-bold tracking-wide mt-5 font-Montserrat">My Experties</h2>
             <hr className="border-b border-customPink w-12 mt-10"></hr>
           </div>
           <div className="text-center py-6 px-4 md:w-[760px] w-auto mx-auto">
@@ -102,7 +102,7 @@ export default function Home() {
       </section>
       <section className="py-24 border-b border-slate-200  bg-[#0d47a1]">
         <div className="md:max-w-[1140px] mx-auto flex flex-col items-center justify-center px-4">
-          <h3 className="after:content-['.'] after:ml-0.5 after:text-customPink md:text-5xl text-4xl text-white text-center leading-10 font-bold tracking-wide mt-5">I'd Love To Hear About Your Project</h3>
+          <h3 className="after:content-['.'] after:ml-0.5 after:text-customPink md:text-5xl text-3xl text-white text-center leading-10 font-bold tracking-wide mt-5">I'd Love To Hear About Your Project</h3>
           <p className="text-lg text-white text-center my-5">Looking For A New Web Design (With Development) And/or Corporate Identity?</p>
           <button className="border border-white py-5 px-8 bg-transparent hover:bg-white transition-all duration-500 text-white hover:text-[#0d47a1] font-medium uppercase text-xs ">Work With Me</button>
         </div>
