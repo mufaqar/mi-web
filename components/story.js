@@ -168,7 +168,7 @@ function Story() {
             animate={animationOpacity}
             className="border border-black py-5 px-8 bg-transparent hover:bg-black text-black hover:text-white uppercase text-xs mt-5"
           >
-            Load More
+            Load More About me
           </motion.button>
         </div>
       </section>
