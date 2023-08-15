@@ -26,7 +26,7 @@ export default function CV() {
                             Mufaqar Islam
                         </h2>
                         <h6 className='md:text-2xl text-xl font-medium mb-4 text-white'>Full Stack Web Developer | WordPress | React | NextJs | Tailwindcss</h6>
-                        <p className='text-sm font-medium tracking-widest text-white'>GREATER NEW YORK AREA</p>
+                        <p className='text-sm font-medium tracking-widest text-white'>Seasoned ReactJs/WordPress/PHP Developer with over a decade of experience building, launching, and managing complex websites also specialize in all things "MERN".</p>
                         <p className='text-sm font-medium tracking-widest mb-5 text-white'>INFORMATION TECHNOLOGY & SERVICES</p>
                         <p className='text-sm font-medium tracking-widest text-white'>PREVIOUS: FRONT-END DEVELOPER AT PORTO</p>
                         <p className='text-sm font-medium tracking-widest text-white'>EDUCATION: PORTO SCHOOL</p>

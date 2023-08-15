@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useEffect, useState } from "react";;
+import { useEffect, useState } from "react";
+import Head from 'next/head'
+
+
 
 
 function MobileNav({ open, setOpen }) {
@@ -65,6 +68,10 @@ export default function Navbar() {
     }
     const router = useRouter();
     return (
+        <>
+        <Head>
+        <title>Experienced Full Stack WordPress and ReactJS Frontend Developer | Mufaqar</title>
+      </Head>
         <nav className={`drop-shadow-md px-4 py-4 h-16 items-center fixed left-0 right-0 z-50 
         ${router.pathname === '/' ? navbar ? 'bg-white' : 'bg-rgb(255 255 255 /0)' : 'bg-white' }`}
         >
@@ -122,5 +129,6 @@ export default function Navbar() {
                 </div>
             </div>
         </nav>
+        </>
     )
 }

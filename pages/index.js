@@ -10,11 +10,15 @@ import { TbGlobe } from 'react-icons/tb';
 import Clients from "../components/clients";
 import Featured_Service from "../components/featured_services";
 import { Brands } from "../components/brands";
+import Head from 'next/head'
 
 
 export default function Home() {
   return (
     <>
+     <Head>
+        <title>Experienced Full Stack WordPress and ReactJS Frontend Developer | Mufaqar</title>
+      </Head>
       <Banner className="home-banner bg-zinc-900" />
       <section className="py-24 bg-white">
         <div className="container mx-auto">
