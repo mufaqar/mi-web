@@ -15,7 +15,7 @@ export default function Footer() {
                         <p className='flex items-center text-base tracking-wider font-normal text-slate-500 my-2 space-x-4'>Made With <AiOutlineHeart className='text-customPink stroke-0' /> By Mufaqar.</p>
                     </div>
                     <div className='w-full flex px-4 items-center md:justify-start justify-center'>
-                        <p className='flex items-center text-base tracking-wider font-normal text-slate-500 my-2'>© 2010 - 2021 All Rights Reserved</p>
+                        <p className='flex items-center text-base tracking-wider font-normal text-slate-500 my-2'>© 2010 - 2023 All Rights Reserved</p>
                     </div>
                     <div className='w-full flex px-4 items-center md:justify-end justify-center'>
                         <ul className='flex my-2 space-x-5'>
