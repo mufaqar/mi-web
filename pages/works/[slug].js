@@ -8,7 +8,7 @@ export default function Slug() {
     const router = useRouter()
     const Slug_meta = router.query.slug
     const res = Works_Data.find(item => item.title === Slug_meta)
-    console.log(res)
+    // console.log(res)
     return (
         <>
             <InnerPages_Banner sub="Our best work." title={res?.title} />
