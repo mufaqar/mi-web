@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import InnerPages_Banner from "../components/innerPages-banner";
+import InnerPages_Banner from "../../components/innerPages-banner";
 
-export default function SingleWork() {
+export default function Slug() {
     return (
         <>
             <InnerPages_Banner sub="Our best work." title="TEDDINGTON" />
@@ -13,7 +13,6 @@ export default function SingleWork() {
                     layout="fill"
                     objectFit="cover" />
             </section>
-
             <section className="py-12 px-8">
                 <div className="md:max-w-[1140px] mx-auto flex md:flex-row flex-col ">
                     <div className="md:w-1/2 w-full md:p-7 p-4">
@@ -56,7 +55,6 @@ export default function SingleWork() {
                     </div>
                 </div>
             </section>
-
             <section className="py-12 px-8 relative w-[95%] h-screen mx-auto">
                 <Image
                     src="/images/c.png"
@@ -64,7 +62,6 @@ export default function SingleWork() {
                     layout="fill"
                     objectFit="cover" />
             </section>
-
             <section className="py-24 px-8">
                 <div className="md:max-w-[1140px] mx-auto">
                     <h2 className="md:text-5xl text-4xl leading-7 font-bold tracking-wide mb-5">The Solution</h2>
@@ -90,7 +87,6 @@ export default function SingleWork() {
                     <p className="text-xl text-slate-500 mb-5">Ongoing services include WordPress Web Hosting and ongoing improvements.</p>
                 </div>
             </section>
-
             <section className="py-12 px-8 relative w-[95%] h-screen mx-auto mb-10">
                 <Image
                     src="/images/d.png"

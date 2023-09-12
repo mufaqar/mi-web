@@ -1,17 +1,17 @@
 import Link from "next/dist/client/link";
 import Image from "next/image";
-import Work_Image from '../public/images/workBg.png';
 
-export default function WorkLayout() {
+export default function WorkLayout({data}) {
     return (
         <>
             <div className={"relative group bg-black transition duration-200"}>
-                <Link href="/single-work">
+                <Link href={`/works/${data?.title}`}>
                     <Image
-                        src={Work_Image}
-                        alt=""
-                        priority="true"
-                        className="group-hover:opacity-70 w-full h-full object-contain object-center"
+                        src={data?.feature}
+                        alt={data?.feature}
+                        width={1024}
+                        height={768}
+                        className="group-hover:opacity-60 opacity-70 w-full h-full "
                     />
                 </Link>
                 <ul className="cat absolute md:top-10 top-4 left-5 md:flex md:space-x-4 space-x-0 md:space-y-0 space-y-4">
@@ -28,8 +28,10 @@ export default function WorkLayout() {
                         </Link>
                     </li>
                 </ul>
-                <Link href="/single-work">
-                <h2 className="absolute md:bottom-10 bottom-4 left-5 text-4xl font-bold text-white ">Teddington</h2>
+                <Link href={`/works/${data?.title}`}>
+                <h2 className="absolute md:bottom-10 bottom-4 left-5 text-4xl font-bold text-white capitalize">
+                    {data?.title}
+                </h2>
                 </Link>
             </div>
 
