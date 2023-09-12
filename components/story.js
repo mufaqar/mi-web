@@ -139,37 +139,32 @@ function Story() {
             className="mt-2 text-3xl md:text-4xl font-bold text-gray-800 leading-[45px]"
             animate={animation}
           >
-            A Trusted Team of Software Developers, Trail Blazers in Innovative
-            Technology!
+           Full Stack MERN Developer | WordPress | React | NextJs | TailwindCSS 
           </motion.h2>
           <p className="mt-4 text-base leading-7 tracking-wide text-gray-400">
-            Softs Generations is providing IT services to all its potential
-            clients worldwide. We have 100 potential clients that include
-            established companies, as well as start-ups. We have clients that
-            love to ask repeated orders after their first order.{' '}
+          Seasoned ReactJs/WordPress/PHP Developer with over a decade of experience building, launching, and managing complex websites also specialize in all things "MERN".
           </p>
+
+          <h5>  Skills Set:</h5>
           <p className="mt-4 text-base leading-7 tracking-wide text-gray-400">
-            We have a team of experienced developers and designers that can
-            fulfill all your Website development needs. We are proud of
-            ourselves because our clients refer us to other people because they
-            know that we are the leading solution provider and can render the
-            best and simple IT solution to your problems. With our 15-year
-            experience, we are offering quality assurance, on time delivery and
-            commitment to your projects.
+         
+          ✅ Frontend: React, Redux, HTML5, JavaScript ES6+, CSS3, Sass, Bootstrap, Tailwind CSS, MUI
+          ✅ Deployment: Heroku, AWS, Firebase, cPanel
+          ✅ Backend: Node.js, Express.js, ReactJs, NextJs, GraphQL , Apollo Client
+          ✅ Database: MongoDB, MySQL, SQL
+
+
           </p>{' '}
+          <h5> WordPress Experties :</h5>
           <p className="mt-4 text-base leading-7 tracking-wide text-gray-400">
-            {' '}
-            We have experienced developers, analysts, database experts and
-            management staff. We believe that flexibility, commitment and
-            agility are the keys to giving creative and innovative technology to
-            the world.{' '}
-          </p>
-          <motion.button
-            animate={animationOpacity}
-            className="border border-black py-5 px-8 bg-transparent hover:bg-black text-black hover:text-white uppercase text-xs mt-5"
-          >
-            Load More About me
-          </motion.button>
+         
+          ✅ Custom Theme Development ( XD/Figma/ to WordPress )
+          ✅ WooCommerce, Multi-Vendor, Booking System.
+          ✅ Elementor, Visual Composer, ACF, Yoast
+          ✅ WordPress speed & performance optimization, troubleshooting issues & fixes.
+          ✅ Backup & Migration to a different hosting
+                    </p>
+          
         </div>
       </section>
     </>

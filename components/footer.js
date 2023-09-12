@@ -19,10 +19,10 @@ export default function Footer() {
                     </div>
                     <div className='w-full flex px-4 items-center md:justify-end justify-center'>
                         <ul className='flex my-2 space-x-5'>
-                            <li className=''><Link href="#"><FaFacebookF className='text-slate-500 hover:text-customPink transition-all duration-200' /></Link></li>
-                            <li className=''><Link href="#"><IoLogoTwitter className='text-slate-500 hover:text-customPink transition-all duration-200' /></Link></li>
-                            <li className=''><Link href="#"><FaLinkedinIn className='text-slate-500 hover:text-customPink transition-all duration-200' /></Link></li>
-                            <li className=''><Link href="#"><AiOutlineSkype className='text-slate-500 hover:text-customPink transition-all duration-200' /></Link></li>
+                            <li className=''><Link href="https://www.facebook.com/mufaqar"><FaFacebookF className='text-slate-500 hover:text-customPink transition-all duration-200' /></Link></li>
+                            <li className=''><Link href="https://twitter.com/mufaqar"><IoLogoTwitter className='text-slate-500 hover:text-customPink transition-all duration-200' /></Link></li>
+                            <li className=''><Link href="https://www.linkedin.com/in/mufaqar"><FaLinkedinIn className='text-slate-500 hover:text-customPink transition-all duration-200' /></Link></li>
+                            <li className=''><Link href="https://join.skype.com/invite/M0ilv0J1egAb"><AiOutlineSkype className='text-slate-500 hover:text-customPink transition-all duration-200' /></Link></li>
                         </ul>
                     </div>
                 </div>
