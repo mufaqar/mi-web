@@ -15,7 +15,7 @@ export const Works_Data = [
         feature: "/images/works/sol-feature.png",
         gallery: [
             {
-                img: "/images/works/any-feature.png",
+                img: "/images/works/sol-feature.png",
             },
         ]
     },
@@ -25,7 +25,7 @@ export const Works_Data = [
         feature: "/images/works/mam-feature.png",
         gallery: [
             {
-                img: "/images/works/any-feature.png",
+                img: "/images/works/mam-feature.png",
             },
         ]
     },
@@ -35,7 +35,7 @@ export const Works_Data = [
         feature: "/images/works/bree-feature.png",
         gallery: [
             {
-                img: "/images/works/any-feature.png",
+                img: "/images/works/bree-feature.png",
             },
         ]
     },
@@ -45,7 +45,7 @@ export const Works_Data = [
         feature: "/images/works/sma-feature.png",
         gallery: [
             {
-                img: "/images/works/any-feature.png",
+                img: "/images/works/sma-feature.png",
             },
         ]
     },
@@ -55,7 +55,7 @@ export const Works_Data = [
         feature: "/images/works/fun-feature.png",
         gallery: [
             {
-                img: "/images/works/any-feature.png",
+                img: "/images/works/fun-feature.png",
             },
         ]
     },

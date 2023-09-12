@@ -9,7 +9,7 @@ export default function WorkLayout({data}) {
                     <Image
                         src={data?.feature}
                         alt={data?.feature}
-                        width={1024}
+                        width={1920}
                         height={768}
                         className="group-hover:opacity-60 opacity-70 w-full h-full "
                     />
