@@ -16,7 +16,7 @@ export default function WorkLayout() {
                 </Link>
                 <ul className="cat absolute md:top-10 top-4 left-5 md:flex md:space-x-4 space-x-0 md:space-y-0 space-y-4">
                     <li>
-                        <Link href="#" className="block text-white p-2 text-base font-normal bg-zinc-700/20 hover:bg-zinc-700/50 rounded-full">#Web Design
+                        <Link href="#" className="block text-white p-2 text-base font-normal bg-zinc-700/20 hover:bg-zinc-700/50 rounded-full">#Web Development
                         </Link>
                     </li>
                     <li>

@@ -139,32 +139,26 @@ function Story() {
             className="mt-2 text-3xl md:text-4xl font-bold text-gray-800 leading-[45px]"
             animate={animation}
           >
-           Full Stack MERN Developer | WordPress | React | NextJs | TailwindCSS 
+            Full Stack MERN Developer | WordPress | React | NextJs | TailwindCSS
           </motion.h2>
           <p className="mt-4 text-base leading-7 tracking-wide text-gray-400">
-          Seasoned ReactJs/WordPress/PHP Developer with over a decade of experience building, launching, and managing complex websites also specialize in all things "MERN".
+            Seasoned ReactJs/WordPress/PHP Developer with over a decade of
+            experience building, launching, and managing complex websites also
+            specialize in all things "MERN".
           </p>
-
-          <h5>  Skills Set:</h5>
           <p className="mt-4 text-base leading-7 tracking-wide text-gray-400">
-         
-          ✅ Frontend: React, Redux, HTML5, JavaScript ES6+, CSS3, Sass, Bootstrap, Tailwind CSS, MUI
-          ✅ Deployment: Heroku, AWS, Firebase, cPanel
-          ✅ Backend: Node.js, Express.js, ReactJs, NextJs, GraphQL , Apollo Client
-          ✅ Database: MongoDB, MySQL, SQL
-
-
+            Skills Set: ✅ Frontend: React, Redux, HTML5, JavaScript ES6+, CSS3,
+            Sass, Bootstrap, Tailwind CSS, MUI ✅ Deployment: Heroku, AWS,
+            Firebase, cPanel ✅ Backend: Node.js, Express.js, ReactJs, NextJs,
+            GraphQL , Apollo Client ✅ Database: MongoDB, MySQL, SQL
           </p>{' '}
-          <h5> WordPress Experties :</h5>
           <p className="mt-4 text-base leading-7 tracking-wide text-gray-400">
-         
-          ✅ Custom Theme Development ( XD/Figma/ to WordPress )
-          ✅ WooCommerce, Multi-Vendor, Booking System.
-          ✅ Elementor, Visual Composer, ACF, Yoast
-          ✅ WordPress speed & performance optimization, troubleshooting issues & fixes.
-          ✅ Backup & Migration to a different hosting
-                    </p>
-          
+            WordPress Experties : ✅ Custom Theme Development ( XD/Figma/ to
+            WordPress ) ✅ WooCommerce, Multi-Vendor, Booking System. ✅
+            Elementor, Visual Composer, ACF, Yoast ✅ WordPress speed &
+            performance optimization, troubleshooting issues & fixes. ✅ Backup
+            & Migration to a different hosting
+          </p>
         </div>
       </section>
     </>
