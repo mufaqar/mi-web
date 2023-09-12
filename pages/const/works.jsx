@@ -5,8 +5,19 @@ export const Works_Data = [
         feature: "/images/works/any-feature.png",
         gallery: [
             {
-                img: "/images/works/any-feature.png",
+                img: "/images/works/any-desk.png",
             },
+        ],
+        features: [
+            {
+                name: 'Web Design',
+            },
+            {
+                name: 'WordPress Development,',
+            },
+            {
+                name: 'WordPress Hosting',
+            }
         ]
     },
     {
@@ -15,8 +26,19 @@ export const Works_Data = [
         feature: "/images/works/sol-feature.png",
         gallery: [
             {
-                img: "/images/works/sol-feature.png",
+                img: "/images/works/sol-desk.png",
             },
+        ],
+        features: [
+            {
+                name: 'Web Design',
+            },
+            {
+                name: 'WordPress Development,',
+            },
+            {
+                name: 'WordPress Hosting',
+            }
         ]
     },
     {
@@ -25,8 +47,19 @@ export const Works_Data = [
         feature: "/images/works/mam-feature.png",
         gallery: [
             {
-                img: "/images/works/mam-feature.png",
+                img: "/images/works/mam-desk.png",
             },
+        ],
+        features: [
+            {
+                name: 'Web Design',
+            },
+            {
+                name: 'WordPress Development,',
+            },
+            {
+                name: 'WordPress Hosting',
+            }
         ]
     },
     {
@@ -35,18 +68,40 @@ export const Works_Data = [
         feature: "/images/works/bree-feature.png",
         gallery: [
             {
-                img: "/images/works/bree-feature.png",
+                img: "/images/works/bree-desk.png",
             },
+        ],
+        features: [
+            {
+                name: 'Web Design',
+            },
+            {
+                name: 'WordPress Development,',
+            },
+            {
+                name: 'WordPress Hosting',
+            }
         ]
     },
     {
-        title: 'smapy.vercel.app/he',
-        link: 'https://smapy.vercel.app/he',
-        feature: "/images/works/sma-feature.png",
+        title: 'smapy.vercel.app.he',
+        link: 'https://smapy.vercel.app.he',
+        feature: "/images/works/sma-feature.PNG",
         gallery: [
             {
-                img: "/images/works/sma-feature.png",
+                img: "/images/works/sma-desk.png",
             },
+        ],
+        features: [
+            {
+                name: 'Web Design',
+            },
+            {
+                name: 'WordPress Development,',
+            },
+            {
+                name: 'WordPress Hosting',
+            }
         ]
     },
     {
@@ -55,8 +110,19 @@ export const Works_Data = [
         feature: "/images/works/fun-feature.png",
         gallery: [
             {
-                img: "/images/works/fun-feature.png",
+                img: "/images/works/fun-desk.png",
             },
+        ],
+        features: [
+            {
+                name: 'Web Design',
+            },
+            {
+                name: 'WordPress Development,',
+            },
+            {
+                name: 'WordPress Hosting',
+            }
         ]
     },
 ]

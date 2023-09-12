@@ -1,17 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
 import InnerPages_Banner from "../../components/innerPages-banner";
+import { useRouter } from "next/router";
+import { Works_Data } from "../const/works";
 
 export default function Slug() {
+    const router = useRouter()
+    const Slug_meta = router.query.slug
+    const res = Works_Data.find(item => item.title === Slug_meta)
+    console.log(res)
     return (
         <>
-            <InnerPages_Banner sub="Our best work." title="TEDDINGTON" />
+            <InnerPages_Banner sub="Our best work." title={res?.title} />
             <section className="py-12 px-8 relative w-full h-screen">
                 <Image
-                    src="/images/a.png"
-                    alt=""
-                    layout="fill"
-                    objectFit="cover" />
+                    src={res?.feature}
+                    alt={res?.feature}
+                    width={1920}
+                    height={768}
+                    className="mx-auto" />
             </section>
             <section className="py-12 px-8">
                 <div className="md:max-w-[1140px] mx-auto flex md:flex-row flex-col ">
@@ -21,28 +28,25 @@ export default function Slug() {
                         <p className="text-xl text-slate-500 mb-5">With their old website not being mobile friendly and looking tired, they challenged Electric Studio to fully redesign and rebuild it.</p>
                         <div className="mb-8">
                             <p className="text-sm text-slate-700 font-bold">VISIT</p>
-                            <Link href="https://teddingtonlegal.com.au/" >
-                                <span className="underline hover:no-underline text-xl text-slate-700 font-bold">https://teddingtonlegal.com.au/</span>
+                            <Link href={`${res?.link}`} >
+                                <span className="underline hover:no-underline text-xl text-slate-700 font-bold">
+                                    {res?.link}
+                                </span>
                             </Link>
                         </div>
                         <div>
                             <p className="text-sm text-slate-700 font-bold">SERVICES</p>
                             <ul>
-                                <li>
-                                    <Link href="#" >
-                                        <span className="underline hover:no-underline text-xl text-slate-700 font-bold">Web Design,</span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" >
-                                        <span className="underline hover:no-underline text-xl text-slate-700 font-bold">WordPress Development,</span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" >
-                                        <span className="underline hover:no-underline text-xl text-slate-700 font-bold">WordPress Hosting</span>
-                                    </Link>
-                                </li>
+                                {res?.features.map((item, id) => {
+                                    return <li key={id}>
+                                        <Link href="#" >
+                                            <span className="underline hover:no-underline text-xl text-slate-700 font-bold">
+                                                {item?.name}
+                                            </span>
+                                        </Link>
+                                    </li>
+                                })}
+
                             </ul>
                         </div>
                     </div>
@@ -55,12 +59,15 @@ export default function Slug() {
                     </div>
                 </div>
             </section>
-            <section className="py-12 px-8 relative w-[95%] h-screen mx-auto">
-                <Image
-                    src="/images/c.png"
-                    alt=""
-                    layout="fill"
-                    objectFit="cover" />
+            <section className="py-12 px-8">
+                {res?.gallery.map((item, id) => {
+                    return <Image key={id}
+                        src={item?.img}
+                        alt={item?.img}
+                        width={1920}
+                        height={768}
+                        className="mx-auto" />
+                })}
             </section>
             <section className="py-24 px-8">
                 <div className="md:max-w-[1140px] mx-auto">
