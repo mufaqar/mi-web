@@ -85,7 +85,7 @@ export const Works_Data = [
     },
     {
         title: 'smapy.vercel.app.he',
-        link: 'https://smapy.vercel.app.he',
+        link: 'https://smapy.vercel.app/he',
         feature: "/images/works/sma-feature.PNG",
         gallery: [
             {
