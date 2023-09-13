@@ -5,10 +5,6 @@ import StoryBgTwo from '../public/images/StoryBgTwo.svg';
 
 
 function Story() {
-
-
-
-
   return (
     <>
       <section className="container grid p-4 pb-32 mx-auto mt-16 mb-8 md:grid-cols-2 story md:p-0 md:pb-32">
@@ -55,7 +51,7 @@ function Story() {
               Client Retention
             </h6>
           </div>
-          <div ref={ref} className="border-t-[1px] border-gray-300">
+          <div className="border-t-[1px] border-gray-300">
             <h2
               className="text-center text-orange-500 text-3xl font-extrabold leading-[42px] md:text-6xl md:leading-[70px]"
               
@@ -110,7 +106,7 @@ function Story() {
           </h6>
           <h2
             className="mt-2 text-3xl md:text-4xl font-bold text-gray-800 leading-[45px]"
-            animate={animation}
+          
           >
             Full Stack MERN Developer | WordPress | React | NextJs | TailwindCSS
           </h2>
