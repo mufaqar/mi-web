@@ -7,7 +7,7 @@ import { Works_Data } from "../../const/works";
 export default function Slug() {
     const router = useRouter()
     const Slug_meta = router.query.slug
-    const res = Works_Data.find(item => item.title === Slug_meta)
+    const res = Works_Data.find(item => item.slug === Slug_meta)
     // console.log(res)
     return (
         <>
@@ -24,8 +24,8 @@ export default function Slug() {
                 <div className="md:max-w-[1140px] mx-auto flex md:flex-row flex-col items-center">
                     <div className="md:w-1/2 w-full md:p-7 p-4">
                         <h2 className="md:text-5xl text-4xl leading-7 font-bold tracking-wide mb-5">The Challenge</h2>
-                        <p className="text-xl text-slate-500 mb-5">Warburton Building Services is an Oxfordshire company specialising in installation and maintenance of mechanical & electrical services, and they approached Electric Studio needing a new easy to manage and up to date website.</p>
-                        <p className="text-xl text-slate-500 mb-5">With their old website not being mobile friendly and looking tired, they challenged Electric Studio to fully redesign and rebuild it.</p>
+                        <p className="text-xl text-slate-500 mb-5">As a web developer, the task is to modernize {res?.title}'s aging web platform in just six months. The primary objectives include enhancing user experience, ensuring mobile responsiveness, optimizing performance, improving security, implementing </p>
+                        <p className="text-xl text-slate-500 mb-5">SEO strategies, ensuring scalability, developing a user-friendly content management system, integrating third-party tools, conducting thorough testing, and providing comprehensive documentation.</p>
                         <div className="mb-8">
                             <p className="text-sm text-slate-700 font-bold">VISIT</p>
                             <Link href={`${res?.link}`} >
@@ -78,25 +78,30 @@ export default function Slug() {
             <section className="py-24">
                 <div className="md:max-w-[1140px] px-4 mx-auto">
                     <h2 className="md:text-5xl text-4xl leading-7 font-bold tracking-wide mb-5">The Solution</h2>
-                    <p className="text-xl text-slate-500 mb-5">Warburton Building Services is an Oxfordshire company specialising in installation and maintenance of mechanical & electrical services, and they approached Electric Studio needing a new easy to manage and up to date website.</p>
-                    <p className="text-xl text-slate-500 mb-5">With their old website not being mobile friendly and looking tired, they challenged Electric Studio to fully redesign and rebuild it.</p>
+                    <p className="text-xl text-slate-500 mb-5">This project is divided into distinct phases. The first month will focus on planning and design, followed by three months of development. One month will be dedicated to testing and quality assurance, ensuring a bug-free and high-performing website. </p>
+                    <p className="text-xl text-slate-500 mb-5">In the final month, we will deploy the revamped website and provide comprehensive documentation, including training for {res?.title}'s team.</p>
                     <div className="mb-7">
                         <ul>
                             <li>
-                                <p className="text-xl text-slate-700 font-bold">Responsive Web Design</p>
+                                <p className="text-xl text-slate-700 font-bold">User-Centric Design</p>
                             </li>
                             <li>
-                                <p className="text-xl text-slate-700 font-bold">Custom WordPress theme</p>
+                                <p className="text-xl text-slate-700 font-bold">Mobile Responsiveness</p>
                             </li>
                             <li>
                                 <p className="text-xl text-slate-700 font-bold">Technical SEO</p>
                             </li>
                             <li>
-                                <p className="text-xl text-slate-700 font-bold">Optimised website admin</p>
+                                <p className="text-xl text-slate-700 font-bold">Performance Optimization</p>
                             </li>
+                            <li>
+                                <p className="text-xl text-slate-700 font-bold">User-Friendly CMS</p>
+                            </li>
+
+                            
                         </ul>
                     </div>
-                    <p className="text-xl text-slate-500 mb-5">Ongoing services include WordPress Web Hosting and ongoing improvements.</p>
+                    <p className="text-xl text-slate-500 mb-5"> Provide detailed documentation for the website's codebase and custom functionalities, facilitating smooth handover and future maintenance.</p>
                 </div>
             </section>
             <section className="py-14">

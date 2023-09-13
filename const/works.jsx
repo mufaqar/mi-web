@@ -1,7 +1,8 @@
 export const Works_Data = [
     {
-        title: 'anypos.app',
-        link: 'https://www.anypos.app/',
+        title: 'Anypos',
+        slug: 'anypos',
+        link: 'https://www.anypos.app',
         feature: "/images/anypose/any-feature.png",
         gallery: [
             {
@@ -22,15 +23,16 @@ export const Works_Data = [
                 name: 'Web Design',
             },
             {
-                name: 'WordPress Development,',
+                name: 'NextJs with Tailwindcss',
             },
             {
-                name: 'WordPress Hosting',
+                name: 'Vercel Hosting',
             }
         ]
     },
     {
-        title: 'solutionfounder.com',
+        title: 'Solution Founder',
+        slug: 'solutionfounder',
         link: 'https://www.solutionfounder.com',
         feature: "/images/solut/sol-feature.png",
         gallery: [
@@ -60,7 +62,8 @@ export const Works_Data = [
         ]
     },
     {
-        title: 'mamshouse.com',
+        title: 'Mams House',
+        slug: 'mamshouse',
         link: 'https://mamshouse.com',
         feature: "/images/mam/mam-feature.png",
         gallery: [
@@ -90,7 +93,8 @@ export const Works_Data = [
         ]
     },
     {
-        title: 'breeze1.netlify.app',
+        title: 'Breeze Chrome Extension',
+        slug: 'breeze1.netlify.app',
         link: 'https://breeze1.netlify.app',
         feature: "/images/bree/bree-feature.png",
         gallery: [
@@ -120,7 +124,8 @@ export const Works_Data = [
         ]
     },
     {
-        title: 'smapy.vercel.app.he',
+        title: 'Smapy',
+        slug: 'smapy',
         link: 'https://smapy.vercel.app/he',
         feature: "/images/smap/sma-feature.png",
         gallery: [
@@ -150,7 +155,8 @@ export const Works_Data = [
         ]
     },
     {
-        title: 'fundgazer.com',
+        title: 'Fund Gazer',
+        slug: 'fundgazer',
         link: 'https://www.fundgazer.com',
         feature: "/images/fund/fun-feature.png",
         gallery: [

@@ -5,7 +5,7 @@ export default function WorkLayout({ data }) {
     return (
         <>
             <div className={"relative group bg-black transition duration-200"}>
-                <Link href={`/works/${data?.title}`}>
+                <Link href={`/works/${data?.slug}`}>
                     <Image
                         src={data?.feature}
                         alt={data?.feature}
@@ -23,7 +23,7 @@ export default function WorkLayout({ data }) {
                         </li>
                     })}
                 </ul>
-                <Link href={`/works/${data?.title}`}>
+                <Link href={`/works/${data?.slug}`}>
                     <h2 className="absolute md:bottom-10 bottom-4 left-5 text-4xl font-bold text-white capitalize">
                         {data?.title}
                     </h2>
