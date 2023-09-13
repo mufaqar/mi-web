@@ -46,7 +46,7 @@ export const Brands = () => {
              
               className="max-w-[12rem] mx-auto grayscale hover:grayscale-0"
             >
-              <Image src={brand1} alt="Brands Picture" />
+              <Image src={brand1} alt="Brands Picture" width={250} height={150} />
             </figure>
           </SwiperSlide>
           <SwiperSlide>
@@ -54,7 +54,7 @@ export const Brands = () => {
              
               className="max-w-[12rem] mx-auto grayscale hover:grayscale-0"
             >
-              <Image src={brand2} alt="Brands Picture" />
+              <Image src={brand2} alt="Brands Picture" width={250} height={150} />
             </figure>
           </SwiperSlide>
           <SwiperSlide>
@@ -62,7 +62,7 @@ export const Brands = () => {
              
               className="max-w-[12rem] mx-auto grayscale hover:grayscale-0"
             >
-              <Image src={brand3} alt="Brands Picture" />
+              <Image src={brand3} alt="Brands Picture" width={250} height={150} />
             </figure>
           </SwiperSlide>
           <SwiperSlide>
@@ -70,7 +70,7 @@ export const Brands = () => {
              
               className="max-w-[12rem] mx-auto grayscale hover:grayscale-0"
             >
-              <Image src={brand5} alt="Brands Picture" />
+              <Image src={brand5} alt="Brands Picture" width={250} height={150} />
             </figure>
           </SwiperSlide>
           <SwiperSlide>
@@ -78,7 +78,7 @@ export const Brands = () => {
              
               className="max-w-[12rem] mx-auto grayscale hover:grayscale-0"
             >
-              <Image src={brand6} alt="Brands Picture" />
+              <Image src={brand6} alt="Brands Picture" width={250} height={150} />
             </figure>
           </SwiperSlide>
         </Swiper>
