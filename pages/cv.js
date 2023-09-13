@@ -16,7 +16,7 @@ export default function CV() {
                     <div className="md:w-1/3 w-full flex justify-center">
                         <div className="border-4 border-white md:mb-[-9.8rem]">
                             <Image src={Profile_Pic}
-                                alt=""
+                                alt={Profile_Pic}
                                 className="object-contain"
                             />
                         </div>

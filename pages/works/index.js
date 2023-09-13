@@ -1,6 +1,6 @@
 import InnerPages_Banner from '../../components/innerPages-banner'
 import WorkLayout from '../../components/workLayout'
-import { Works_Data } from '../const/works'
+import { Works_Data } from '../../const/works'
 
 
 export default function Works() {

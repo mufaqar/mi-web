@@ -61,7 +61,7 @@ function slide() {
         <div className="relative w-12  h-12 rounded-full">
           <Image
             src={Image_url}
-            alt=""
+            alt={Image_url}
             className="rounded-full h-full w-full"
           />
         </div>

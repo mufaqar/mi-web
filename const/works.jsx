@@ -2,10 +2,19 @@ export const Works_Data = [
     {
         title: 'anypos.app',
         link: 'https://www.anypos.app/',
-        feature: "/images/works/any-feature.png",
+        feature: "/images/anypose/any-feature.png",
         gallery: [
             {
-                img: "/images/works/any-desk.png",
+                img: "/images/anypose/any-desk.png",
+            },
+            {
+                img: "/images/anypose/gallery1.png",
+            },
+            {
+                img: "/images/anypose/gallery2.png",
+            },
+            {
+                img: "/images/anypose/gallery3.png",
             },
         ],
         features: [
@@ -23,10 +32,19 @@ export const Works_Data = [
     {
         title: 'solutionfounder.com',
         link: 'https://www.solutionfounder.com',
-        feature: "/images/works/sol-feature.png",
+        feature: "/images/solut/sol-feature.png",
         gallery: [
             {
-                img: "/images/works/sol-desk.png",
+                img: "/images/solut/sol-desk.png",
+            },
+            {
+                img: "/images/solut/gallery1.png",
+            },
+            {
+                img: "/images/solut/gallery2.png",
+            },
+            {
+                img: "/images/solut/gallery3.png",
             },
         ],
         features: [
@@ -44,10 +62,19 @@ export const Works_Data = [
     {
         title: 'mamshouse.com',
         link: 'https://mamshouse.com',
-        feature: "/images/works/mam-feature.png",
+        feature: "/images/mam/mam-feature.png",
         gallery: [
             {
-                img: "/images/works/mam-desk.png",
+                img: "/images/mam/mam-desk.png",
+            },
+            {
+                img: "/images/mam/gallery1.png",
+            },
+            {
+                img: "/images/mam/gallery2.png",
+            },
+            {
+                img: "/images/mam/gallery3.png",
             },
         ],
         features: [
@@ -65,10 +92,19 @@ export const Works_Data = [
     {
         title: 'breeze1.netlify.app',
         link: 'https://breeze1.netlify.app',
-        feature: "/images/works/bree-feature.png",
+        feature: "/images/bree/bree-feature.png",
         gallery: [
             {
-                img: "/images/works/bree-desk.png",
+                img: "/images/bree/bree-desk.png",
+            },
+            {
+                img: "/images/bree/gallery1.png",
+            },
+            {
+                img: "/images/bree/gallery1.png",
+            },
+            {
+                img: "/images/bree/gallery1.png",
             },
         ],
         features: [
@@ -86,10 +122,19 @@ export const Works_Data = [
     {
         title: 'smapy.vercel.app.he',
         link: 'https://smapy.vercel.app/he',
-        feature: "/images/works/sma-feature.PNG",
+        feature: "/images/smap/sma-feature.png",
         gallery: [
             {
-                img: "/images/works/sma-desk.png",
+                img: "/images/smap/sma-desk.png",
+            },
+            {
+                img: "/images/smap/gallery1.png",
+            },
+            {
+                img: "/images/smap/gallery2.png",
+            },
+            {
+                img: "/images/smap/gallery3.png",
             },
         ],
         features: [
@@ -107,10 +152,19 @@ export const Works_Data = [
     {
         title: 'fundgazer.com',
         link: 'https://www.fundgazer.com',
-        feature: "/images/works/fun-feature.png",
+        feature: "/images/fund/fun-feature.png",
         gallery: [
             {
-                img: "/images/works/fun-desk.png",
+                img: "/images/fund/fun-desk.png",
+            },
+            {
+                img: "/images/fund/gallery1.png",
+            },
+            {
+                img: "/images/fund/gallery2.png",
+            },
+            {
+                img: "/images/fund/gallery3.png",
             },
         ],
         features: [

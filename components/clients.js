@@ -14,42 +14,42 @@ export default function Clients() {
             <div className="w-full flex items-center justify-center md:p-8 p-6 border-r border-b border-slate-200">
                 <Image
                     src={Image_Tedd}
-                    alt=""
+                    alt={Image_Tedd}
                     className="hover:animate-servicesIcon scale-[.5]"
                 />
             </div>
             <div className="w-full flex items-center justify-center md:p-8 p-6 md:border-r border-b border-slate-200 ">
                 <Image
                     src={Image_Pay}
-                    alt=""
+                    alt={Image_Pay}
                     className="hover:animate-servicesIcon scale-[.5]"
                 />
             </div>
             <div className="w-full flex items-center justify-center md:p-8 p-6 border-b md:border-r-0 border-r border-slate-200 ">
                 <Image
                     src={Image_Jorda}
-                    alt=""
+                    alt={Image_Jorda}
                     className="hover:animate-servicesIcon scale-[.5]"
                 />
             </div>
             <div className="w-full flex items-center justify-center md:p-8 p-6 md:border-r md:border-b-0 border-b border-slate-200 ">
                 <Image
                     src={Image_Drnikesh}
-                    alt=""
+                    alt={Image_Drnikesh}
                     className="hover:animate-servicesIcon scale-[.5]"
                 />
             </div>
             <div className="w-full flex items-center justify-center md:p-8 p-6 border-r border-slate-200 ">
                 <Image
                     src={Image_Ateze}
-                    alt=""
+                    alt={Image_Ateze}
                     className="hover:animate-servicesIcon scale-[.5]"
                 />
             </div>
             <div className="w-full flex items-center justify-center md:p-8 p-6">
                 <Image
                     src={Image_Arbish}
-                    alt=""
+                    alt={Image_Arbish}
                     className="hover:animate-servicesIcon scale-[.5]"
                 />
             </div>
