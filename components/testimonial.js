@@ -6,14 +6,21 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper';
+import { motion, Variant } from 'framer-motion'
+import { scaleUp } from "../const/animation";
 
 export default function Testimonial() {
   return (
-    <>
-      <div className="md:max-w-[1110px] mx-auto flex md:flex-row flex-col">
+    <motion.div
+      initial={"offscreen"}
+      whileInView={"onscreen"}
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ staggerChildren: 0.5 }}>
+      <motion.div
+        variants={scaleUp}
+        className="md:max-w-[1110px] mx-auto flex md:flex-row flex-col">
         <div className="md:w-1/4 w-full bg-customPink py-14 px-8 items-center">
           <div>
             <h5 className="text-xl font-bold tracking-tighter text-white mb-2">
@@ -39,8 +46,8 @@ export default function Testimonial() {
             <SwiperSlide>{slide()}</SwiperSlide>
           </Swiper>
         </div>
-      </div>
-    </>
+      </motion.div>
+    </motion.div>
   );
 }
 
