@@ -39,7 +39,7 @@ export const Brands = () => {
         scale: 0.8,
       });
     }
-  }, [inView]);
+  }, [inView,animationOpacity]);
 
   return (
     <div>
