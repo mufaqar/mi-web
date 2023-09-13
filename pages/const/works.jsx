@@ -1,4 +1,4 @@
-export const Works_Data = [
+export default  Works_Data = [
     {
         title: 'anypos.app',
         link: 'https://www.anypos.app/',
