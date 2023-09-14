@@ -31,12 +31,12 @@ function Story() {
             <motion.h2
               variants={fadeUp}
               className="text-center text-blue-500 text-3xl font-extrabold leading-[42px] md:text-6xl md:leading-[70px]">
-              10+
+              10M+
             </motion.h2>
             <motion.h6
               variants={fadeUp}
               className="mt-2 text-center h3">
-              Team Members
+              Line of Code
             </motion.h6>
           </div>
           <div className="border-t-[1px] border-r-[1px] border-gray-300">
