@@ -72,10 +72,10 @@ export default function Banner() {
             </Swiper>
           </div>
           <ul className='flex space-x-5 mt-5'>
-            <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition hover:duration-500'><Link href="#"><FaFacebookF className='text-white' /></Link></li>
-            <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition hover:duration-500'><Link href="#"><IoLogoTwitter className='text-white' /></Link></li>
-            <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition hover:duration-500'><Link href="#"><FaLinkedinIn className='text-white' /></Link></li>
-            <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition hover:duration-500'><Link href="#"><AiOutlineSkype className='text-white' /></Link></li>
+            <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition duration-500'><Link href="#"><FaFacebookF className='text-white' /></Link></li>
+            <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition duration-500'><Link href="#"><IoLogoTwitter className='text-white' /></Link></li>
+            <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition duration-500'><Link href="#"><FaLinkedinIn className='text-white' /></Link></li>
+            <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition duration-500'><Link href="#"><AiOutlineSkype className='text-white' /></Link></li>
           </ul>
         </div>
         <Particles

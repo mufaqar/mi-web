@@ -7,76 +7,122 @@ import TimelineBox from "../components/timelineBox";
 import CV_fixNav from "../components/cv-fixNav";
 import Image from "next/image";
 import Profile_Pic from '../public/images/me.jpg';
+import { motion, Variant } from 'framer-motion'
+import { fadeUp, scaleUp } from "../const/animation";
 
 export default function CV() {
     return (
         <>
-            <section id="about" className="md:pt-24 pb-16 bg-[#0d47a1]">
+            <motion.section
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ staggerChildren: 0.5 }}
+                id="about" className="md:pt-24 pb-16 bg-[#0d47a1]">
                 <div className='md:max-w-[1140px] mx-auto flex md:flex-row flex-col md:space-y-0 space-y-8 items-center'>
                     <div className="md:w-1/3 w-full flex justify-center">
-                        <div className="border-4 border-white md:mb-[-9.8rem]">
+                        <motion.div
+                            variants={scaleUp}
+                            className="border-4 border-white md:mb-[-9.8rem]">
                             <Image src={Profile_Pic}
                                 alt={Profile_Pic}
                                 className="object-contain"
                             />
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="md:w-2/3 w-full md:pl-11 px-4 md:text-left text-center">
-                        <h2 className='md:text-6xl text-4xl font-bold text-white mb-4'>
+                        <motion.h2
+                            variants={fadeUp}
+                            className='md:text-6xl text-4xl font-bold text-white mb-4'>
                             Mufaqar Islam
-                        </h2>
-                        <h6 className='md:text-2xl text-xl font-medium mb-4 text-white'>Full Stack Web Developer | WordPress | React | NextJs | Tailwindcss</h6>
-                        <p className='text-sm font-medium tracking-widest text-white'>Seasoned ReactJs/WordPress/PHP Developer with over a decade of experience building, launching, and managing complex websites also specialize in all things "MERN".</p>
-                        <p className='text-sm font-medium tracking-widest mb-5 text-white'>INFORMATION TECHNOLOGY & SERVICES</p>
-                        <p className='text-sm font-medium tracking-widest text-white'>PREVIOUS: FRONT-END DEVELOPER AT PORTO</p>
-                        <p className='text-sm font-medium tracking-widest text-white'>EDUCATION: PORTO SCHOOL</p>
+                        </motion.h2>
+                        <motion.h6
+                            variants={fadeUp}
+                            className='md:text-2xl text-xl font-medium mb-4 text-white'>
+                            Full Stack Web Developer | WordPress | React | NextJs | Tailwindcss
+                        </motion.h6>
+                        <motion.p
+                            variants={fadeUp}
+                            className='text-sm font-medium tracking-widest text-white'>
+                            Seasoned ReactJs/WordPress/PHP Developer with over a decade of experience building, launching, and managing complex websites also specialize in all things "MERN".
+                        </motion.p>
+                        <motion.p
+                            variants={fadeUp}
+                            className='text-sm font-medium tracking-widest mb-5 text-white'>
+                            INFORMATION TECHNOLOGY & SERVICES
+                        </motion.p>
+                        <motion.p
+                            variants={fadeUp}
+                            className='text-sm font-medium tracking-widest text-white'>
+                            PREVIOUS: FRONT-END DEVELOPER AT PORTO
+                        </motion.p>
+                        <motion.p
+                            variants={fadeUp}
+                            className='text-sm font-medium tracking-widest text-white'>EDUCATION: PORTO SCHOOL
+                        </motion.p>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
-            <section className="py-8 border-b border-black/30">
+            <motion.section
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ staggerChildren: 0.5 }}
+                className="py-8 border-b border-black/30">
                 <div className="md:max-w-[1140px] mx-auto flex md:flex-row flex-col items-center">
                     <div className=" w-1/3">
-
                     </div>
                     <div className="md:w-2/3 w-full flex md:flex-row flex-col md:space-y-0 space-y-5 items-center justify-between">
-                        <div>
+                        <motion.div
+                            variants={fadeUp}>
                             <Link href="tel:+923026006280" target="_blank" rel="nofollow">
                                 <span className="flex space-x-2 items-center group">
                                     <BsHeadphones className="md:text-3xl text-2xl text-customPink group-hover:text-black" />
                                     <span className="text-xl">Contact Information</span>
                                 </span>
                             </Link>
-                        </div>
-                        <div>
+                        </motion.div>
+                        <motion.div
+                            variants={fadeUp}>
                             <Link href="mailto:mufaqar@gmail.com" target="_blank" rel="nofollow">
                                 <span className="flex space-x-2 items-center group">
                                     <BsEnvelopeOpen className="md:text-3xl text-2xl text-customPink group-hover:text-black" />
                                     <span className="text-xl">Send Message</span>
                                 </span>
                             </Link>
-                        </div>
-                        <div>
+                        </motion.div>
+                        <motion.div
+                            variants={fadeUp}>
                             <Link href="Resume.pdf">
                                 <span className="flex space-x-2 items-center group">
                                     <BsCloudDownload className="md:text-3xl text-2xl text-customPink group-hover:text-black" />
                                     <span className="text-xl">Download Resume</span>
                                 </span>
                             </Link>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
-            <section className="py-8">
+            <motion.section
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ staggerChildren: 0.5 }}
+                className="py-8">
                 <div className="md:max-w-[1140px] mx-auto grid md:grid-cols-2">
-                    <div className="md:p-8 p-5">
+                    <motion.div
+                        variants={fadeUp}
+                        className="md:p-8 p-5">
                         <h3 className='text-2xl font-bold uppercase tracking-tighter text-black mb-5'>About me</h3>
                         <p className="text-base text-slate-700">ReactJs Developer with 10+ years of extensive Frontend and
                             Backend experience. React, Next Js | Bootstrap, and Tailwind Css
                             Familiarity with modern front-end build pipelines and tools.</p>
-                    </div>
-                    <div className="md:p-8 p-5">
+                    </motion.div>
+                    <motion.div
+                        variants={fadeUp}
+                        className="md:p-8 p-5">
                         <div className="p-8 shadow-xl transform hover:-translate-y-3 duration-500">
                             <h5 className="text-xl font-bold tracking-tighter text-black mb-3">Personal Details</h5>
                             <div className="flex md:flex-row flex-col justify-between">
@@ -108,13 +154,22 @@ export default function CV() {
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
-            </section>
+            </motion.section>
 
-            <section id="experience" className="py-16 px-4 bg-gray-100">
+            <motion.section
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ staggerChildren: 0.5 }}
+                id="experience" className="py-16 px-4 bg-gray-100">
                 <div className="md:max-w-[1140px] mx-auto ">
-                    <h3 className='text-2xl font-bold uppercase tracking-tighter text-black mb-5'>EXPERIENCE</h3>
+                    <motion.h3
+                        variants={fadeUp}
+                        className='text-2xl font-bold uppercase tracking-tighter text-black mb-5'>
+                        EXPERIENCE
+                    </motion.h3>
                     <div className="relative">
                         <TimelineBox
                             Start_Date="July 2016"
@@ -158,96 +213,134 @@ export default function CV() {
                         <div className="h-[485px] w-1 bg-[#0d47a1] absolute inset-0 -left-3 top-[125px] md:block hidden"></div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
-            <section id="education" className="py-16 px-4">
+            <motion.section
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ staggerChildren: 0.5 }}
+                id="education" className="py-16 px-4">
                 <div className="md:max-w-[1140px] mx-auto ">
-                    <h3 className='text-2xl font-bold uppercase tracking-tighter text-black mb-5'>EDUCATION</h3>
+                    <motion.h3
+                        variants={fadeUp} className='text-2xl font-bold uppercase tracking-tighter text-black mb-5'>
+                        EDUCATION
+                    </motion.h3>
                     <div className="grid md:grid-cols-2 gap-5">
-                        <div className="shadow-xl p-8 transform hover:-translate-y-3 duration-500 ">
+                        <motion.div
+                            variants={fadeUp}
+                            className="shadow-xl p-8 ">
                             <GiGraduateCap className="text-3xl text-customPink" />
                             <h5 className="text-xl font-bold tracking-tighter text-black mb-2">PU Lahore</h5>
                             <p className="font-medium text-sm text-slate-500">Bachelor in computer Science</p>
                             <p className='text-customPink text-base font-bold'>Jun 2006 - Mar 2010</p>
-                        </div>
-                        <div className="shadow-xl p-8 transform hover:-translate-y-3 duration-500">
+                        </motion.div>
+                        <motion.div
+                            variants={fadeUp}
+                            className="shadow-xl p-8">
                             <GiGraduateCap className="text-3xl text-customPink" />
                             <h5 className="text-xl font-bold tracking-tighter text-black mb-2">EVs Lahore</h5>
                             <p className="font-medium text-sm text-slate-500">Certification in Web Development</p>
                             <p className='text-customPink text-base font-bold'>2004 -2006</p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
-            <section id="skills" className="py-16 px-4">
+            <motion.section
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ staggerChildren: 0.5 }}
+                id="skills" className="py-16 px-4">
                 <div className="md:max-w-[1140px] mx-auto flex md:flex-row flex-col items-center">
                     <div className="p-8 md:w-3/4 w-full">
-                        <h3 className='text-2xl font-bold uppercase tracking-tighter text-black mb-5'>SKILLS & LANGUAGE</h3>
-                        <div className="flex md:flex-row flex-col md:space-x-5">
-                            <ul className="flex flex-col md:space-y-4 md:w-1/2 w-full">
-                                <li className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
+                        <motion.h3
+                            variants={fadeUp} className='text-2xl font-bold uppercase tracking-tighter text-black mb-5'>
+                            SKILLS & LANGUAGE
+                        </motion.h3>
+                        <div className="flex md:flex-row flex-col md:gap-5">
+                            <ul className="flex flex-col md:gap-4 md:w-1/2 w-full">
+                                <motion.li
+                                    variants={fadeUp}
+                                    className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">PHP </p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
                                         <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '92%' }}> 92%</div>
                                     </div>
                                     </div>
-                                </li>
-                                <li className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
+                                </motion.li>
+                                <motion.li
+                                    variants={fadeUp}
+                                    className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">MySql </p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
                                         <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
                                     </div>
                                     </div>
-                                </li>
-                                <li className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
+                                </motion.li>
+                                <motion.li
+                                    variants={fadeUp}
+                                    className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">Rest API</p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
                                         <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
                                     </div>
                                     </div>
-                                </li>
-                                <li className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
+                                </motion.li>
+                                <motion.li
+                                    variants={fadeUp}
+                                    className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">JavaScript </p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
                                         <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
                                     </div>
                                     </div>
-                                </li>
+                                </motion.li>
                             </ul>
                             <ul className="flex flex-col md:space-y-4 md:w-1/2 w-full">
-                                <li className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
+                                <motion.li
+                                    variants={fadeUp}
+                                    className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">jQuery </p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
                                         <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
                                     </div>
                                     </div>
-                                </li>
-                                <li className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
+                                </motion.li>
+                                <motion.li
+                                    variants={fadeUp}
+                                    className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">ReactJs</p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
                                         <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
                                     </div>
                                     </div>
-                                </li>
-                                <li className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
+                                </motion.li>
+                                <motion.li
+                                    variants={fadeUp}
+                                    className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">NextJs</p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
                                         <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
                                     </div>
                                     </div>
-                                </li>
-                                <li className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
+                                </motion.li>
+                                <motion.li
+                                    variants={fadeUp}
+                                    className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">Redux </p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
                                         <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
                                     </div>
                                     </div>
-                                </li>
+                                </motion.li>
                             </ul>
                         </div>
                     </div>
-                    <div className="p-8 shadow-xl md:w-1/4 w-full transform hover:-translate-y-3 duration-500">
+                    <motion.div
+                        variants={fadeUp}
+                        className="p-8 shadow-xl md:w-1/4 w-full">
                         <h5 className="text-xl font-bold tracking-tighter text-black mb-3">Languages</h5>
                         <ul className="flex flex-col">
                             <li className="font-medium text-sm uppercase flex items-center space-x-5">
@@ -257,9 +350,9 @@ export default function CV() {
                                 <span>URDU </span>
                             </li>
                         </ul>
-                    </div>
+                    </motion.div>
                 </div>
-            </section>
+            </motion.section>
 
             <CV_fixNav />
         </>

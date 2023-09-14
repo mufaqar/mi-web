@@ -4,6 +4,8 @@ import { FiPlay } from 'react-icons/fi'
 import { FiLayers } from 'react-icons/fi'
 import InnerPages_Banner from '../components/innerPages-banner'
 import Service from '../components/service-box'
+import { motion, Variant } from 'framer-motion'
+import { scaleUp } from "../const/animation";
 
 export default function Services() {
   return (
@@ -20,15 +22,22 @@ export default function Services() {
           <Service icon={<BiAperture />} title="SEO" content="Content represents you and we know this well. We don’t copy content, we create it and creation are worthy of both time and money. We help you to create structured contents for your site and brand awareness. Through our research-driven SEO techniques, we ensure goal driven organic traffic to your website and that’s what matters most for marketing strategy. More Knocking on Your Virtual business door is our target." />
         </div>
       </section>
-      <section className='py-24 px-5'>
-        <div className='md:w-[1170px] mx-auto flex  md:flex-row flex-col items-center p-10 bg-gray-200'>
+      <motion.section
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ staggerChildren: 0.5 }}
+        className='py-24 px-5'>
+        <motion.div
+          variants={scaleUp}
+          className='md:w-[1170px] mx-auto flex  md:flex-row flex-col items-center p-10 bg-gray-200'>
           <h3 className='md:text-4xl text-3xl leading-10 font-bold tracking-wide md:w-3/4 w-full'>I'd Love To Hear About Your Project</h3>
           <button className='md:w-1/4 w-full flex items-center space-x-5'>
             <span className='bg-gradient-to-r from-[#0d47a1] to-[#bd71ff] w-12 h-12 flex items-center justify-center 
             text-white rounded-full animate-videoIcon'><FiPlay /></span>
             <span className='text-base font-medium tracking-widest'>START YOUR PROJECT</span></button>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
     </>
   )
 }
