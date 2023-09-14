@@ -3,6 +3,8 @@ import { FaFacebookF } from 'react-icons/fa';
 import { IoLogoTwitter } from 'react-icons/io';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { AiOutlineSkype } from 'react-icons/ai';
+import { AiOutlineGithub } from 'react-icons/ai';
+
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -72,10 +74,12 @@ export default function Banner() {
             </Swiper>
           </div>
           <ul className='flex space-x-5 mt-5'>
-            <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition duration-500'><Link href="#"><FaFacebookF className='text-white' /></Link></li>
-            <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition duration-500'><Link href="#"><IoLogoTwitter className='text-white' /></Link></li>
-            <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition duration-500'><Link href="#"><FaLinkedinIn className='text-white' /></Link></li>
-            <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition duration-500'><Link href="#"><AiOutlineSkype className='text-white' /></Link></li>
+          <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition duration-500'><Link href="http://github.com/mufaqar"><AiOutlineGithub className='text-white' /></Link></li>
+           
+           <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition duration-500'><Link href="https://www.facebook.com/mufaqar"><FaFacebookF className='text-white' /></Link></li>
+            <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition duration-500'><Link href="https://twitter.com/mufaqar"><IoLogoTwitter className='text-white' /></Link></li>
+            <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition duration-500'><Link href="https://www.linkedin.com/in/mufaqar"><FaLinkedinIn className='text-white' /></Link></li>
+            <li className='bg-zinc-800 hover:bg-customPink p-3 rounded-full transition duration-500'><Link href="https://join.skype.com/invite/M0ilv0J1egAb"><AiOutlineSkype className='text-white' /></Link></li>
           </ul>
         </div>
         <Particles

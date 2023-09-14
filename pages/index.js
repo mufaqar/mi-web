@@ -32,20 +32,23 @@ export default function Home() {
             <motion.h4
               variants={fadeUp}
               className="text-sm tracking-widest font-medium uppercase stroke-black ">
-              WHAT I AM BEST IN
+            Experienced Full Stack 
             </motion.h4>
             <motion.h2
               variants={fadeUp}
               className="after:content-['.'] after:ml-0.5 after:text-customPink md:text-6xl text-4xl leading-7 font-bold tracking-wide mt-5 font-Montserrat">
-              My Experties
+             MERN Developer | WordPress Expert
+
             </motion.h2>
             <motion.hr variants={scaleUp} className="border-b border-customPink w-12 mt-10"></motion.hr>
           </div>
           <motion.div
             variants={fadeUp}
-            className="text-center py-6 px-4 md:w-[760px] w-auto mx-auto">
-            <p className="text-xl text-slate-500 ">I craft and bring to you quality products from start to end , expert in responsive Web designing & development, branding, E-commerce solutions and WordPress Maintenance, Security, Backups & Support</p>
+            className="text-center py-6 px-4 md:w-[1080px] w-auto mx-auto">
+            <p className="text-xl text-slate-500 ">I bring over a decade of expertise in ReactJs, WordPress, and PHP development, adept in frontend technologies like React, Redux, HTML5, CSS3, and proficient in deployment via Heroku, AWS, Firebase, and cPanel. My backend skills encompass Node.js, Express.js, ReactJs, NextJs, GraphQL, and Apollo Client, coupled with expertise in MongoDB, MySQL, and SQL databases. In the WordPress realm, I specialize in custom theme development, WooCommerce, Multi-Vendor setups, and booking systems, utilizing tools such as Elementor, Visual Composer, ACF, and Yoast for optimal performance, troubleshooting, and seamless migrations.</p>
           </motion.div>
+
+          
         </div>
       </motion.section>
       <motion.section

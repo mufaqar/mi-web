@@ -36,7 +36,7 @@ function Story() {
             <motion.h6
               variants={fadeUp}
               className="mt-2 text-center h3">
-              Line of Code
+              Lines of Code
             </motion.h6>
           </div>
           <div className="border-t-[1px] border-r-[1px] border-gray-300">
