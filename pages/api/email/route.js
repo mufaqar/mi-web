@@ -1,12 +1,13 @@
 let nodemailer = require('nodemailer')
 
-export async function POST(request) {
+const EMAIL = "softsgens@gmail.com"
+const GMAIL_PASSWORD = "bczjxzfatgxsebrz"
 
-     const body = await request.json();
+export default function handler(
 
-     const EMAIL = "softsgens@gmail.com"
-     const GMAIL_PASSWORD = "bczjxzfatgxsebrz"
-
+     req,
+     res
+) {
      // step-1 
      const transporter = nodemailer.createTransport({
           port: 465,
@@ -21,29 +22,30 @@ export async function POST(request) {
      // step-2
      const mailData = {
           from: EMAIL,
-          to: `softsgens@gmail.com, ${body.email}`,
-          subject: `Message From ${body.name}`,
-          text: body.massage + " | Sent from: " + body.email,
+          to: `softsgens@gmail.com, ${req.body.email}`,
+          subject: `Message From ${req.body.name}`,
+          text: req.body.message + " | Sent from: " + req.body.email,
           html: `
-      <p><strong>Name: </strong> ${body.name}</p>
-      <p><strong>Email: </strong> ${body.email}</p>
-      <p><strong>Phone number: </strong> ${body.phone}</p>
-      <p><strong>Services: </strong> ${body.services}</p>
-      <p><strong>Message: </strong> ${body.massage}</p> `
+               <p><strong>Name: </strong> ${req.body.name}</p>
+               <p><strong>Email: </strong> ${req.body.email}</p>
+               <p><strong>Phone number: </strong> ${req.body.phone}</p>
+               <p><strong>Message: </strong> ${req.body.message}</p> `
      }
 
      // step-3
 
      transporter.sendMail(mailData, function (err, info) {
           if (err) {
-               console.log(err)
-               return new Response('Error', { err })
+               res.status(500).json({
+                    status: false,
+                    message: "Email not send"
+               })
           }
           else {
-               console.log(info)
-               return new Response('Email sended!', { info })
+               res.status(200).json({
+                    status: true,
+                    message: "Send Successully"
+               })
           }
      })
-
-     return new Response('Email sended!')
 }

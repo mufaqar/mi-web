@@ -20,7 +20,7 @@ export default function Contact_Us() {
 
     const onSubmit = (data) => {
         setSending(true)
-        fetch('/api/email', {
+        fetch('/api/email/route', {
             method: 'POST',
             headers: {
                 Accept: 'application/json, text/plain, */*',
@@ -28,9 +28,7 @@ export default function Contact_Us() {
             },
             body: JSON.stringify(data),
         }).then((res) => {
-            console.log('Response received', res);
             if (res.status === 200) {
-                console.log('Response succeeded!');
                 alert('Message Successfully send.!');
                 reset();
                 setSending(false)
