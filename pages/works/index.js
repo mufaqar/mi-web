@@ -9,7 +9,7 @@ export default function Works() {
       <PageHead
         title="Portfolio: Full Stack MERN Developer | WordPress | React | NextJs "
         description="I build with Love websites that are fast, easy to manage, secure & convert your visitors into customers."
-        url="https://www.mufaqar.com/work"
+        url="https://www.mufaqar.com/works"
       />
       <InnerPages_Banner title="PORTFOLIO" />
       <section className="py-24 px-5">
