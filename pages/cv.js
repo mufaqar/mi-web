@@ -9,10 +9,16 @@ import Image from "next/image";
 import Profile_Pic from '../public/images/me.jpg';
 import { motion, Variant } from 'framer-motion'
 import { fadeUp, scaleUp } from "../const/animation";
+import PageHead from "../components/pagesmeta";
 
 export default function CV() {
     return (
         <>
+         <PageHead
+        title="Resume | Full Stack MERN Developer | WordPress | React | NextJs | TailwindCSS "
+        description="Seasoned ReactJs/WordPress/PHP Developer from Lahore Pakistan"
+        url="https://www.mufaqar.com/cv"
+      />
             <motion.section
                 initial={"offscreen"}
                 whileInView={"onscreen"}

@@ -6,10 +6,16 @@ import InnerPages_Banner from '../components/innerPages-banner'
 import Service from '../components/service-box'
 import { motion, Variant } from 'framer-motion'
 import { scaleUp } from "../const/animation";
+import PageHead from '../components/pagesmeta'
 
 export default function Services() {
   return (
     <>
+    <PageHead
+        title="THIS IS WHAT I LOVE TO DO | Mufaqar Full Stack MERN Developer "
+        description="THIS IS WHAT I LOVE TO DO. WHAT I OFFER  To build with Love websites  secure & convert your visitors into customers."
+        url="https://www.mufaqar.com/services"
+      />
       <InnerPages_Banner sub="THIS IS WHAT I LOVE TO DO." title="WHAT I OFFER" />
 
       <section className='bg-[url(/images/our-team-bg2.jpg)] bg-center bg-no-repeat bg-cover py-24 px-5'>

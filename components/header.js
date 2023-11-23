@@ -38,7 +38,7 @@ function MobileNav({ open, setOpen }) {
                     className="text-sm font-normal my-4 uppercase text-white">
                     CV
                 </Link>
-                <Link href="/contact-us" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
+                <Link href="/contact" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
                     className="text-sm font-normal my-4 uppercase text-white">
                     Contact Me
                 </Link>
@@ -122,7 +122,7 @@ export default function Navbar() {
                         <Link href="/cv">
                             CV
                         </Link>
-                        <Link href="/contact-us">
+                        <Link href="/contact">
                             Contact Me
                         </Link>
                     </div>

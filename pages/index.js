@@ -12,14 +12,15 @@ import { Brands } from "../components/brands";
 import Head from 'next/head'
 import { motion, Variant } from 'framer-motion'
 import { fadeUp, scaleUp } from "../const/animation";
+import PageHead from "../components/pagesmeta";
 
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Experienced Full Stack WordPress and ReactJS Frontend Developer | Mufaqar</title>
-      </Head>
+      
+      <PageHead title="Experienced Full Stack WordPress and ReactJS Frontend Developer | Mufaqar " description="Full Stack MERN Developer proficient in WordPress, React, NextJs, and Tailwind expert from Lahore , Pakistan." url="https://www.mufaqar.com" />
+       
       <Banner className="home-banner bg-zinc-900" />
       <motion.section
         initial={"offscreen"}
