@@ -139,19 +139,19 @@ export default function CV() {
                                             <span className="text-slate-500">(+92) 302 -6006280</span>
                                         </Link>
                                     </li>
-                                    <li className="font-medium text-sm uppercase flex items-center space-x-2">
+                                    <li className="font-medium text-sm  flex items-center space-x-2">
                                         <span>NATIONALITY: </span> <span className="text-slate-500"> PAKISTAN</span>
                                     </li>
 
                                 </ul>
                                 <ul className="flex flex-col md:space-y-4">
-                                    <li className="font-medium text-sm uppercase flex items-center space-x-2">
+                                    <li className="font-medium text-sm  flex items-center space-x-2">
                                         <span>SKYPE: </span>
                                         <Link href="skype:mufaqar" target="_blank" rel="nofollow">
-                                            <span className="text-slate-500"> skype:mufaqar</span>
+                                            <span className="text-slate-500"> mufaqar</span>
                                         </Link>
                                     </li>
-                                    <li className="font-medium text-sm uppercase flex items-center space-x-2">
+                                    <li className="font-medium text-sm  flex items-center space-x-2">
                                         <span>EMAIL: </span>
                                         <Link href="mailto:mufaqar@gmail.com" target="_blank" rel="nofollow">
                                             <span className="text-slate-500">mufaqar@gmail.com</span>
@@ -279,9 +279,9 @@ export default function CV() {
                                 <motion.li
                                     variants={fadeUp}
                                     className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
-                                    <p className="md:w-1/4 w-full">MySql </p>
+                                    <p className="md:w-1/4 w-full">WordPress </p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '95%' }}> 95%</div>
                                     </div>
                                     </div>
                                 </motion.li>
@@ -290,7 +290,7 @@ export default function CV() {
                                     className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">Rest API</p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '85%' }}> 80%</div>
                                     </div>
                                     </div>
                                 </motion.li>
@@ -299,7 +299,7 @@ export default function CV() {
                                     className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">JavaScript </p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '90%' }}> 80%</div>
                                     </div>
                                     </div>
                                 </motion.li>
@@ -308,9 +308,9 @@ export default function CV() {
                                 <motion.li
                                     variants={fadeUp}
                                     className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
-                                    <p className="md:w-1/4 w-full">jQuery </p>
+                                    <p className="md:w-1/4 w-full">Database </p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '92%' }}> 92%</div>
                                     </div>
                                     </div>
                                 </motion.li>
@@ -319,7 +319,7 @@ export default function CV() {
                                     className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">ReactJs</p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '90%' }}> 80%</div>
                                     </div>
                                     </div>
                                 </motion.li>
@@ -328,16 +328,16 @@ export default function CV() {
                                     className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
                                     <p className="md:w-1/4 w-full">NextJs</p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '90%' }}> 90%</div>
                                     </div>
                                     </div>
                                 </motion.li>
                                 <motion.li
                                     variants={fadeUp}
                                     className="font-medium text-sm uppercase flex md:flex-row flex-col items-center">
-                                    <p className="md:w-1/4 w-full">Redux </p>
+                                    <p className="md:w-1/4 w-full">Tailwind </p>
                                     <div className="md:w-3/4 w-full"><div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '30%' }}> 45%</div>
+                                        <div className="bg-customPink text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{ width: '96%' }}> 96%</div>
                                     </div>
                                     </div>
                                 </motion.li>
