@@ -6,14 +6,18 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'Montserrat' : ['Montserrat' , 'sans-serif'],
-        'Raleway' : ['Raleway' , 'sans-serif'],
+        'Montserrat': ['Montserrat', 'sans-serif'],
+        'Raleway': ['Raleway', 'sans-serif'],
       },
       boxShadow: {
         '3xl': '0px 0px 15px 0px rgb(0 0 0 / 8%)',
       },
       colors: {
         'customPink': '#0d47a1',
+        title_color: `var(--title_color)`,
+        header: `var(--header)`,
+        bs_btn_bg: `var(--bs_btn_bg)`,
+        bs_link_color: `var(--bs_link_color)`,
       },
       animation: {
         animHr: 'animation1 1s ease',
@@ -27,7 +31,7 @@ module.exports = {
           '50%': { width: '30px' },
           '75%': { width: '100px' },
           '100%': { width: '40px' },
-        },        
+        },
         animation2: {
           "25%": {
             transform: "scale(.5)",
@@ -55,25 +59,25 @@ module.exports = {
             height: "50%",
           },
         },
-          
-        pulse : {
-          '0%': { boxShadow: "0 0 1 0 rgb(189 113 255/ 70%) "},
-          '25%': {  boxShadow: "0px 0px 3px 1px rgb(189 113 255 / 70%)"},
-          '50%': {  boxShadow: "0px 0px 6px 3px rgb(189 113 255/ 70%)" , opacity: "1"},
-          '100%': {  boxShadow: "0px 0px 10px 6px rgb(189 113 255/ 70%)"} ,
-        },      
+
+        pulse: {
+          '0%': { boxShadow: "0 0 1 0 rgb(189 113 255/ 70%) " },
+          '25%': { boxShadow: "0px 0px 3px 1px rgb(189 113 255 / 70%)" },
+          '50%': { boxShadow: "0px 0px 6px 3px rgb(189 113 255/ 70%)", opacity: "1" },
+          '100%': { boxShadow: "0px 0px 10px 6px rgb(189 113 255/ 70%)" },
+        },
 
       }),
-      
+
     },
   },
 
   variants: {
     extend: {
-      scale: ['active', 'group-hover' , 'group-before'],
+      scale: ['active', 'group-hover', 'group-before'],
       rotate: ['group-hover '],
       inset: ['hover', 'group-hover', 'group-before'],
-      
+
     },
   },
 
