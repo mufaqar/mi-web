@@ -11,6 +11,8 @@
     --header: #003548;
     --bs_btn_bg: #e42537;
     --bs_link_color: #ff7f00;
+    --bs_secondary: #70ae6e;
+    --bs_info: #afd2e9;
 }
 
 @layer components {
@@ -23,7 +25,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x: hidden!important;
 }
 
 h1,

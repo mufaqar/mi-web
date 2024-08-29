@@ -18,6 +18,8 @@ module.exports = {
         header: `var(--header)`,
         bs_btn_bg: `var(--bs_btn_bg)`,
         bs_link_color: `var(--bs_link_color)`,
+        bs_secondary: `var(--bs_secondary)`,
+        bs_info: `var(--bs_info)`
       },
       animation: {
         animHr: 'animation1 1s ease',

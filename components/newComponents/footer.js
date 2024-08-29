@@ -36,12 +36,12 @@ const Footer = () => {
                     </h6>
                     <ul className='flex flex-col gap-2'>
                         <li>
-                            <Link href="#" className='text-base font-normal text-white underline hover:decoration-red-800 transition-all duration-300'>
+                            <Link href="#" className='text-base font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300'>
                                 +44 (0)1235 811088
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className='text-base font-normal text-white underline hover:decoration-red-800 transition-all duration-300'>
+                            <Link href="#" className='text-base font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300'>
                                 studio@hexagonwebworks.com
                             </Link>
                         </li>
@@ -73,17 +73,17 @@ const Footer = () => {
                     </h6>
                     <ul className='flex flex-col gap-2'>
                         <li>
-                            <Link href="#" className='text-base font-normal text-white underline hover:decoration-red-800 transition-all duration-300'>
+                            <Link href="#" className='text-base font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300'>
                                 Terms & Conditions
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className='text-base font-normal text-white underline hover:decoration-red-800 transition-all duration-300'>
+                            <Link href="#" className='text-base font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300'>
                                 Cookies & Privacy Policy
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className='text-base font-normal text-white underline hover:decoration-red-800 transition-all duration-300'>
+                            <Link href="#" className='text-base font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300'>
                                 Hosting Terms & Conditions
                             </Link>
                         </li>
