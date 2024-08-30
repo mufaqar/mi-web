@@ -136,7 +136,7 @@ export default function home2() {
                     <p className='md:text-2xl text-lg font-normal text-title_color text-center mb-9'>
                         If you have a project or collaboration that you would like to discuss with us, or you’re curious to hear more about how we can help you, then we look forward to hearing from you.
                     </p>
-                    <ul className='flex md:flex-row flex-col md:gap-10 gap-5 justify-center'>
+                    <ul className='flex md:flex-row flex-col md:gap-10 gap-2 items-center justify-center'>
                         <li>
                             <Link href="tel:+923026006280" target='_blank' className='md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300'>
                                 +92 302-6006-280
