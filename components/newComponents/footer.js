@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+import { FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaLinkedin, FaSkype, FaTwitterSquare } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -36,25 +36,40 @@ const Footer = () => {
                     </h6>
                     <ul className='flex flex-col gap-2'>
                         <li>
-                            <Link href="#" className='text-base font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300'>
-                                +44 (0)1235 811088
+                            <Link href="tel:+923026006280" target='_blank' className='text-base font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300'>
+                                +92 302-6006-280
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className='text-base font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300'>
-                                studio@hexagonwebworks.com
+                            <Link href="mailto:info@mufaqar.com" target='_blank' className='text-base font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300'>
+                                info@mufaqar.com
                             </Link>
                         </li>
                     </ul>
                     <ul className='flex flex-wrap gap-4 mt-6'>
                         <li>
-                            <Link href="#" className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
+                            <Link href="https://www.facebook.com/mufaqar" target='_blank' className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
+                                <FaFacebookSquare />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="https://www.linkedin.com/in/mufaqar" target='_blank' className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
                                 <FaLinkedin />
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
-                                <FaInstagramSquare />
+                            <Link href="https://twitter.com/mufaqar" target='_blank' className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
+                                <FaTwitterSquare />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="http://github.com/mufaqar" target='_blank' className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
+                                <FaGithubSquare />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="https://join.skype.com/invite/M0ilv0J1egAb" target='_blank' className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
+                                <FaSkype />
                             </Link>
                         </li>
                     </ul>
@@ -64,7 +79,7 @@ const Footer = () => {
                         Address
                     </h6>
                     <p className='text-base font-normal text-white md:w-48'>
-                        Hexagon Webworks Ltd 140 Eastern Avenue Milton Park Abingdon Oxfordshire OX14 4SB United Kingdom
+                        134 B Ahmed Housing Multan Lahore , Paksitan
                     </p>
                 </div>
                 <div>
@@ -89,7 +104,7 @@ const Footer = () => {
                         </li>
                     </ul>
                     <p className='text-base font-normal text-white mt-2'>
-                        © 2024 Hexagon Webworks Ltd
+                        © 2010 - 2023 All Rights Reserved
                     </p>
                 </div>
             </div>
