@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const Workbox = ({ cstm_class }) => {
+const Workbox = ({ cstm_class, data }) => {
     return (
         <div className='group'>
             <Image src="/images/ariens.webp" alt='ariens' width={566} height={336} className='object-cover w-full h-full' />
