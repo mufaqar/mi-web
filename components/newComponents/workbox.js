@@ -9,10 +9,10 @@ const Workbox = ({ cstm_class, data }) => {
                 <Image src="/images/svgs/hexa.svg" alt='hexa' width={502} height={451} className='absolute scale-100 object-cover -left-40 bottom-12 group-hover:scale-[2.5] transition-all duration-1000 opacity-20' />
                 <div className='relative z-10'>
                     <h3 className='text-2xl font-normal text-white mb-5 underline decoration-white group-hover:decoration-bs_btn_bg transition-all duration-1000'>
-                        {data?.title}
+                        {data?.category}
                     </h3>
                     <p className='md:text-4xl text-2xl font-semibold text-white max-w-[380px]'>
-                        
+                    {data?.title}
                     </p>
                 </div>
             </div>

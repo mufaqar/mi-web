@@ -4,8 +4,12 @@ import React from 'react'
 import Workbox from '../components/newComponents/workbox'
 import Testimonial from '../components/newComponents/testimonial'
 import CTA from '../components/newComponents/cta'
+import { Categories } from '../const/works'
 
 export default function home2() {
+    const allWorks = Categories.flatMap((category) =>
+        category.works.map((work) => ({ ...work, categoryId: category.id, category: category.category, }))
+    );
     return (
         <main className='overflow-x-hidden'>
             <section className='bg-title_color md:py-[12.5rem] py-20 '>
@@ -117,8 +121,18 @@ export default function home2() {
                         Work we’re proud of
                     </h2>
                     <div className='grid md:grid-cols-2 grid-cols-1 gap-5 items-center'>
-                        <Workbox cstm_class="bg-bs_secondary" />
-                        <Workbox cstm_class="bg-bs_link_color" />
+                        {allWorks.slice(0, 2).map((work, idx) => (
+                            <Workbox
+                                key={idx}
+                                data={work}
+                                cstm_class={`${work.categoryId === 1
+                                    ? 'bg-bs_secondary'
+                                    : work.categoryId === 2
+                                        ? 'bg-bs_link_color'
+                                        : 'bg-bs_btn_bg'
+                                    }`}
+                            />
+                        ))}
                     </div>
                 </div>
             </section>

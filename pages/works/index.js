@@ -12,7 +12,7 @@ export default function Works() {
 
   // Combine all works into a single array for displaying when "All work" is selected
   const allWorks = Categories.flatMap((category) =>
-    category.works.map((work) => ({ ...work, categoryId: category.id }))
+    category.works.map((work) => ({ ...work, categoryId: category.id, category: category.category, }))
   );
 
   // Find works of the selected category
@@ -21,7 +21,8 @@ export default function Works() {
       ? Categories.find((category) => category.category === selectedCategory)?.works.map((work) => ({
         ...work,
         categoryId: Categories.find((cat) => cat.category === selectedCategory)?.id,
-      })) || []
+        category: Categories.find((cat) => cat.category === selectedCategory)?.category,
+              })) || []
       : [];
 
   return (
