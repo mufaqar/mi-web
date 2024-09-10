@@ -11,6 +11,9 @@ import { fadeUp } from '../const/animation';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { useState } from 'react';
 import PageHead from '../components/pagesmeta';
+import { FaFacebookSquare, FaGithubSquare, FaLinkedin, FaSkype, FaTwitterSquare } from 'react-icons/fa';
+import CTA from '../components/newComponents/cta';
+import Image from 'next/image';
 
 export default function Contact_Us() {
   const {
@@ -48,181 +51,141 @@ export default function Contact_Us() {
         description="Hire a dedicated skilled freelancer. Contact Me to elevate your business with expert solutions from Lahore's finest freelancers."
         url="https://www.mufaqar.com/contact"
       />
-      <main className="overflow-hidden">
+      <main className='overflow-x-hidden'>
         <InnerPages_Banner
-          sub="I’d love to plan, design & develop your websit"
           title="LET’S WORK TOGETHER"
+          subtitle="I’d love to plan, design & develop your websit"
         />
-
-        <motion.section
-          initial={'offscreen'}
-          whileInView={'onscreen'}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ staggerChildren: 0.5 }}
-        >
-          <div className="flex md:flex-row flex-col">
-            <div className="md:w-5/12 w-full p-12 items-center justify-center bg-zinc-900">
-              <motion.div
-                variants={fadeUp}
-                className="flex md:flex-row flex-col md:space-x-5 space-y-5 md:text-left text-center items-center p-5 mb-7 "
-              >
-                <BsBuilding className="text-5xl text-white" />
-                <div className="flex flex-col justify-center">
-                  <h3 className="text-2xl font-semibold text-white">
-                    Office Location
-                  </h3>
-                  <p className="text-base text-gray-400">
-                    134 B Ahmed Housing Multan Lahore , Paksitan
-                  </p>
-                </div>
-              </motion.div>
-              <hr className="w-10/12 mx-auto border-gray-400 mb-7"></hr>
-              <motion.div
-                variants={fadeUp}
-                className="flex md:flex-row flex-col md:space-x-5 space-y-5 md:text-left text-center items-center p-5 mb-7 "
-              >
-                <BsTelephone className="text-5xl text-white" />
-                <div className="flex flex-col justify-center">
-                  <p className="text-base text-gray-400 uppercase">Phone</p>
-                  <Link href="tel:+923026006280" target="_blank" rel="nofollow">
-                    <h3 className="text-2xl font-semibold text-white">
-                      +92 302-6006-280
-                    </h3>
-                  </Link>
-                </div>
-              </motion.div>
-              <hr className="w-10/12 mx-auto border-gray-400 mb-7"></hr>
-              <motion.div
-                variants={fadeUp}
-                className="flex md:flex-row flex-col md:space-x-5 space-y-5 md:text-left text-center items-center p-5 "
-              >
-                <BsEnvelope className="text-5xl text-white" />
-                <div className="flex flex-col justify-center">
-                  <p className="text-base text-gray-400 uppercase">
-                    Send an Email
-                  </p>
-                  <Link
-                    href="mailto:mufaqar@gmail.com"
-                    target="_blank"
-                    rel="nofollow"
-                  >
-                    <h3 className="text-2xl font-semibold text-white">
-                      info@mufaqar.com
-                    </h3>
-                  </Link>
-                </div>
-              </motion.div>
+        <section className='bg-title_color md:pb-[12.5rem] pb-20'>
+          <div className='container mx-auto px-4 relative'>
+            <div className='flex md:flex-row flex-col md:gap-10 gap-5 items-start'>
+              <div className='md:w-1/3 w-full'>
+                <h3 className='text-3xl font-semibold text-white mb-2'>
+                  Phone
+                </h3>
+                <Link href="tel:+923026006280" target='_blank' className='text-2xl font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300'>
+                  +92 302-6006-280
+                </Link>
+                <h3 className='text-3xl font-semibold text-white mb-2 mt-8'>
+                  Email
+                </h3>
+                <Link href="mailto:info@mufaqar.com" target='_blank' className='text-2xl font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300'>
+                  info@mufaqar.com
+                </Link>
+                <h3 className='text-3xl font-semibold text-white mb-2 mt-8'>
+                  Address
+                </h3>
+                <p className='text-2xl font-normal text-white'>
+                  134 B Ahmed Housing Multan Lahore , Paksitan
+                </p>
+                <ul className='flex flex-wrap gap-4 mt-8'>
+                  <li>
+                    <Link href="https://www.facebook.com/mufaqar" target='_blank' className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
+                      <FaFacebookSquare />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="https://www.linkedin.com/in/mufaqar" target='_blank' className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
+                      <FaLinkedin />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="https://twitter.com/mufaqar" target='_blank' className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
+                      <FaTwitterSquare />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="http://github.com/mufaqar" target='_blank' className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
+                      <FaGithubSquare />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="https://join.skype.com/invite/M0ilv0J1egAb" target='_blank' className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
+                      <FaSkype />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className='md:w-2/3 w-full'>
+                <form
+                  onSubmit={handleSubmit(onSubmit)}
+                  className="flex flex-col gap-8 relative z-10"
+                >
+                  <div className="w-full">
+                    <label htmlFor="name" className="hidden">
+                      Your Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Your Name"
+                      className='text-xl font-semibold text-title_color py-[.8125rem] px-4 w-full rounded-lg border-2 border-[#afd2e9] outline-none focus:shadow-[0_0_0_.25rem_rgb(175,210,233,25%)]'
+                      {...register('name', { required: true })}
+                    />
+                    {errors.name && (
+                      <span className="text-xs text-red-500">
+                        This field is required
+                      </span>
+                    )}
+                  </div>
+                  <div className="w-full">
+                    <label htmlFor="email" className="hidden">
+                      Your Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Your Email"
+                      className='text-xl font-semibold text-title_color py-[.8125rem] px-4 w-full rounded-lg border-2 border-[#afd2e9] outline-none focus:shadow-[0_0_0_.25rem_rgb(175,210,233,25%)]'
+                      {...register('email', { required: true })}
+                    />
+                    {errors.email && (
+                      <span className="text-xs text-red-500">
+                        This field is required
+                      </span>
+                    )}
+                  </div>
+                  <div className="w-full">
+                    <label htmlFor="phone" className="hidden">
+                      Your Phone
+                    </label>
+                    <input
+                      type="phone"
+                      id="phone"
+                      placeholder="Your Phone"
+                      className='text-xl font-semibold text-title_color py-[.8125rem] px-4 w-full rounded-lg border-2 border-[#afd2e9] outline-none focus:shadow-[0_0_0_.25rem_rgb(175,210,233,25%)]'
+                      {...register('phone', { required: true })}
+                    />
+                    {errors.phone && (
+                      <span className="text-xs text-red-500">
+                        This field is required
+                      </span>
+                    )}
+                  </div>
+                  <div className="w-full">
+                    <textarea
+                      type="text"
+                      id="message"
+                      rows="10"
+                      placeholder="Tell us a little bit about your project"
+                      className='text-xl font-semibold text-title_color py-[.8125rem] px-4 w-full rounded-lg border-2 border-[#afd2e9] outline-none focus:shadow-[0_0_0_.25rem_rgb(175,210,233,25%)]'
+                      {...register('message', { required: true })}
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    className='text-xl font-semibold text-white bg-bs_btn_bg hover:bg-bs_link_color hover:border-bs_link_color py-[0.8125rem] px-[1.813rem] rounded-xl border-2 border-[#e42537] inline-block transition-all duration-300 w-fit'>
+                    Send Message
+                  </button>
+                </form>
+              </div>
             </div>
-            <div className="md:w-7/12 w-full">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13608.758388583374!2d74.248524!3d31.491472!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x46a0c6c4ff7a1c7c!2sMufaqar%20%7C%20WordPress%20Designer%20-%20Theme%20Developer!5e0!3m2!1sen!2sus!4v1655373782749!5m2!1sen!2sus"
-                className="w-full h-[550px]"
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
+            <Image src="/images/svgs/hexa4.svg" alt='hexa4' width={650} height={363} className='absolute md:left-[-5%] md:bottom-[-48%] left-[-55%] bottom-[-15%]' />
+            <Image src="/images/svgs/hexa3.svg" alt='hexa3' width={177} height={162} className='absolute md:right-0 md:bottom-[-41%] right-[-25%] bottom-[-15%] md:scale-100 scale-75' />
           </div>
-        </motion.section>
-
-        <motion.section
-          initial={'offscreen'}
-          whileInView={'onscreen'}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ staggerChildren: 0.5 }}
-        >
-          <div className="container mx-auto flex flex-col py-16 px-4">
-            <motion.p
-              variants={fadeUp}
-              className="text-sm text-gray-400 uppercase text-center"
-            >
-              LET'S WORK TOGETHER.
-            </motion.p>
-            <motion.h3
-              variants={fadeUp}
-              className="text-4xl font-semibold text-black text-center mb-7"
-            >
-              Contact Us
-            </motion.h3>
-            <motion.form
-              variants={fadeUp}
-              onSubmit={handleSubmit(onSubmit)}
-              className="md:w-3/4 w-full mx-auto"
-            >
-              <div className="flex md:flex-row flex-col gap-4 mb-4">
-                <div className="md:w-1/2 w-full">
-                  <label htmlFor="name" className="hidden">
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    placeholder="Your Name"
-                    className="w-full border border-gray-300 focus:border-customPink outline-none py-4 px-6 text-sm md:mr-4 md:mb-0 mb-4"
-                    {...register('name', { required: true })}
-                  />
-                  {errors.name && (
-                    <span className="text-xs text-red-500">
-                      This field is required
-                    </span>
-                  )}
-                </div>
-                <div className="md:w-1/2 w-full">
-                  <label htmlFor="email" className="hidden">
-                    Your Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    placeholder="Your Email"
-                    className="w-full border border-gray-300 focus:border-customPink outline-none py-4 px-6 text-sm"
-                    {...register('email', { required: true })}
-                  />
-                  {errors.email && (
-                    <span className="text-xs text-red-500">
-                      This field is required
-                    </span>
-                  )}
-                </div>
-              </div>
-              <div className="w-full">
-                <label htmlFor="phone" className="hidden">
-                  Your Phone
-                </label>
-                <input
-                  type="phone"
-                  id="phone"
-                  placeholder="Your Phone"
-                  className="w-full border border-gray-300 focus:border-customPink outline-none py-4 px-6 text-sm mb-4"
-                  {...register('phone', { required: true })}
-                />
-                {errors.phone && (
-                  <span className="text-xs text-red-500">
-                    This field is required
-                  </span>
-                )}
-              </div>
-              <div className="w-full">
-                <textarea
-                  type="text"
-                  id="message"
-                  rows="10"
-                  placeholder="Tell us a little bit about your project"
-                  className="w-full border border-gray-300 focus:border-customPink outline-none py-4 px-6 text-sm mb-4"
-                  {...register('message', { required: true })}
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="border-2 border-customPink flex w-44 h-14 justify-between items-center text-sm uppercase text-customPink font-medium p-4 hover:bg-customPink hover:w-48 hover:text-white transform transition-all duration-300"
-              >
-                <span>Send Message </span>
-                <BsArrowRight className="text-xl" />
-              </button>
-            </motion.form>
-          </div>
-        </motion.section>
-      </main>
+        </section>
+        <CTA />
+      </main >
     </>
   );
 }

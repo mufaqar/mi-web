@@ -4,6 +4,7 @@ import Workbox from '../../components/newComponents/workbox';
 import Testimonial from '../../components/newComponents/testimonial';
 import CTA from '../../components/newComponents/cta';
 import { Categories } from '../../const/works.jsx'
+import InnerPages_Banner from '../../components/innerPages-banner.js';
 
 
 export default function Works() {
@@ -22,29 +23,16 @@ export default function Works() {
         ...work,
         categoryId: Categories.find((cat) => cat.category === selectedCategory)?.id,
         category: Categories.find((cat) => cat.category === selectedCategory)?.category,
-              })) || []
+      })) || []
       : [];
 
   return (
     <main className='overflow-x-hidden'>
-      <section className="bg-title_color md:py-[10.5rem] py-20 relative">
-        <div className="container mx-auto px-4">
-          <h1 className="md:text-[4.5rem] md:leading-[1] text-4xl font-bold text-white mb-9 max-w-[519px]">
-            Work
-          </h1>
-          <p className="md:text-2xl text-lg font-normal text-white mb-6 max-w-[525px]">
-            The vast majority of business comes via word of mouth, repeat business, and referrals. Below is a
-            selection of work we’re extra proud of.
-          </p>
-          <Image
-            src="/images/svgs/work.svg"
-            alt="work"
-            width={662}
-            height={332}
-            className="absolute md:right-[-5%] md:top-[-6%] top-[-5%] right-[-20%] md:scale-100 scale-50"
-          />
-        </div>
-      </section>
+      <InnerPages_Banner
+        title="Work"
+        subtitle="The vast majority of business comes via word of mouth, repeat business, and referrals. Below is a
+            selection of work we’re extra proud of."
+      />
       <section className="bg-title_color md:pb-[10.5rem] pb-20 relative">
         <div className="container mx-auto px-4">
           <ul className="flex flex-wrap md:gap-8 gap-3 justify-center mb-10">
@@ -61,8 +49,7 @@ export default function Works() {
                 key={item.id}
                 className={`text-lg font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300 cursor-pointer ${selectedCategory === item.category && 'font-bold decoration-bs_link_color'
                   }`}
-                onClick={() => setSelectedCategory(item.category)}
-              >
+                onClick={() => setSelectedCategory(item.category)}>
                 {item.category}
               </li>
             ))}

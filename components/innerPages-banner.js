@@ -1,28 +1,23 @@
-import { motion, Variant } from 'framer-motion'
-import { fadeUp } from "../const/animation";
+import Image from "next/image";
 
-export default function InnerPages_Banner(props) {
+export default function InnerPages_Banner({ subtitle, title }) {
   return (
-    <>
-      <motion.section
-        initial={"offscreen"}
-        whileInView={"onscreen"}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ staggerChildren: 0.5 }}
-        className="py-24 bg-gray-50">
-        <div className='container mx-auto flex flex-col items-center space-y-2 p-4'>
-          <motion.h6
-            variants={fadeUp}
-            className='text-xl font-medium tracking-widest text-center text-slate-500'>
-            {props.sub}
-          </motion.h6>
-          <motion.h1
-            variants={fadeUp}
-            className='md:text-6xl text-4xl font-extrabold text-center text-black after:content-["."] after:ml-0.5 after:text-customPink'>
-            {props.title}
-          </motion.h1>
-        </div>
-      </motion.section>
-    </>
+    <section className="bg-title_color md:py-[10.5rem] py-20 relative">
+      <div className="container mx-auto px-4">
+        <h1 className="md:text-[4.5rem] md:leading-[1] text-4xl font-bold text-white mb-9 max-w-[519px]">
+          {title}
+        </h1>
+        <p className="md:text-2xl text-lg font-normal text-white mb-6 max-w-[525px]">
+          {subtitle}
+        </p>
+        <Image
+          src="/images/svgs/work.svg"
+          alt="work"
+          width={662}
+          height={332}
+          className="absolute md:right-[-5%] md:top-[-6%] top-[-5%] right-[-20%] md:scale-100 scale-50"
+        />
+      </div>
+    </section>
   )
 }
