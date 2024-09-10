@@ -6,7 +6,7 @@ const Testimonial = () => {
         <section className='bg-title_color md:pb-[12.5rem] pb-20 '>
             <div className='container mx-auto px-4 relative'>
                 <div className='flex flex-row md:gap-10 gap-5 items-start max-w-[880px] mx-auto '>
-                    <Image src="/images/svgs/qout.svg" alt='qout' width={123} height={98} className='-mt-10' />
+                    <Image src="/images/svgs/qout.svg" alt='qout' width={123} height={98} className='-mt-10 md:w-full w-[70px]' />
                     <div className='md:mb-28 mb-10'>
                         <p className='md:text-2xl text-xl font-normal italic text-white mb-9' >
                             I’ve worked with Hexagon Webworks since 2015 and they have been fantastic. They are super responsive, essential when you are trading from your website, but were equally patient with us as we were evolving our requirements. I would highly recommend them to anyone looking to take their website to the next level and have someone trustworthy manage it.

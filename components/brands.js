@@ -17,79 +17,77 @@ import { motion, Variant } from 'framer-motion'
 import { fadeUp, scaleUp } from "../const/animation";
 
 export const Brands = () => {
-
-
-
   return (
-    <motion.div
-      initial={"offscreen"}
-      whileInView={"onscreen"}
-      viewport={{ once: true, amount: 0.5 }}
-      transition={{ staggerChildren: 0.5 }}>
-      <motion.h2
-        variants={fadeUp}
-        className="after:content-['.'] after:ml-0.5 after:text-customPink md:text-6xl text-4xl leading-7 font-bold tracking-wide text-center font-Montserrat">
-        Clients
-      </motion.h2>
-      <motion.p
-        variants={fadeUp}
-        className="max-w-2xl mx-auto mt-4 text-lg leading-7 tracking-wide text-center text-gray-400">
-        Our past clients have been happy and satisfied with our work.
-      </motion.p>
-      <div className="">
-        <Swiper
-          // install Swiper modules
-          modules={[Navigation, Autoplay]}
-          loop={true}
-          autoplay={{
-            delay: 1500,
-          }}
-          slidesPerView={5}
-          spaceBetween={10}
-          navigation={false}
-        >
-          <SwiperSlide>
-            <motion.figure
-              variants={scaleUp}
-              className="max-w-[12rem] mx-auto grayscale hover:grayscale-0"
-            >
-              <Image src={brand1} alt="Brands Picture" width={250} height={150} />
-            </motion.figure>
-          </SwiperSlide>
-          <SwiperSlide>
-            <motion.figure
-              variants={scaleUp}
-              className="max-w-[12rem] mx-auto grayscale hover:grayscale-0"
-            >
-              <Image src={brand2} alt="Brands Picture" width={250} height={150} />
-            </motion.figure>
-          </SwiperSlide>
-          <SwiperSlide>
-            <motion.figure
-              variants={scaleUp}
-              className="max-w-[12rem] mx-auto grayscale hover:grayscale-0"
-            >
-              <Image src={brand3} alt="Brands Picture" width={250} height={150} />
-            </motion.figure>
-          </SwiperSlide>
-          <SwiperSlide>
-            <motion.figure
-              variants={scaleUp}
-              className="max-w-[12rem] mx-auto grayscale hover:grayscale-0"
-            >
-              <Image src={brand5} alt="Brands Picture" width={250} height={150} />
-            </motion.figure>
-          </SwiperSlide>
-          <SwiperSlide>
-            <motion.figure
-              variants={scaleUp}
-              className="max-w-[12rem] mx-auto grayscale hover:grayscale-0"
-            >
-              <Image src={brand6} alt="Brands Picture" width={250} height={150} />
-            </motion.figure>
-          </SwiperSlide>
-        </Swiper>
+    <section className='bg-title_color md:pb-[10.5rem] pb-20'>
+      <div className='container mx-auto px-4'>
+        <h2 className="md:text-4xl text-2xl font-semibold text-white text-center underline decoration-bs_link_color mb-8">
+          Clients
+        </h2>
+        <p className="md:text-2xl text-lg font-normal text-white text-center mb-10">
+          Our past clients have been happy and satisfied with our work.
+        </p>
+        <div className="">
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            loop={true}
+            autoplay={{
+              delay: 1500,
+            }}
+            slidesPerView={5}
+            spaceBetween={10}
+            navigation={false}
+            breakpoints={
+              {// when window width is >= 320px
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                // when window width is >= 480px
+                480: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                // when window width is >= 640px
+                640: {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
+                }
+              }
+            }
+          >
+            <SwiperSlide>
+              <figure className="max-w-[12rem] mx-auto grayscale-0 hover:grayscale-0 bg-white"
+              >
+                <Image src={brand1} alt="Brands Picture" width={250} height={150} />
+              </figure>
+            </SwiperSlide>
+            <SwiperSlide>
+              <figure className="max-w-[12rem] mx-auto grayscale-0 hover:grayscale-0 bg-white"
+              >
+                <Image src={brand2} alt="Brands Picture" width={250} height={150} />
+              </figure>
+            </SwiperSlide>
+            <SwiperSlide>
+              <figure className="max-w-[12rem] mx-auto grayscale-0 hover:grayscale-0 bg-white"
+              >
+                <Image src={brand3} alt="Brands Picture" width={250} height={150} />
+              </figure>
+            </SwiperSlide>
+            <SwiperSlide>
+              <figure className="max-w-[12rem] mx-auto grayscale-0 hover:grayscale-0 bg-white"
+              >
+                <Image src={brand5} alt="Brands Picture" width={250} height={150} />
+              </figure>
+            </SwiperSlide>
+            <SwiperSlide>
+              <figure className="max-w-[12rem] mx-auto grayscale-0 hover:grayscale-0 bg-white"
+              >
+                <Image src={brand6} alt="Brands Picture" width={250} height={150} />
+              </figure>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
-    </motion.div>
+    </section>
   );
 };
