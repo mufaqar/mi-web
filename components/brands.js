@@ -37,17 +37,15 @@ export const Brands = () => {
             spaceBetween={10}
             navigation={false}
             breakpoints={
-              {// when window width is >= 320px
+              {
                 320: {
                   slidesPerView: 2,
                   spaceBetween: 20,
                 },
-                // when window width is >= 480px
                 480: {
                   slidesPerView: 3,
                   spaceBetween: 30,
                 },
-                // when window width is >= 640px
                 640: {
                   slidesPerView: 4,
                   spaceBetween: 40,
@@ -56,32 +54,27 @@ export const Brands = () => {
             }
           >
             <SwiperSlide>
-              <figure className="max-w-[12rem] mx-auto grayscale-0 hover:grayscale-0 bg-white"
-              >
+              <figure className="max-w-[12rem] mx-auto grayscale-0 hover:grayscale-0 bg-white">
                 <Image src={brand1} alt="Brands Picture" width={250} height={150} />
               </figure>
             </SwiperSlide>
             <SwiperSlide>
-              <figure className="max-w-[12rem] mx-auto grayscale-0 hover:grayscale-0 bg-white"
-              >
+              <figure className="max-w-[12rem] mx-auto grayscale-0 hover:grayscale-0 bg-white">
                 <Image src={brand2} alt="Brands Picture" width={250} height={150} />
               </figure>
             </SwiperSlide>
             <SwiperSlide>
-              <figure className="max-w-[12rem] mx-auto grayscale-0 hover:grayscale-0 bg-white"
-              >
+              <figure className="max-w-[12rem] mx-auto grayscale-0 hover:grayscale-0 bg-white">
                 <Image src={brand3} alt="Brands Picture" width={250} height={150} />
               </figure>
             </SwiperSlide>
             <SwiperSlide>
-              <figure className="max-w-[12rem] mx-auto grayscale-0 hover:grayscale-0 bg-white"
-              >
+              <figure className="max-w-[12rem] mx-auto grayscale-0 hover:grayscale-0 bg-white">
                 <Image src={brand5} alt="Brands Picture" width={250} height={150} />
               </figure>
             </SwiperSlide>
             <SwiperSlide>
-              <figure className="max-w-[12rem] mx-auto grayscale-0 hover:grayscale-0 bg-white"
-              >
+              <figure className="max-w-[12rem] mx-auto grayscale-0 hover:grayscale-0 bg-white">
                 <Image src={brand6} alt="Brands Picture" width={250} height={150} />
               </figure>
             </SwiperSlide>
