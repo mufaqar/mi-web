@@ -11,7 +11,7 @@ const Header = () => {
             <div className='container mx-auto px-4 flex md:flex-row flex-row gap-5 items-center justify-between'>
                 <div className='md:w-1/3 w-2/3'>
                     <Link href="/" className='inline-block'>
-                        <Image src="/images/svgs/logo.svg" width={370} height={51} />
+                        <Image src="/images/svgs/logo.svg" alt='logo' width={370} height={51} />
                     </Link>
                 </div>
                 <nav>

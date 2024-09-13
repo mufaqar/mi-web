@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className='bg-[#003041] py-[7.5rem] relative'>
             <Link href="/" className='inline-block bg-[url("/images/svgs/hexa.svg")] bg-no-repeat bg-center bg-contain absolute -top-12 -translate-x-1/2 left-1/2 p-6'>
-                <Image src="/images/svgs/logo-footer.svg" width={59} height={51} />
+                <Image src="/images/svgs/logo-footer.svg" alt="logo" width={59} height={51} />
             </Link>
             <div className='container mx-auto px-4 md:mb-24 mb-10'>
                 <form className='max-w-[926px] mx-auto'>
