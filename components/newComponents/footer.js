@@ -108,6 +108,7 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
+            <Image src="/images/svgs/blocks4.svg" alt='blocks4.svg' width={426} height={286} className='absolute 2xl:left-0 lg:left-[-131px] left-0 lg:top-[-150px] top-[-75px] md:w-auto w-1/2 z-10' />
         </footer>
     )
 }

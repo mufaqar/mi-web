@@ -12,19 +12,26 @@ export default function home2() {
     );
     return (
         <main className='overflow-x-hidden'>
-            <section className='bg-title_color md:py-[12.5rem] py-20 '>
-                <div className='container mx-auto px-4 relative'>
-                    <h1 className='md:text-[4.5rem] md:leading-[1] text-4xl font-bold text-white mb-9 max-w-[830px]'>
-                        A digital studio creating websites that inspire and engage
-                    </h1>
-                    <p className='md:text-2xl text-lg font-normal text-white mb-6 max-w-[780px]'>
-                        We’re a WordPress focused web design studio in Oxford. We create brands, design and develop websites, and build e-commerce solutions, all with a competitive edge and long-term support.
-                    </p>
-                    <Image src="/images/svgs/hexa3.svg" alt='hexa3' width={132} height={124} className='opacity-10 md:scale-100 scale-75 absolute md:bottom-[-45%] bottom-[-30%] md:left-[-3%] left-[-16%]' />
-                    <Image src="/images/svgs/hexa2.svg" alt='hexa2' width={1252} height={608} className='absolute right-[-32%] md:top-[45%] top-[89%]' />
+            <section className='relative'>
+                <div className='container mx-auto px-4 flex md:flex-row flex-col gap-6 items-center'>
+                    <div className='md:w-1/2 w-full'>
+                        <h1 className='md:text-6xl md:leading-[1] text-4xl font-bold text-[#1F2B37] mb-4'>
+                            We're a Creative product agency, building platforms organisations
+                        </h1>
+                        <p className='md:text-2xl text-lg font-normal text-[#212121] mb-6'>
+                            We are Platform. It’s good to meet you. 👋
+                        </p>
+                        <Link href="/contact" className='text-sm font-normal text-white bg-[#36CCDA] hover:bg-bs_link_color hover:border-bs_link_color py-[0.688rem] px-[1.813rem] border-2 border-[#36CCDA] inline-block transition-all duration-300 sm:mb-24'>
+                            CONTACT US
+                        </Link>
+                    </div>
+                    <div className='md:w-1/2 w-full'>
+                        <Image src="/images/new-banner.png" alt='new-banner.png' width={942} height={975} />
+                    </div>
                 </div>
+                <Image src="/images/svgs/blocks.svg" alt='blocks.svg' width={426} height={286} className='absolute 2xl:left-0 lg:left-[-131px] left-0 lg:bottom-[-150px] bottom-[-75px] md:w-auto w-1/2 z-10' />
             </section>
-            <section className='bg-bs_secondary md:py-[12.5rem] py-20 '>
+            <section className='bg-bs_secondary md:py-[12.5rem] py-20'>
                 <div className='container mx-auto px-4 grid md:grid-cols-3 grid-cols-1 gap-5 items-center'>
                     <div>
                         <h2 className='md:text-5xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-12 max-w-[340px]'>
@@ -56,7 +63,7 @@ export default function home2() {
                     </div>
                 </div>
             </section>
-            <section className='bg-bs_info md:py-[12.5rem] py-20 '>
+            <section className='bg-bs_info md:py-[12.5rem] py-20 relative'>
                 <div className='container mx-auto px-4 grid md:grid-cols-3 grid-cols-1 gap-5 items-center'>
                     <div>
                         <h2 className='md:text-5xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-12 max-w-[340px]'>
@@ -87,8 +94,9 @@ export default function home2() {
                         <Image src="/images/svgs/cms.svg" alt='cms' width={566} height={336} className='md:ml-auto' />
                     </div>
                 </div>
+                <Image src="/images/svgs/blocks2.svg" alt='blocks2.svg' width={426} height={286} className='absolute 2xl:left-0 lg:left-[-131px] left-0 lg:bottom-[-150px] bottom-[-75px] md:w-auto w-1/2 z-10' />
             </section>
-            <section className='bg-bs_secondary md:py-[12.5rem] py-20 '>
+            <section className='bg-bs_secondary md:py-[12.5rem] py-20'>
                 <div className='container mx-auto px-4 grid md:grid-cols-3 grid-cols-1 gap-5 items-center'>
                     <div>
                         <h2 className='md:text-5xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-12 max-w-[340px]'>
@@ -115,7 +123,7 @@ export default function home2() {
                     </div>
                 </div>
             </section>
-            <section className='bg-title_color md:py-[12.5rem] py-20 '>
+            <section className='bg-title_color md:py-[12.5rem] py-20 relative'>
                 <div className='container mx-auto px-4'>
                     <h2 className='md:text-5xl text-2xl font-semibold text-white underline decoration-bs_link_color mb-12 text-center'>
                         Work we’re proud of

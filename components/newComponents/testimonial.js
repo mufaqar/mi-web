@@ -3,8 +3,8 @@ import React from 'react'
 
 const Testimonial = () => {
     return (
-        <section className='bg-title_color md:pb-[12.5rem] pb-20 '>
-            <div className='container mx-auto px-4 relative'>
+        <section className='bg-title_color md:pb-[12.5rem] pb-20 relative'>
+            <div className='container mx-auto px-4'>
                 <div className='flex flex-row md:gap-10 gap-5 items-start max-w-[880px] mx-auto '>
                     <Image src="/images/svgs/qout.svg" alt='qout' width={123} height={98} className='-mt-10 md:w-full w-[70px]' />
                     <div className='md:mb-28 mb-10'>
@@ -16,8 +16,7 @@ const Testimonial = () => {
                         </p>
                     </div>
                 </div>
-                <Image src="/images/svgs/hexa4.svg" alt='hexa4' width={650} height={363} className='absolute md:left-[-5%] md:bottom-[-93%] left-[-55%] bottom-[-30%]' />
-                <Image src="/images/svgs/hexa3.svg" alt='hexa3' width={177} height={162} className='absolute md:right-0 md:bottom-[-78%] right-[-25%] bottom-[-26%] md:scale-100 scale-75' />
+                <Image src="/images/svgs/blocks3.svg" alt='blocks3.svg' width={426} height={286} className='absolute 2xl:right-0 lg:right-[-131px] right-0 lg:bottom-[-150px] bottom-[-75px] md:w-auto w-1/2 z-10' />
             </div>
         </section>
 

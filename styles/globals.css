@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 :root {
-    --title_color: #01394d;
+    --title_color: #003041;
     --header: #003548;
     --bs_btn_bg: #e42537;
     --bs_link_color: #ff7f00;
