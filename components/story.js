@@ -9,7 +9,7 @@ function Story() {
   return (
     <>
       <section className='bg-title_color'>
-        <div className="container grid p-4 pb-32 mx-auto md:grid-cols-2 story relative z-10">
+        <div className="container grid p-4 md:py-[12.5rem] py-20 mx-auto md:grid-cols-2 story relative z-10">
           <div className="relative grid bg-white border border-gray-300 stories_wrapper rounded-xl md:grid-cols-2">
             <div className="border-r-[1px] border-gray-300">
               <h2 className="text-center text-green-500 text-3xl font-extrabold leading-[42px] md:text-6xl md:leading-[70px]">

@@ -33,7 +33,7 @@ export default function Works() {
         subtitle="The vast majority of business comes via word of mouth, repeat business, and referrals. Below is a
             selection of work we’re extra proud of."
       />
-      <section className="bg-title_color md:pb-[10.5rem] pb-20 relative">
+      <section className="bg-title_color md:py-[12.5rem] py-20 relative">
         <div className="container mx-auto px-4">
           <ul className="flex flex-wrap md:gap-8 gap-3 justify-center mb-10">
             {/* Filter buttons */}

@@ -20,7 +20,7 @@ export default function Services() {
       />
       <InnerPages_Banner subtitle="THIS IS WHAT I LOVE TO DO." title="WHAT I OFFER" />
 
-      <section className="bg-title_color md:pb-[10.5rem] pb-20 relative">
+      <section className="bg-title_color md:py-[12.5rem] py-20 relative">
         <div className='container mx-auto px-4 grid md:grid-cols-3 gap-10'>
           <Service icon={<AiOutlineBulb />} title="WEB DESIGNING AND BRANDING" content="We design and give a personality, value and competitive edge to your brand. We strongly believe that if you are not online, you are not in today’s corporate business. We are the creators of good brands with a specialized persona and essence of communication. Get stunning broachers and flyers specially designed for you. Your story of glory speaks through your brand." />
           <Service icon={<FiLayers />} title="REACTJS , NEXTJS AND TAILWINDCSS" content="I build Websites that are fast, easy to manage, secure & convert your visitors into customers using Nextjs and TailwindCss" />

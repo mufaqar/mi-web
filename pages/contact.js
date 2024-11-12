@@ -56,7 +56,7 @@ export default function Contact_Us() {
           title="LET’S WORK TOGETHER"
           subtitle="I’d love to plan, design & develop your websit"
         />
-        <section className='bg-title_color md:pb-[12.5rem] pb-20'>
+        <section className='bg-title_color md:py-[12.5rem] py-20 relative'>
           <div className='container mx-auto px-4 relative'>
             <div className='flex md:flex-row flex-col md:gap-10 gap-5 items-start'>
               <div className='md:w-1/3 w-full'>
@@ -180,9 +180,8 @@ export default function Contact_Us() {
                 </form>
               </div>
             </div>
-            <Image src="/images/svgs/hexa4.svg" alt='hexa4' width={650} height={363} className='absolute md:left-[-5%] md:bottom-[-48%] left-[-55%] bottom-[-15%]' />
-            <Image src="/images/svgs/hexa3.svg" alt='hexa3' width={177} height={162} className='absolute md:right-0 md:bottom-[-41%] right-[-25%] bottom-[-15%] md:scale-100 scale-75' />
           </div>
+          <Image src="/images/svgs/blocks3.svg" alt='blocks3.svg' width={426} height={286} className='absolute 2xl:right-0 lg:right-[-131px] right-0 lg:bottom-[-150px] bottom-[-75px] md:w-auto w-1/2 z-10' />
         </section>
         <CTA />
       </main >
