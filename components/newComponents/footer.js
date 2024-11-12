@@ -1,14 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaLinkedin, FaSkype, FaTwitterSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaGithubSquare, FaLinkedin, FaSkype, FaTwitterSquare } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <footer className='bg-[#003041] py-[7.5rem] relative'>
-            <Link href="/" className='inline-block bg-[url("/images/svgs/hexa.svg")] bg-no-repeat bg-center bg-contain absolute -top-12 -translate-x-1/2 left-1/2 p-6'>
-                <Image src="/images/svgs/logo-footer.svg" alt="logo" width={59} height={51} />
-            </Link>
+        <footer className='bg-title_color py-[7.5rem] relative'>
             <div className='container mx-auto px-4 md:mb-24 mb-10'>
                 <form className='max-w-[926px] mx-auto'>
                     <div className='flex md:flex-row flex-col gap-4 mb-4'>
@@ -108,7 +105,7 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
-            <Image src="/images/svgs/blocks4.svg" alt='blocks4.svg' width={426} height={286} className='absolute 2xl:left-0 lg:left-[-131px] left-0 lg:top-[-150px] top-[-75px] md:w-auto w-1/2 z-10' />
+            <Image src="/images/svgs/blocks3.svg" alt='blocks3.svg' width={426} height={286} className='absolute 2xl:left-0 lg:left-[-131px] left-0 lg:top-[-150px] top-[-75px] md:w-auto w-1/2 z-10' />
         </footer>
     )
 }

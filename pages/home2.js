@@ -32,12 +32,12 @@ export default function home2() {
                 <Image src="/images/svgs/blocks.svg" alt='blocks.svg' width={426} height={286} className='absolute 2xl:left-0 lg:left-[-131px] left-0 lg:bottom-[-150px] bottom-[-75px] md:w-auto w-1/2 z-10' />
             </section>
             <section className='bg-bs_secondary md:py-[12.5rem] py-20'>
-                <div className='container mx-auto px-4 grid md:grid-cols-3 grid-cols-1 gap-5 items-center'>
+                <div className='container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-5 items-center'>
                     <div>
                         <h2 className='md:text-5xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-12 max-w-[340px]'>
                             Branding & Web Design
                         </h2>
-                        <p className='md:text-2xl text-base text-title_color mb-9'>
+                        <p className='md:text-2xl text-base text-title_color mb-9 max-w-[474px]'>
                             Sensational brands. Amazing looking web designs. Perfectly combining function & form creating digital products user love.
                         </p>
                         <ul className='flex flex-col gap-2 list-disc list-inside marker:text-bs_btn_bg marker:!mr-0'>
@@ -58,18 +58,18 @@ export default function home2() {
                             </li>
                         </ul>
                     </div>
-                    <div className='md:col-span-2'>
-                        <Image src="/images/svgs/branding.svg" alt='branding' width={566} height={336} className='md:ml-auto' />
+                    <div>
+                        <Image src="/images/branding.png" alt='branding' width={1000} height={667} className='md:ml-auto md:mr-0' />
                     </div>
                 </div>
             </section>
             <section className='bg-bs_info md:py-[12.5rem] py-20 relative'>
-                <div className='container mx-auto px-4 grid md:grid-cols-3 grid-cols-1 gap-5 items-center'>
+                <div className='container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-5 items-center'>
                     <div>
                         <h2 className='md:text-5xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-12 max-w-[340px]'>
                             WordPress CMS
                         </h2>
-                        <p className='md:text-2xl text-base text-title_color mb-9'>
+                        <p className='md:text-2xl text-base text-title_color mb-9 max-w-[460px]'>
                             Fast, secure and scalable websites and e-commerce solutions custom built on the world’s favourite CMS, WordPress.
                         </p>
                         <ul className='flex flex-col gap-2 list-disc list-inside marker:text-bs_btn_bg marker:!mr-0'>
@@ -90,19 +90,19 @@ export default function home2() {
                             </li>
                         </ul>
                     </div>
-                    <div className='md:col-span-2'>
-                        <Image src="/images/svgs/cms.svg" alt='cms' width={566} height={336} className='md:ml-auto' />
+                    <div>
+                        <Image src="/images/wordpress.png" alt='wordpress' width={886} height={746} className='md:ml-auto' />
                     </div>
                 </div>
                 <Image src="/images/svgs/blocks2.svg" alt='blocks2.svg' width={426} height={286} className='absolute 2xl:left-0 lg:left-[-131px] left-0 lg:bottom-[-150px] bottom-[-75px] md:w-auto w-1/2 z-10' />
             </section>
             <section className='bg-bs_secondary md:py-[12.5rem] py-20'>
-                <div className='container mx-auto px-4 grid md:grid-cols-3 grid-cols-1 gap-5 items-center'>
+                <div className='container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-5 items-center'>
                     <div>
                         <h2 className='md:text-5xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-12 max-w-[340px]'>
                             Hosting & Support
                         </h2>
-                        <p className='md:text-2xl text-base text-title_color mb-9'>
+                        <p className='md:text-2xl text-base text-title_color mb-9 max-w-[460px]'>
                             Stress free and proactive WordPress support, maintenance and web hosting, all delivered by our friendly UK staff.
                         </p>
                         <ul className='flex flex-col gap-2 list-disc list-inside marker:text-bs_btn_bg marker:!mr-0'>
@@ -118,8 +118,8 @@ export default function home2() {
                             </li>
                         </ul>
                     </div>
-                    <div className='md:col-span-2'>
-                        <Image src="/images/svgs/support.svg" alt='support' width={566} height={336} className='md:ml-auto' />
+                    <div>
+                        <Image src="/images/hosting.png" alt='hosting' width={993} height={669} className='md:ml-auto' />
                     </div>
                 </div>
             </section>
