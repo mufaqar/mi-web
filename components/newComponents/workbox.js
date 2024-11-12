@@ -12,11 +12,8 @@ const Workbox = ({ cstm_class, data }) => {
                     <h3 className='text-2xl font-normal text-white mb-5 underline decoration-white group-hover:decoration-bs_btn_bg transition-all duration-1000'>
                         {data?.category}
                     </h3>
-                    <p className='md:text-4xl text-2xl font-semibold text-white max-w-[380px]'>
-                    {data?.title}
-                    </p>
                     <Link href={`/works/${data?.slug}`} className='md:text-4xl text-2xl font-semibold text-white max-w-[380px]'>
-                    {data?.title}
+                        {data?.title}
                     </Link>
                 </div>
             </div>
