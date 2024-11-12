@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Workbox = ({ cstm_class, data }) => {
@@ -14,6 +15,9 @@ const Workbox = ({ cstm_class, data }) => {
                     <p className='md:text-4xl text-2xl font-semibold text-white max-w-[380px]'>
                     {data?.title}
                     </p>
+                    <Link href={`/works/${data?.slug}`} className='md:text-4xl text-2xl font-semibold text-white max-w-[380px]'>
+                    {data?.title}
+                    </Link>
                 </div>
             </div>
         </div>
