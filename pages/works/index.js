@@ -33,12 +33,12 @@ export default function Works() {
         subtitle="The vast majority of business comes via word of mouth, repeat business, and referrals. Below is a
             selection of work we’re extra proud of."
       />
-      <section className="bg-title_color md:py-[12.5rem] py-20 relative">
+      <section className="bg-bs_info md:py-[12.5rem] py-20 relative">
         <div className="container mx-auto px-4">
           <ul className="flex flex-wrap md:gap-8 gap-3 justify-center mb-10">
             {/* Filter buttons */}
             <li
-              className={`text-lg font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300 cursor-pointer ${selectedCategory === 'All' && 'font-bold decoration-bs_link_color'
+              className={`text-lg font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300 cursor-pointer ${selectedCategory === 'All' && 'font-bold decoration-bs_link_color'
                 }`}
               onClick={() => setSelectedCategory('All')}
             >
@@ -47,7 +47,7 @@ export default function Works() {
             {Categories.map((item) => (
               <li
                 key={item.id}
-                className={`text-lg font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300 cursor-pointer ${selectedCategory === item.category && 'font-bold decoration-bs_link_color'
+                className={`text-lg font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300 cursor-pointer ${selectedCategory === item.category && 'font-bold decoration-bs_link_color'
                   }`}
                 onClick={() => setSelectedCategory(item.category)}>
                 {item.category}

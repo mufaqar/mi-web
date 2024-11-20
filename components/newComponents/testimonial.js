@@ -3,7 +3,7 @@ import React from 'react'
 
 const Testimonial = () => {
     return (
-        <section className='bg-title_color md:pb-[12.5rem] pb-20 relative'>
+        <section className='bg-title_color md:py-[12.5rem] py-20 relative'>
             <div className='container mx-auto px-4'>
                 <div className='flex flex-row md:gap-10 gap-5 items-start max-w-[880px] mx-auto '>
                     <Image src="/images/svgs/qout.svg" alt='qout' width={123} height={98} className='-mt-10 md:w-full w-[70px]' />
