@@ -1,11 +1,5 @@
-import { AiOutlineBulb } from 'react-icons/ai'
-import { BiAperture } from 'react-icons/bi'
-import { FiPlay } from 'react-icons/fi'
-import { FiLayers } from 'react-icons/fi'
 import InnerPages_Banner from '../components/innerPages-banner'
 import Service from '../components/service-box'
-import { motion, Variant } from 'framer-motion'
-import { scaleUp } from "../const/animation";
 import PageHead from '../components/pagesmeta'
 import Testimonial from '../components/newComponents/testimonial'
 import CTA from '../components/newComponents/cta'

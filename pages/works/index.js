@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React, { useState } from 'react';
 import Workbox from '../../components/newComponents/workbox';
 import Testimonial from '../../components/newComponents/testimonial';

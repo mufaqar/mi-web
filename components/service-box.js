@@ -1,5 +1,3 @@
-import { motion, Variant } from 'framer-motion'
-import { scaleUp } from "../const/animation";
 import Image from 'next/image';
 
 export default function Service(props) {
