@@ -5,12 +5,19 @@ import Workbox from '../components/newComponents/workbox'
 import Testimonial from '../components/newComponents/testimonial'
 import CTA from '../components/newComponents/cta'
 import { Categories } from '../const/works'
+import PageHead from '../components/pagesmeta'
 
 export default function home2() {
     const allWorks = Categories.flatMap((category) =>
         category.works.map((work) => ({ ...work, categoryId: category.id, category: category.category, }))
     );
     return (
+<>
+        <PageHead
+        title=" Full Stack MERN Developer | WordPress | React | NextJs | TailwindCSS "
+        description="Seasoned ReactJs/WordPress/PHP Developer with over a decade of experience building, launching, and managing complex websites"
+        url="https://www.mufaqar.com"
+      />
         <main className='overflow-x-hidden'>
             <section className='relative'>
                 <div className='container mx-auto px-4 flex md:flex-row flex-col gap-6 items-center'>
@@ -147,5 +154,6 @@ export default function home2() {
             <Testimonial />
             <CTA />
         </main>
+        </>
     )
 }
