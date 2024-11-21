@@ -9,10 +9,11 @@ const Testimonial = () => {
                     <Image src="/images/svgs/qout.svg" alt='qout' width={123} height={98} className='-mt-10 md:w-full w-[70px]' />
                     <div className='md:mb-28 mb-10'>
                         <p className='md:text-2xl text-xl font-normal italic text-white mb-9' >
-                            I’ve worked with Hexagon Webworks since 2015 and they have been fantastic. They are super responsive, essential when you are trading from your website, but were equally patient with us as we were evolving our requirements. I would highly recommend them to anyone looking to take their website to the next level and have someone trustworthy manage it.
-                        </p>
+                           
+                        I’ve been working with Mufaqar since 2015, and the experience has been exceptional. He is incredibly responsive, which is crucial when your business depends on your website, yet he was equally patient with us as our requirements evolved. I highly recommend Mufaqar to anyone looking to elevate their website and have a trustworthy professional manage it.
+                           </p>
                         <p className='md:text-[1.375rem] md:leading-4 text-lg font-normal text-white'>
-                            <strong> Dr. Michael Fiebig, Absolute Antibody,</strong> Chief Scientific Officer
+                            <strong> Nikola , NSigma</strong> Chief  Officer
                         </p>
                     </div>
                 </div>

@@ -16,13 +16,13 @@ export default function home2() {
                 <div className='container mx-auto px-4 flex md:flex-row flex-col gap-6 items-center'>
                     <div className='md:w-1/2 w-full'>
                         <h1 className='md:text-6xl md:leading-[1] text-4xl font-bold text-[#1F2B37] mb-4'>
-                            We're a Creative product agency, building platforms organisations
+                       Crafting innovative platforms that empower organizations to thrive.
                         </h1>
                         <p className='md:text-2xl text-lg font-normal text-[#212121] mb-6'>
-                            We are Platform. It’s good to meet you. 👋
+                        A Full Stack Freelancer. It's great to connect with you!
                         </p>
                         <Link href="/contact" className='text-sm font-normal text-white bg-[#36CCDA] hover:bg-bs_link_color hover:border-bs_link_color py-[0.688rem] px-[1.813rem] border-2 border-[#36CCDA] inline-block transition-all duration-300 sm:mb-24'>
-                            CONTACT US
+                            CONTACT ME
                         </Link>
                     </div>
                     <div className='md:w-1/2 w-full'>
@@ -126,7 +126,7 @@ export default function home2() {
             <section className='bg-title_color md:py-[12.5rem] py-20 relative'>
                 <div className='container mx-auto px-4'>
                     <h2 className='md:text-5xl text-2xl font-semibold text-white underline decoration-bs_link_color mb-12 text-center'>
-                        Work we’re proud of
+                    Work I'm Proud Of
                     </h2>
                     <div className='grid md:grid-cols-2 grid-cols-1 gap-5 items-center'>
                         {allWorks.slice(0, 2).map((work, idx) => (
