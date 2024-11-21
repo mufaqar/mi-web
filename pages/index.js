@@ -1,179 +1,151 @@
-import Banner from "../components/Banner";
-import { BsGraphUp } from 'react-icons/bs';
-import { BsHourglassSplit } from 'react-icons/bs'
-import { FiLayers } from 'react-icons/fi';
-import { HiOutlineBeaker } from 'react-icons/hi';
-import { FaCalendarAlt } from 'react-icons/fa';
-import { BiDevices } from 'react-icons/bi';
-import { TbFocusCentered } from 'react-icons/tb';
-import { TbGlobe } from 'react-icons/tb';
-import Featured_Service from "../components/featured_services";
-import { Brands } from "../components/brands";
-import Head from 'next/head'
-import { motion, Variant } from 'framer-motion'
-import { fadeUp, scaleUp } from "../const/animation";
-import PageHead from "../components/pagesmeta";
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+import Workbox from '../components/newComponents/workbox'
+import Testimonial from '../components/newComponents/testimonial'
+import CTA from '../components/newComponents/cta'
+import { Categories } from '../const/works'
 
-
-export default function Home() {
-  return (
-    <>
-      
-      <PageHead title="Experienced Full Stack WordPress and ReactJS Frontend Developer | Mufaqar " description="Full Stack MERN Developer proficient in WordPress, React, NextJs, and Tailwind expert from Lahore , Pakistan." url="https://www.mufaqar.com" />
-       
-      <Banner className="home-banner bg-zinc-900" />
-      <motion.section
-        initial={"offscreen"}
-        whileInView={"onscreen"}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ staggerChildren: 0.5 }}
-        className="py-24 bg-white">
-        <div className="container mx-auto">
-          <div className="flex flex-col items-center mb-6">
-            <motion.h4
-              variants={fadeUp}
-              className="text-sm tracking-widest font-medium uppercase stroke-black ">
-            Experienced Full Stack 
-            </motion.h4>
-            <motion.h2
-              variants={fadeUp}
-              className="after:content-['.'] after:ml-0.5 after:text-customPink md:text-6xl text-4xl leading-7 font-bold tracking-wide mt-5 font-Montserrat">
-             MERN Developer | WordPress Expert
-
-            </motion.h2>
-            <motion.hr variants={scaleUp} className="border-b border-customPink w-12 mt-10"></motion.hr>
-          </div>
-          <motion.div
-            variants={fadeUp}
-            className="text-center py-6 px-4 md:w-[1080px] w-auto mx-auto">
-            <p className="text-xl text-slate-500 ">I bring over a decade of expertise in ReactJs, WordPress, and PHP development, adept in frontend technologies like React, Redux, HTML5, CSS3, and proficient in deployment via Heroku, AWS, Firebase, and cPanel. My backend skills encompass Node.js, Express.js, ReactJs, NextJs, GraphQL, and Apollo Client, coupled with expertise in MongoDB, MySQL, and SQL databases. In the WordPress realm, I specialize in custom theme development, WooCommerce, Multi-Vendor setups, and booking systems, utilizing tools such as Elementor, Visual Composer, ACF, and Yoast for optimal performance, troubleshooting, and seamless migrations.</p>
-          </motion.div>
-
-          
-        </div>
-      </motion.section>
-      <motion.section
-        initial={"offscreen"}
-        whileInView={"onscreen"}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ staggerChildren: 0.5 }}
-        className="grid md:grid-cols-2 border-t border-slate-100 bg-white">
-        <div className="bg-[url(/images/serviceBg.jpg)] bg-center bg-no-repeat bg-cover md:h-auto h-screen flex items-center">
-          <div className="w-full flex flex-col md:px-24 px-4 md:items-start items-center">
-            <motion.h4
-              variants={fadeUp}
-              className="text-sm tracking-widest font-medium uppercase ">
-              THIS IS WHAT WE LOVE TO DO.
-            </motion.h4>
-            <motion.h2
-              variants={fadeUp}
-              className="after:content-['.'] after:ml-0.5 after:text-customPink md:text-5xl text-4xl leading-7 font-bold tracking-wide mt-5">
-              Experties
-            </motion.h2>
-            <motion.hr variants={scaleUp} className="border-b border-customPink w-12 mt-10"></motion.hr>
-          </div>
-        </div>
-        <div className="grid md:grid-cols-2">
-          <Featured_Service
-            BG_icon={<BiDevices />}
-            mai_icon={<BiDevices />}
-            title="Wordpress Services"
-            content="WordPress Customization Theme Development WordPress Integration Site Maintenance and WordPress Security"
-          />
-          <Featured_Service
-            BG_icon={<FiLayers />}
-            mai_icon={<FiLayers />}
-            title=" React & Next.js and Tailwindcss"
-            content="An experienced frontend developer to build Websites and e-commerce stores over headless CMS (Wordpress)"
-          />
-          <Featured_Service
-            BG_icon={<TbFocusCentered />}
-            mai_icon={<TbFocusCentered />}
-            title="Web Designing and Branding"
-            content="I build websites with passion that build brands."
-          />
-          <Featured_Service
-            BG_icon={<TbGlobe />}
-            mai_icon={<TbGlobe />}
-            title="E-Commerce Solutions"
-            content="I am  experts at Woocommerce/Shopify, the most famous platform that’s trusted by leading brands."
-          />
-        </div>
-      </motion.section>
-      <section className="py-16 bg-white">
-        <Brands />
-      </section>
-      <motion.section
-        initial={"offscreen"}
-        whileInView={"onscreen"}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ staggerChildren: 0.5 }}
-        className="pt-5 pb-16 border-b border-slate-200 bg-white">
-        <div className="md:max-w-[1140px] w-auto mx-auto">
-          <div className="grid md:grid-cols-4 items-center">
-            <motion.div
-              variants={fadeUp}
-              className="flex items-center justify-center">
-              <BsGraphUp className="text-5xl text-gray-700 mr-5 stroke-0" />
-              <div>
-                <h5 className="after:content-['.'] after:ml-0.5 after:text-customPink text-3xl font-medium tracking-wide text-gray-700">1268</h5>
-                <span className="text-xs uppercase font-medium tracking-wide text-gray-700">PROJECTS</span>
-              </div>
-            </motion.div>
-            <motion.div
-              variants={fadeUp}
-              className="flex items-center justify-center">
-              <HiOutlineBeaker className="text-5xl text-gray-700 mr-5 stroke-0" />
-              <div>
-                <h5 className="after:content-['.'] after:ml-0.5 after:text-customPink text-3xl font-medium tracking-wide text-gray-700">199060</h5>
-                <span className="text-xs uppercase font-medium tracking-wide text-gray-700">Lines of Code</span>
-              </div>
-            </motion.div>
-            <motion.div
-              variants={fadeUp}
-              className="flex items-center justify-center">
-              <BsHourglassSplit className="text-5xl text-gray-700 mr-5 stroke-0" />
-              <div>
-                <h5 className="after:content-['.'] after:ml-0.5 after:text-customPink text-3xl font-medium tracking-wide text-gray-700">350</h5>
-                <span className="text-xs uppercase font-medium tracking-wide text-gray-700">Clients</span>
-              </div>
-            </motion.div>
-            <motion.div
-              variants={fadeUp}
-              className="flex items-center justify-center">
-              <FaCalendarAlt className="text-5xl text-gray-700 mr-5 stroke-0" />
-              <div>
-                <h5 className="after:content-['.'] after:ml-0.5 after:text-customPink text-3xl font-medium tracking-wide text-gray-700">12</h5>
-                <span className="text-xs uppercase font-medium tracking-wide text-gray-700">Years Experience</span>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </motion.section>
-      <motion.section
-        initial={"offscreen"}
-        whileInView={"onscreen"}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ staggerChildren: 0.5 }}
-        className="py-24 border-b border-slate-200  bg-[#0d47a1]">
-        <div className="md:max-w-[1140px] mx-auto flex flex-col items-center justify-center px-4">
-          <motion.h3
-            variants={fadeUp}
-            className="after:content-['.'] after:ml-0.5 after:text-customPink md:text-5xl text-3xl text-white text-center leading-10 font-bold tracking-wide mt-5">
-            I'd Love To Hear About Your Project
-          </motion.h3>
-          <motion.p
-            variants={fadeUp}
-            className="text-lg text-white text-center my-5">
-            Looking For A New Web Design (With Development) And/or Corporate Identity?
-          </motion.p>
-          <motion.button
-            variants={fadeUp}
-            className="border border-white py-5 px-8 bg-transparent hover:bg-white transition-all duration-500 text-white hover:text-[#0d47a1] font-medium uppercase text-xs ">
-            Work With Me
-          </motion.button>
-        </div>
-      </motion.section>
-    </>
-  )
+export default function home2() {
+    const allWorks = Categories.flatMap((category) =>
+        category.works.map((work) => ({ ...work, categoryId: category.id, category: category.category, }))
+    );
+    return (
+        <main className='overflow-x-hidden'>
+            <section className='relative'>
+                <div className='container mx-auto px-4 flex md:flex-row flex-col gap-6 items-center'>
+                    <div className='md:w-1/2 w-full'>
+                        <h1 className='md:text-6xl md:leading-[1] text-4xl font-bold text-[#1F2B37] mb-4'>
+                            We're a Creative product agency, building platforms organisations
+                        </h1>
+                        <p className='md:text-2xl text-lg font-normal text-[#212121] mb-6'>
+                            We are Platform. It’s good to meet you. 👋
+                        </p>
+                        <Link href="/contact" className='text-sm font-normal text-white bg-[#36CCDA] hover:bg-bs_link_color hover:border-bs_link_color py-[0.688rem] px-[1.813rem] border-2 border-[#36CCDA] inline-block transition-all duration-300 sm:mb-24'>
+                            CONTACT US
+                        </Link>
+                    </div>
+                    <div className='md:w-1/2 w-full'>
+                        <Image src="/images/new-banner.png" alt='new-banner.png' width={942} height={975} />
+                    </div>
+                </div>
+                <Image src="/images/svgs/blocks.svg" alt='blocks.svg' width={426} height={286} className='absolute 2xl:left-0 lg:left-[-131px] left-0 lg:bottom-[-150px] bottom-[-75px] md:w-auto w-1/2 z-10' />
+            </section>
+            <section className='bg-bs_secondary md:py-[12.5rem] py-20'>
+                <div className='container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-5 items-center'>
+                    <div>
+                        <h2 className='md:text-5xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-12 max-w-[340px]'>
+                            Branding & Web Design
+                        </h2>
+                        <p className='md:text-2xl text-base text-title_color mb-9 max-w-[474px]'>
+                            Sensational brands. Amazing looking web designs. Perfectly combining function & form creating digital products user love.
+                        </p>
+                        <ul className='flex flex-col gap-2 list-disc list-inside marker:text-bs_btn_bg marker:!mr-0'>
+                            <li>
+                                <Link href="#" className='md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300'>
+                                    Web Discovery
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#" className='md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300'>
+                                    Web Design
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#" className='md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300'>
+                                    Branding & Identity
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <Image src="/images/branding.png" alt='branding' width={1000} height={667} className='md:ml-auto md:mr-0' />
+                    </div>
+                </div>
+            </section>
+            <section className='bg-bs_info md:py-[12.5rem] py-20 relative'>
+                <div className='container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-5 items-center'>
+                    <div>
+                        <h2 className='md:text-5xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-12 max-w-[340px]'>
+                            WordPress CMS
+                        </h2>
+                        <p className='md:text-2xl text-base text-title_color mb-9 max-w-[460px]'>
+                            Fast, secure and scalable websites and e-commerce solutions custom built on the world’s favourite CMS, WordPress.
+                        </p>
+                        <ul className='flex flex-col gap-2 list-disc list-inside marker:text-bs_btn_bg marker:!mr-0'>
+                            <li>
+                                <Link href="#" className='md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300'>
+                                    WordPress CMS Development
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#" className='md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300'>
+                                    WooCommerce Development
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#" className='md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300'>
+                                    Custom API Integrations
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <Image src="/images/wordpress.png" alt='wordpress' width={886} height={746} className='md:ml-auto' />
+                    </div>
+                </div>
+                <Image src="/images/svgs/blocks2.svg" alt='blocks2.svg' width={426} height={286} className='absolute 2xl:left-0 lg:left-[-131px] left-0 lg:bottom-[-150px] bottom-[-75px] md:w-auto w-1/2 z-10' />
+            </section>
+            <section className='bg-bs_secondary md:py-[12.5rem] py-20'>
+                <div className='container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-5 items-center'>
+                    <div>
+                        <h2 className='md:text-5xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-12 max-w-[340px]'>
+                            Hosting & Support
+                        </h2>
+                        <p className='md:text-2xl text-base text-title_color mb-9 max-w-[460px]'>
+                            Stress free and proactive WordPress support, maintenance and web hosting, all delivered by our friendly UK staff.
+                        </p>
+                        <ul className='flex flex-col gap-2 list-disc list-inside marker:text-bs_btn_bg marker:!mr-0'>
+                            <li>
+                                <Link href="#" className='md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300'>
+                                    WordPress Web Hosting
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#" className='md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300'>
+                                    WordPress Maintenance
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <Image src="/images/hosting.png" alt='hosting' width={993} height={669} className='md:ml-auto' />
+                    </div>
+                </div>
+            </section>
+            <section className='bg-title_color md:py-[12.5rem] py-20 relative'>
+                <div className='container mx-auto px-4'>
+                    <h2 className='md:text-5xl text-2xl font-semibold text-white underline decoration-bs_link_color mb-12 text-center'>
+                        Work we’re proud of
+                    </h2>
+                    <div className='grid md:grid-cols-2 grid-cols-1 gap-5 items-center'>
+                        {allWorks.slice(0, 2).map((work, idx) => (
+                            <Workbox
+                                key={idx}
+                                data={work}
+                                cstm_class={`${work.categoryId === 1
+                                    ? 'bg-bs_secondary'
+                                    : work.categoryId === 2
+                                        ? 'bg-bs_link_color'
+                                        : 'bg-bs_btn_bg'
+                                    }`}
+                            />
+                        ))}
+                    </div>
+                </div>
+            </section>
+            <Testimonial />
+            <CTA />
+        </main>
+    )
 }
