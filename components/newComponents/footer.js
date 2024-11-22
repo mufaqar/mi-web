@@ -140,7 +140,7 @@ const Footer = () => {
             </li>
           </ul>
           <p className="text-base font-normal text-white mt-2">
-            © 2010 - 2023 All Rights Reserved
+            © 2010 - 2024 All Rights Reserved
           </p>
         </div>
       </div>
