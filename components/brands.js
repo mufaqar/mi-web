@@ -18,13 +18,13 @@ import { fadeUp, scaleUp } from "../const/animation";
 
 export const Brands = () => {
   return (
-    <section className='bg-title_color md:pb-[10.5rem] pb-20'>
+    <section className='bg-white md:pb-[10.5rem] py-20'>
       <div className='container mx-auto px-4'>
-        <h2 className="md:text-4xl text-2xl font-semibold text-white text-center underline decoration-bs_link_color mb-8">
+        <h2 className="md:text-4xl text-2xl font-semibold text-center underline decoration-bs_link_color mb-8">
           Clients
         </h2>
-        <p className="md:text-2xl text-lg font-normal text-white text-center mb-10">
-          Our past clients have been happy and satisfied with our work.
+        <p className="md:text-2xl text-lg font-normale text-center mb-10">
+        My clients have consistently expressed satisfaction and happiness with the quality of my work.
         </p>
         <div className="">
           <Swiper

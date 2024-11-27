@@ -59,13 +59,13 @@ function Story() {
             <h2 className="md:text-4xl text-2xl font-semibold text-white underline decoration-bs_link_color mb-8">
               Muhammad Mufaqar Islam
             </h2>
-            <p className="md:text-2xl text-lg font-normal text-white mb-4">
+            <p className="text-lg font-normal text-white mb-4">
               I was born and raised in beautiful Pakistan and currently reside
               in Lahore. My journey into the world of web development began with
               a deep passion for creating and building online experiences, which
               led me to carve my own path as a freelancer.
             </p>
-            <p className="md:text-2xl text-lg font-normal text-white mb-4">
+            <p className="text-lg font-normal text-white mb-4">
               I started working as a freelance WordPress  developer
               at the age of 24, diving headfirst into learning and mastering all
               things WordPress. Over the years, I honed my skills in WordPress,
@@ -74,14 +74,14 @@ function Story() {
               independently, delivering high-quality web development services to
               clients worldwide.
             </p>
-            <p className="md:text-2xl text-lg font-normal text-white mb-4">
+            <p className="text-lg font-normal text-white mb-4">
               In addition to client work, I actively share my knowledge and
               expertise with the WordPress community in Pakistan. I’ve had the
               privilege of collaborating with businesses to not only create
               visually appealing websites but also optimize them to drive leads,
               conversions, and business growth.
             </p>
-            <p className="md:text-2xl text-lg font-normal text-white mb-4">
+            <p className="text-lg font-normal text-white mb-4">
               Combining my skills in WordPress, online marketing, and search
               engine optimization, I specialize in designing websites that not
               only look great but also deliver measurable results for my
