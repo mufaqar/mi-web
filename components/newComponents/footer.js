@@ -32,7 +32,7 @@ const Footer = () => {
           </span>
         </form>
       </div> */}
-      <div className="container mx-auto px-4 grid md:grid-cols-3 grid-cols-1 gap-5">
+      <div className="container mx-auto px-4 grid md:grid-cols-3 grid-cols-1 gap-5 mt-16">
         <div>
           <h6 className="text-2xl font-semibold text-white mb-4">Contact</h6>
           <ul className="flex flex-col gap-2">
