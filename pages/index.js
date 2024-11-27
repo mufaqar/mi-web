@@ -61,11 +61,12 @@ export default function home2() {
           <div className="container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-5 items-center">
             <div>
               <h2 className="md:text-5xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-12 max-w-[340px]">
-                Branding & Web Design
+                Full Stack Development Services
               </h2>
               <p className="md:text-2xl text-base text-title_color mb-9 max-w-[474px]">
-                Sensational brands. Amazing looking web designs. Perfectly
-                combining function & form creating digital products user love.
+                I bring extensive technical expertise and comprehensive
+                knowledge in full-stack development, covering front-end
+                development, back-end development, databases, DevOps, and APIs.
               </p>
               <ul className="flex flex-col gap-2 list-disc list-inside marker:text-bs_btn_bg marker:!mr-0">
                 <li>
@@ -73,7 +74,7 @@ export default function home2() {
                     href="#"
                     className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
                   >
-                    Web Discovery
+                    Next.js Applications
                   </Link>
                 </li>
                 <li>
@@ -81,7 +82,7 @@ export default function home2() {
                     href="#"
                     className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
                   >
-                    Web Design
+                    TailwindCSS Integration
                   </Link>
                 </li>
                 <li>
@@ -89,7 +90,7 @@ export default function home2() {
                     href="#"
                     className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
                   >
-                    Branding & Identity
+                    API & Headless CMS Integration
                   </Link>
                 </li>
               </ul>
@@ -109,11 +110,12 @@ export default function home2() {
           <div className="container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-5 items-center">
             <div>
               <h2 className="md:text-5xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-12 max-w-[340px]">
-                WordPress CMS
+                WORDPRESS SERVICES{' '}
               </h2>
               <p className="md:text-2xl text-base text-title_color mb-9 max-w-[460px]">
-                Fast, secure and scalable websites and e-commerce solutions
-                custom built on the world’s favourite CMS, WordPress.
+                I specialize in creating fast, secure, and scalable WordPress
+                websites tailored to your needs, including custom themes,
+                plugins, and e-commerce solutions.
               </p>
               <ul className="flex flex-col gap-2 list-disc list-inside marker:text-bs_btn_bg marker:!mr-0">
                 <li>
@@ -121,7 +123,7 @@ export default function home2() {
                     href="#"
                     className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
                   >
-                    WordPress CMS Development
+                    Custom Themes & Plugins
                   </Link>
                 </li>
                 <li>
@@ -129,7 +131,7 @@ export default function home2() {
                     href="#"
                     className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
                   >
-                    WooCommerce Development
+                    E-commerce Solutions
                   </Link>
                 </li>
                 <li>
@@ -137,7 +139,7 @@ export default function home2() {
                     href="#"
                     className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
                   >
-                    Custom API Integrations
+                    Maintenance & Support
                   </Link>
                 </li>
               </ul>
@@ -164,11 +166,10 @@ export default function home2() {
           <div className="container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-5 items-center">
             <div>
               <h2 className="md:text-5xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-12 max-w-[340px]">
-                Hosting & Support
+                Maintenance & Support
               </h2>
               <p className="md:text-2xl text-base text-title_color mb-9 max-w-[460px]">
-                Stress free and proactive WordPress support, maintenance and web
-                hosting, all delivered by our friendly UK staff.
+              Hassle-free and proactive WordPress and React.js support, maintenance, and hosting services, delivered by a skilled and dedicated team.
               </p>
               <ul className="flex flex-col gap-2 list-disc list-inside marker:text-bs_btn_bg marker:!mr-0">
                 <li>
@@ -176,7 +177,7 @@ export default function home2() {
                     href="#"
                     className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
                   >
-                    WordPress Web Hosting
+                   Manage Web Hosting
                   </Link>
                 </li>
                 <li>
@@ -185,6 +186,14 @@ export default function home2() {
                     className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
                   >
                     WordPress Maintenance
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
+                  >
+                    React/NextJs Applications Maintenance
                   </Link>
                 </li>
               </ul>
