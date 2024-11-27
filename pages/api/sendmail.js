@@ -2,13 +2,13 @@ import nodemailer from "nodemailer";
 
 export default async (req, res) => {
   console.log("🚀 ~ file: sendmail.js:4 ~ req:", req.body)
-  const { firstName, LastName, email, Phone, linkedinURL, skypeID, selectJob, cv } = req.body;
+  const { name, email, phone, message } = req.body;
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
     auth: {
       user: 'softsgens@gmail.com',
-      pass: 'ttunkewfxjnyriyk',
+      pass: 'gcfokklkzusxugdi',
     }
   });
 
@@ -16,14 +16,12 @@ export default async (req, res) => {
     await transporter.sendMail({
       from: 'mufaqar@gmail.com',
       to: "mufaqar@gmail.com",
-      subject: `Contact form submission from ${firstName} ${LastName}`,
-      html: `<p>You have a contact form submission</p>
-        <p><strong>Name: </strong> ${firstName} ${LastName}</p>
+      subject: `Contact form submission from ${name} `,
+      html: `<p>Contact Us Query from Mufaqar.com</p>
+        <p><strong>Name: </strong> ${name} </p>
         <p><strong>Email: </strong> ${email}</p>
-        <p><strong>Phone Number: </strong> ${Phone}</p>
-        <p><strong>Skype ID: </strong> ${skypeID}</p>
-        <p><strong>Selected Job: </strong> ${selectJob}</p>
-        <p><strong>LinkedinURL: </strong> ${linkedinURL}</p>
+        <p><strong>Phone Number: </strong> ${phone}</p>
+        <p><strong>Message: </strong> ${message}</p>
       `
     });
   } catch (error) {

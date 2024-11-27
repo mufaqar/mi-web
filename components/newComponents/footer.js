@@ -12,7 +12,7 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-title_color py-[7.5rem] relative">
-      <div className="container mx-auto px-4 md:mb-24 mb-10">
+      {/* <div className="container mx-auto px-4 md:mb-24 mb-10">
         <form className="max-w-[926px] mx-auto">
           <div className="flex md:flex-row flex-col gap-4 mb-4">
             <input
@@ -31,7 +31,7 @@ const Footer = () => {
             Please enter an email address.
           </span>
         </form>
-      </div>
+      </div> */}
       <div className="container mx-auto px-4 grid md:grid-cols-3 grid-cols-1 gap-5">
         <div>
           <h6 className="text-2xl font-semibold text-white mb-4">Contact</h6>
