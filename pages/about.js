@@ -9,8 +9,8 @@ export default function About() {
   return (
     <main className='overflow-x-hidden'>
       <PageHead
-        title="About Me | Full Stack MERN Developer | WordPress | React | NextJs | TailwindCSS "
-        description="Seasoned ReactJs/WordPress/PHP Developer with over a decade of experience building, launching, and managing complex websites"
+        title=" About Me - Experienced Full-Stack Web Developer | Mufaqar Islam "
+        description="Experienced full-stack developer specializing in WordPress, React, and e-commerce solutions. Delivering tailored web development for 12+ years."
         url="https://www.mufaqar.com/about"
       />
       <InnerPages_Banner title="Mufaqar" />
@@ -18,8 +18,6 @@ export default function About() {
       <Story />
 
       <Brands />
-
-      <Testimonial />
       <CTA />
     </main>
   );

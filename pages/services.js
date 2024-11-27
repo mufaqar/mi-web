@@ -8,20 +8,21 @@ export default function Services() {
   return (
     <>
       <PageHead
-        title="THIS IS WHAT I LOVE TO DO | Mufaqar Full Stack MERN Developer "
-        description="THIS IS WHAT I LOVE TO DO. WHAT I OFFER  To build with Love websites  secure & convert your visitors into customers."
+        title=" Professional Web Development, E-commerce, and Design Services "
+        description="Expert in WordPress, React.js, e-commerce, SEO, and design services to boost your online presence and drive business growth."
         url="https://www.mufaqar.com/services"
       />
       <InnerPages_Banner subtitle="THIS IS WHAT I LOVE TO DO." title="WHAT I OFFER" />
 
       <section className="bg-bs_info md:py-[12.5rem] py-20 relative">
         <div className='container mx-auto px-4 grid md:grid-cols-3 gap-10'>
-          <Service title="WEB DESIGNING AND BRANDING" content="We design and give a personality, value and competitive edge to your brand. We strongly believe that if you are not online, you are not in today’s corporate business." />
-          <Service title="REACTJS , NEXTJS AND TAILWINDCSS" content="I build Websites that are fast, easy to manage, secure & convert your visitors into customers using Nextjs and TailwindCss" />
-          <Service title="WEB DEVELOPMENT" content="Reliable, professional and search engine friendly web solutions are a need of the today’s web. We build on strong methodologies." />
-          <Service title="WORDPRESS SERVICES" content="We design and give a personality, value and competitive edge to your brand. We strongly believe that if you are not online, you are not in today’s corporate business." />
-          <Service title="E-COMMERCE SOLUTIONS" content="Think beyond desktops, laptops and set out for tablets and smartphones. With the growing trend of using the variety of devices to browse web, we are those who make it an optimized." />
-          <Service title="SEO" content="Content represents you and we know this well. We don’t copy content, we create it and creation are worthy of both time and money." />
+          <Service title="WORDPRESS SERVICES" content="I specialize in creating fast, secure, and scalable WordPress websites tailored to your needs, including custom themes, plugins, and e-commerce solutions." list1="Custom Themes & Plugins" list2="E-commerce Solutions" list3="Maintenance & Support" />
+          <Service title="Fullstack React.js Developer" content="I specialize in JavaScript frameworks like React.js, Node.js, and TypeScript to build scalable web apps with Next.js, TailwindCSS, APIs, and headless CMS." list1="Next.js Applications" list2="TailwindCSS Integration" list3="API & Headless CMS Integration" />
+          <Service title="PHP Development" content="I specialize in Core PHP and frameworks like CodeIgniter and Laravel to deliver scalable and high-performance web solutions." list1="Custom Web Applications" list2="API Development & Integration" list3="CMS Customization" />
+          <Service title="E-COMMERCE SOLUTIONS" content="I provide tailored e-commerce solutions to help you grow your online store using platforms like WooCommerce and Shopify." list1="WooCommerce Development"  list2="Shopify Solutions" list3="Store Management & Integrations"/>
+          <Service title="SEO" content="I provide comprehensive SEO solutions to boost your website's visibility and drive organic traffic through on-page and off-page optimization." list1="On-Page SEO" list2="Off-Page SEO & Backlinks" list3="Comprehensive SEO Strategy" />
+          <Service title="Graphic Design Services" content="I create visually stunning and impactful designs to elevate your brand's identity and engage your audience." list1="Branding & Logo Design" list2="UI/UX Design" list3="Marketing Materials"/>
+       
         </div>
       </section>
       <Testimonial />

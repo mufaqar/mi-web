@@ -15,19 +15,19 @@ export default function Service(props) {
             <li className='flex gap-1.5 items-center'>
               <Image src="/images/svgs/hexa5.svg" alt='hexa' width={8} height={8} />
               <span className='md:text-xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300'>
-                Web Discovery
+                  {props.list1}
               </span>
             </li>
             <li className='flex gap-1.5 items-center'>
               <Image src="/images/svgs/hexa5.svg" alt='hexa' width={8} height={8} />
               <span className='md:text-xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300'>
-                Web Design
+              {props.list2}
               </span>
             </li>
             <li className='flex gap-1.5 items-center'>
               <Image src="/images/svgs/hexa5.svg" alt='hexa' width={8} height={8} />
               <span className='md:text-xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300'>
-                Branding & Identity
+              {props.list3}
               </span>
             </li>
           </ul>

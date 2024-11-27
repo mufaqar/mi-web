@@ -29,8 +29,7 @@ export default function Works() {
     <main className='overflow-x-hidden'>
       <InnerPages_Banner
         title="Work"
-        subtitle="The vast majority of business comes via word of mouth, repeat business, and referrals. Below is a
-            selection of work we’re extra proud of."
+        subtitle="The majority of my work comes from word of mouth, repeat clients, and referrals. Here’s a selection of projects I’m especially proud of."
       />
       <section className="bg-bs_info md:py-[12.5rem] py-20 relative">
         <div className="container mx-auto px-4">
