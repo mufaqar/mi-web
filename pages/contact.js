@@ -14,8 +14,10 @@ import PageHead from '../components/pagesmeta';
 import { FaFacebookSquare, FaGithubSquare, FaLinkedin, FaSkype, FaTwitterSquare } from 'react-icons/fa';
 import CTA from '../components/newComponents/cta';
 import Image from 'next/image';
+import Thankyou_Popup from '../components/newComponents/thankyou-popup';
 
 export default function Contact_Us() {
+  const [popUp, setPopUp] = useState(false);
   const {
     register,
     handleSubmit,
@@ -38,7 +40,6 @@ export default function Contact_Us() {
       console.log('Response received', res);
       if (res.status === 200) {
         console.log('Response succeeded!');
-        alert('Message Successfully send.!');
         reset();
         setSending(false);
       }
@@ -51,7 +52,7 @@ export default function Contact_Us() {
         description="Hire a dedicated skilled freelancer. Contact Me to elevate your business with expert solutions from Lahore's finest freelancers."
         url="https://www.mufaqar.com/contact"
       />
-      <main className='overflow-x-hidden'>
+      <main className='overflow-x-hidden relative'>
         <InnerPages_Banner
           title="LET’S WORK TOGETHER"
           subtitle="I’d love to plan, design & develop your websit" />
@@ -107,7 +108,12 @@ export default function Contact_Us() {
               </div>
               <div className='md:w-2/3 w-full'>
                 <form
-                  onSubmit={handleSubmit(onSubmit)}
+                  onSubmit={(e) => {
+                    handleSubmit(onSubmit)(e);
+                    setTimeout(() => {
+                      setPopUp(true);
+                    }, 3000);
+                  }}
                   className="flex flex-col gap-8 relative z-10"
                 >
                   <div className="w-full">
@@ -183,7 +189,17 @@ export default function Contact_Us() {
           <Image src="/images/svgs/blocks3.svg" alt='blocks3.svg' width={426} height={286} className='absolute 2xl:right-0 lg:right-[-131px] right-0 lg:bottom-[-150px] bottom-[-75px] md:w-auto w-1/2 z-10' />
         </section>
         <CTA />
-      </main >
+        <div
+          onClick={() => setPopUp(false)}
+          className={`${popUp
+            ? "scale-100 opacity-100 pointer-events-auto"
+            : "scale-60 opacity-0 pointer-events-none"
+            } transition-all duration-500 fixed top-0 bottom-0 w-screen h-screen bg-black/10 z-20 flex items-center justify-center`}
+        >
+          <Thankyou_Popup popUp={popUp} setPopUp={setPopUp} />
+        </div>
+
+      </main>
     </>
   );
 }
