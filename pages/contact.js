@@ -54,8 +54,7 @@ export default function Contact_Us() {
       <main className='overflow-x-hidden'>
         <InnerPages_Banner
           title="LET’S WORK TOGETHER"
-          subtitle="I’d love to plan, design & develop your websit"
-        />
+          subtitle="I’d love to plan, design & develop your websit" />
         <section className='bg-title_color md:py-[12.5rem] py-20 relative'>
           <div className='container mx-auto px-4 relative'>
             <div className='flex md:flex-row flex-col md:gap-10 gap-5 items-start'>
