@@ -71,7 +71,7 @@ export default function home2() {
               <ul className="flex flex-col gap-2 list-disc list-inside marker:text-bs_btn_bg marker:!mr-0">
                 <li>
                   <Link
-                    href="#"
+                  href="/services"
                     className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
                   >
                     Next.js Applications
@@ -79,7 +79,7 @@ export default function home2() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                  href="/services"
                     className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
                   >
                     TailwindCSS Integration
@@ -87,7 +87,7 @@ export default function home2() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                  href="/services"
                     className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
                   >
                     API & Headless CMS Integration
@@ -120,7 +120,7 @@ export default function home2() {
               <ul className="flex flex-col gap-2 list-disc list-inside marker:text-bs_btn_bg marker:!mr-0">
                 <li>
                   <Link
-                    href="#"
+                    href="/services"
                     className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
                   >
                     Custom Themes & Plugins
@@ -128,7 +128,7 @@ export default function home2() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/services"
                     className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
                   >
                     E-commerce Solutions
@@ -136,7 +136,7 @@ export default function home2() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/services"
                     className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
                   >
                     Maintenance & Support
@@ -174,7 +174,7 @@ export default function home2() {
               <ul className="flex flex-col gap-2 list-disc list-inside marker:text-bs_btn_bg marker:!mr-0">
                 <li>
                   <Link
-                    href="#"
+                    href="/services"
                     className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
                   >
                    Manage Web Hosting
@@ -182,7 +182,7 @@ export default function home2() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/services"
                     className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
                   >
                     WordPress Maintenance
@@ -190,7 +190,7 @@ export default function home2() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/services"
                     className="md:text-2xl text-base font-normal text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300"
                   >
                     React/NextJs Applications Maintenance
