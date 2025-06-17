@@ -37,6 +37,12 @@ const Header = () => {
                                 <span className={`block w-0 group-hover:w-full transition-all duration-300 bg-bs_btn_bg h-[1px]`}></span>
                             </Link>
                         </li>
+                         <li className='w-fit'>
+                            <Link href="/cv" className='text-xl font-semibold text-white group'>
+                               Resume
+                                <span className={`block w-0 group-hover:w-full transition-all duration-300 bg-bs_btn_bg h-[1px]`}></span>
+                            </Link>
+                        </li>
                         <li className='w-fit'>
                             <Link href="/contact" className='text-xl font-semibold text-white bg-bs_btn_bg hover:bg-bs_link_color hover:border-bs_link_color py-[0.688rem] px-[1.813rem] rounded-xl border-2 border-[#e42537] inline-block transition-all duration-300'>
                                 Contact

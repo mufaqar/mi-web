@@ -52,19 +52,15 @@ export default function CV() {
                             className='text-sm font-medium tracking-widest text-title_color'>
                             Seasoned ReactJs/WordPress/PHP Developer with over a decade of experience building, launching, and managing complex websites also specialize in all things "MERN".
                         </motion.p>
-                        <motion.p
-                            variants={fadeUp}
-                            className='text-sm font-medium tracking-widest mb-5 text-title_color'>
-                            INFORMATION TECHNOLOGY & SERVICES
-                        </motion.p>
+                       
                         <motion.p
                             variants={fadeUp}
                             className='text-sm font-medium tracking-widest text-title_color'>
-                            PREVIOUS: FRONT-END DEVELOPER AT PORTO
+                            PREVIOUS: FRONT-END DEVELOPER AT SOFTSGENS
                         </motion.p>
                         <motion.p
                             variants={fadeUp}
-                            className='text-sm font-medium tracking-widest text-title_color'>EDUCATION: PORTO SCHOOL
+                            className='text-sm font-medium tracking-widest text-title_color'>EDUCATION: BS Computer Science
                         </motion.p>
                     </div>
                 </div>
