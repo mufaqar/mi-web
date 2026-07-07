@@ -21,7 +21,7 @@ export default function Services() {
           <Service title="PHP Development" content="I specialize in Core PHP and frameworks like CodeIgniter and Laravel to deliver scalable and high-performance web solutions." list1="Custom Web Applications" list2="API Development & Integration" list3="CMS Customization" />
           <Service title="E-COMMERCE SOLUTIONS" content="I provide tailored e-commerce solutions to help you grow your online store using platforms like WooCommerce and Shopify." list1="WooCommerce Development"  list2="Shopify Solutions" list3="Store Management & Integrations"/>
           <Service title="SEO" content="I provide comprehensive SEO solutions to boost your website's visibility and drive organic traffic through on-page and off-page optimization." list1="On-Page SEO" list2="Off-Page SEO & Backlinks" list3="Comprehensive SEO Strategy" />
-          <Service title="Graphic Design Services" content="I create visually stunning and impactful designs to elevate your brand's identity and engage your audience." list1="Branding & Logo Design" list2="UI/UX Design" list3="Marketing Materials"/>
+          <Service title="Digital Marketing & Automation" content="I help businesses scale with UGS, AGS, Google Ads, Facebook Ads, and marketing automation solutions designed to maximize ROI and streamline growth." list1="Google & Facebook Ads Management" list2="UGS & AGS Solutions" list3="Marketing Automation & Workflows"/>
        
         </div>
       </section>
