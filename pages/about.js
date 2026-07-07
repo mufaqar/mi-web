@@ -9,8 +9,8 @@ export default function About() {
   return (
     <main className='overflow-x-hidden'>
       <PageHead
-        title=" About Me - Experienced Full-Stack Web Developer | Mufaqar Islam "
-        description="Experienced full-stack developer specializing in WordPress, React, and e-commerce solutions. Delivering tailored web development for 12+ years."
+        title="About Mufaqar Islam | Full Stack Web Developer | 12+ Years WordPress & React"
+        description="Experienced full-stack web developer with 12+ years specializing in WordPress, React, Next.js, PHP, and e-commerce solutions. Delivering tailored digital experiences from Lahore."
         url="https://www.mufaqar.com/about"
       />
     

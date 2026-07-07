@@ -28,8 +28,8 @@ export default function Works() {
   return (
     <main className='overflow-x-hidden'>
       <PageHead
-        title="Portfolio | Web Development Projects | Mufaqar Islam"
-        description="Explore my portfolio of WordPress, React, Next.js, and e-commerce projects. From custom themes to full-stack applications, see what I can build for you."
+        title="Portfolio - Mufaqar Islam | Web Development Projects | WordPress, React & Next.js"
+        description="Explore the portfolio of Mufaqar Islam featuring WordPress, React, Next.js, PHP, and e-commerce projects. From custom themes to full-stack applications, see live work samples."
         url="https://www.mufaqar.com/works"
       />
       <InnerPages_Banner

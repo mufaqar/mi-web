@@ -18,8 +18,8 @@ export default function home2() {
   return (
     <>
       <PageHead
-        title="Mufaqar Islam | Full Stack Web Developer | WordPress | React | Next.js | TailwindCSS"
-        description="Seasoned ReactJs/WordPress/PHP Developer with over a decade of experience building, launching, and managing complex websites"
+        title="Mufaqar Islam | Full Stack Web Developer | WordPress, React, Next.js & PHP Expert"
+        description="Seasoned WordPress, React, Next.js & PHP Developer with over a decade of experience building, launching, and managing complex websites and web applications."
         url="https://www.mufaqar.com"
       />
       <main className="overflow-x-hidden">

@@ -8,8 +8,8 @@ export default function Services() {
   return (
     <>
       <PageHead
-        title=" Professional Web Development, E-commerce, and Design Services "
-        description="Expert in WordPress, React.js, e-commerce, SEO, and design services to boost your online presence and drive business growth."
+        title="Web Development & Digital Marketing Services | WordPress, React, SEO, Ads & Automation"
+        description="Expert WordPress, React, Next.js, PHP development plus SEO, Google & Facebook Ads, UGS, AGS, and marketing automation. Full-service digital solutions to grow your business."
         url="https://www.mufaqar.com/services"
       />
       <InnerPages_Banner subtitle="THIS IS WHAT I LOVE TO DO." title="WHAT I OFFER" />

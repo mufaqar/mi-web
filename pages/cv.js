@@ -15,8 +15,8 @@ export default function CV() {
   return (
     <>
       <PageHead
-        title="Resume | Full Stack MERN Developer | WordPress | React | NextJs | TailwindCSS "
-        description="Explore my resume showcasing expertise as a Full Stack MERN Developer, specializing in WordPress, React, NextJs, and TailwindCSS. Uncover a versatile professional ready to enhance your web development projects."
+        title="Resume - Mufaqar Islam | Full Stack Web Developer | 10+ Years Experience"
+        description="View the resume of Mufaqar Islam — a seasoned Full Stack Web Developer with 10+ years of experience in WordPress, React, Next.js, PHP, and TailwindCSS. Available for hire."
         url="https://www.mufaqar.com/cv"
       />
       <motion.section

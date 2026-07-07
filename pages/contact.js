@@ -48,8 +48,8 @@ export default function Contact_Us() {
   return (
     <>
       <PageHead
-        title="Contact Me | Full Stack MERN Developer | WordPress | React | NextJs  "
-        description="Hire a dedicated skilled freelancer. Contact Me to elevate your business with expert solutions from Lahore's finest freelancers."
+        title="Contact Mufaqar Islam | Hire Full Stack Web Developer | WordPress & React Expert"
+        description="Hire a dedicated full stack web developer. Contact Mufaqar Islam for WordPress, React, Next.js, PHP, SEO, and digital marketing solutions based in Lahore, Pakistan."
         url="https://www.mufaqar.com/contact"
       />
       <main className='overflow-x-hidden relative'>

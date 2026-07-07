@@ -28,8 +28,8 @@ export default function Slug() {
     return (
         <>
             <PageHead
-                title={`${res?.title} | Web Development Project | Mufaqar Islam`}
-                description={`View project details for ${res?.title} — a ${res?.category} project built by Mufaqar Islam, Full Stack Web Developer.`}
+                title={`${res?.title} | Project Portfolio | Mufaqar Islam | Full Stack Web Developer`}
+                description={`View the ${res?.title} project — a ${res?.category} project built by Mufaqar Islam, a Full Stack Web Developer specializing in WordPress, React, and Next.js.`}
                 url={`https://www.mufaqar.com/works/${res?.slug}`}
             />
             <InnerPages_Banner sub="Our best work." title={res?.title} />
