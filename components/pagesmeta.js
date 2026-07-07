@@ -13,10 +13,10 @@ const PageHead = ({ title, description, url, curl, ogType }) => {
             <meta property="og:description" content={description} />
             <meta property="og:url" content={url} />
             <meta property="og:site_name" content="Mufaqar Islam" />
-            <meta property="og:image" content="https://www.mufaqar.com/images/og-image.svg" />
+            <meta property="og:image" content="https://www.mufaqar.com/images/og.png" />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="630" />
-            <meta property="og:image:type" content="image/svg+xml" />
+            <meta property="og:image:type" content="image/png" />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content="@mufaqar" />
             <meta name="twitter:title" content={title} />
