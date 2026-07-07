@@ -4,7 +4,7 @@ import Testimonial from '../../components/newComponents/testimonial';
 import CTA from '../../components/newComponents/cta';
 import { Categories } from '../../const/works.jsx'
 import InnerPages_Banner from '../../components/innerPages-banner.js';
-
+import PageHead from '../../components/pagesmeta';
 
 export default function Works() {
   // State to keep track of the selected category
@@ -27,6 +27,11 @@ export default function Works() {
 
   return (
     <main className='overflow-x-hidden'>
+      <PageHead
+        title="Portfolio | Web Development Projects | Mufaqar Islam"
+        description="Explore my portfolio of WordPress, React, Next.js, and e-commerce projects. From custom themes to full-stack applications, see what I can build for you."
+        url="https://www.mufaqar.com/works"
+      />
       <InnerPages_Banner
         title="Work"
         subtitle="The majority of my work comes from word of mouth, repeat clients, and referrals. Here’s a selection of projects I’m especially proud of."

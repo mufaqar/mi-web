@@ -76,7 +76,7 @@ export default function Contact_Us() {
                   Address
                 </h3>
                 <p className='text-2xl font-normal text-white'>
-                  134 B Ahmed Housing Multan Lahore , Paksitan
+                  134 B Ahmed Housing Multan Lahore , Pakistan
                 </p>
                 <ul className='flex flex-wrap gap-4 mt-8'>
                   <li>

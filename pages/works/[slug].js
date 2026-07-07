@@ -3,6 +3,7 @@ import Link from "next/link";
 import InnerPages_Banner from "../../components/innerPages-banner";
 import { useRouter } from "next/router";
 import { Categories } from "../../const/works";
+import PageHead from "../../components/pagesmeta";
 
 export default function Slug() {
     const router = useRouter();
@@ -26,6 +27,11 @@ export default function Slug() {
     }
     return (
         <>
+            <PageHead
+                title={`${res?.title} | Web Development Project | Mufaqar Islam`}
+                description={`View project details for ${res?.title} — a ${res?.category} project built by Mufaqar Islam, Full Stack Web Developer.`}
+                url={`https://www.mufaqar.com/works/${res?.slug}`}
+            />
             <InnerPages_Banner sub="Our best work." title={res?.title} />
             <section className="bg-bs_secondary md:py-[12.5rem] py-20 relative">
                 <div className="container px-4 mx-auto">

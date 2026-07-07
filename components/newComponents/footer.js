@@ -106,7 +106,7 @@ const Footer = () => {
         <div>
           <h6 className="text-2xl font-semibold text-white mb-4">Address</h6>
           <p className="text-base font-normal text-white md:w-48">
-            134 B Ahmed Housing Multan Lahore , Paksitan
+            134 B Ahmed Housing Multan Lahore , Pakistan
           </p>
         </div>
         <div>
@@ -140,7 +140,7 @@ const Footer = () => {
             </li>
           </ul>
           <p className="text-base font-normal text-white mt-2">
-            © 2010 - 2024 All Rights Reserved
+            © 2010 - 2026 All Rights Reserved
           </p>
         </div>
       </div>

@@ -18,7 +18,7 @@ export default function home2() {
   return (
     <>
       <PageHead
-        title=" Full Stack MERN Developer | WordPress | React | NextJs | TailwindCSS "
+        title="Mufaqar Islam | Full Stack Web Developer | WordPress | React | Next.js | TailwindCSS"
         description="Seasoned ReactJs/WordPress/PHP Developer with over a decade of experience building, launching, and managing complex websites"
         url="https://www.mufaqar.com"
       />
@@ -27,8 +27,7 @@ export default function home2() {
           <div className="container mx-auto px-4 flex md:flex-row flex-col gap-6 items-center">
             <div className="md:w-1/2 w-full">
               <h1 className="md:text-6xl md:leading-[1] text-4xl font-bold text-[#1F2B37] mb-4">
-                Crafting innovative platforms that empower organizations to
-                thrive.
+                Mufaqar Islam — Full Stack Web Developer Crafting Platforms That Empower Organizations
               </h1>
               <p className="md:text-2xl text-lg font-normal text-[#212121] mb-6">
                 A Full Stack Freelancer. It's great to connect with you!
